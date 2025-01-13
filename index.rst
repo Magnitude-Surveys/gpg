@@ -1,4 +1,4 @@
-Geophysics for Practicing Geoscientists
+Magnitude Surveys - Introduction to Geophysics
 =======================================
 
  .. image:: intro.png
@@ -6,16 +6,21 @@ Geophysics for Practicing Geoscientists
    :alt: intro
    :align: right
 
+This is remixed and derived from Geophysics for Practising Geoscientisits by GeoSci Developers, Douglas W. Oldenburg and Francis H.M. Jones.
+
 The GPG is a learning resource for applied geophysics and its applications to
 help solve problems of relevance to society including those in resource
 exploration, environmental applications, and geotechnical projects.
+
 Geophysical surveys and data are sensitive to physical property variations in
 the subsurface. These variations can be diagnostic for finding resources,
-tracking contamination or mapping geologic units. Application of a geophysical
-technique to help answer a geoscientific question requires that targeted
+tracking contamination or mapping geologic units.
+
+Application of a geophysical technique to help answer a geoscientific question requires that targeted
 physical properties be identified and appropriate geophysical surveys,
-processing and interpretation be carried out. The application of geophysics is
-consolidated into a Seven Step procedure that serves as a guiding template in
+processing and interpretation be carried out. 
+
+The application of geophysics is consolidated into a Seven Step procedure that serves as a guiding template in
 every problem. In the GPG we discuss  the physical principles for each type of
 survey and carry through with applications. The focus is on environmental,
 resource exploration and geotechnical problems but the concepts span a broad
@@ -55,10 +60,12 @@ Contents:
    content/foundations/index
    content/physical_properties/index
    content/magnetics/index
-   content/seismic/index
-   content/GPR/index
    content/electromagnetics/index
+   content/GPR/index
    content/DC_resistivity/index
+
+
+   content/seismic/index
    content/induced_polarization/index
    content/gravity/index
    content/appendix/apps
