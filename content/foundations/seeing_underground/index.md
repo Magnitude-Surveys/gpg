@@ -18,8 +18,12 @@ examples that illustrate how geophysics can be used.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 foundations_seeing_underground_intro
 foundations_seeing_underground_primer
 foundations_seeing_underground_example
 foundations_seeing_underground_geotech
 foundations_seeing_underground_conclusions
+
+</div>

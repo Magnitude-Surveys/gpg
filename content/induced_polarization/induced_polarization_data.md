@@ -20,8 +20,8 @@ frequency domain.
 > </figure>
 
 Consider the experiment illustrated in the following figure. Current,
-*I*, is injected into the ground at the source electrodes and voltage,
-*V*, is measured at the potential electrodes. The source is DC (direct
+$`I`$, is injected into the ground at the source electrodes and voltage,
+$`V`$, is measured at the potential electrodes. The source is DC (direct
 current) in the sense that when it is on, there is no variation.
 However, in this case it is turned on and off with a duty cycle as shown
 above. Two methods of measuring chargeability in the time domain are
@@ -31,37 +31,37 @@ described below.
     possible to measure it exactly in the field. The figure to the right
     shows voltage measured when the transmitter is first turned on and
     then turned off some time later. Using parameters from this figure,
-    one definition of chargeability is
-    *M* = *V*<sub>*S*</sub>/*V*<sub>*P*</sub> where *V*<sub>*S*</sub>
-    and *V*<sub>*P*</sub> are the steady state and "secondary"
-    potentials, respectively.
+    one definition of chargeability is $`M = V_S / V_P`$ where $`V_S`$
+    and $`V_P`$ are the steady state and "secondary" potentials,
+    respectively.
 
-    > -   The leading edge potential *V*<sub>*σ*</sub> is what would be
-    >     measured in the absence of chargeability. This potential would
-    >     yield the ground's resistivity.
-    > -   The steady state, *V*<sub>*P*</sub> (with a subscript *m* in
-    >     the figure above), often referred to as the primary potential,
-    >     is the combined effect of current flowing in the ground and
-    >     charges built up under the influence of the imposed electric
-    >     field.
-    > -   The secondary potential is entirely due to the charge
-    >     imbalance resulting from the build-up of charge.
-    > -   Using this form, chargeability *M* will be 0 ≤ *M* \< 1. If
-    >     *M* = 0 the measured potential will follow the input current
-    >     waveform exactly with no charging or discharging involved, as
-    >     shown in the first column of the figure above.
+    > - The leading edge potential $`V_{\sigma}`$ is what would be
+    >   measured in the absence of chargeability. This potential would
+    >   yield the ground's resistivity.
+    > - The steady state, $`V_P`$ (with a subscript *m* in the figure
+    >   above), often referred to as the primary potential, is the
+    >   combined effect of current flowing in the ground and charges
+    >   built up under the influence of the imposed electric field.
+    > - The secondary potential is entirely due to the charge imbalance
+    >   resulting from the build-up of charge.
+    > - Using this form, chargeability $`M`$ will be $`0 ≤ M < 1`$. If
+    >   $`M =
+    >   0`$ the measured potential will follow the input current
+    >   waveform exactly with no charging or discharging involved, as
+    >   shown in the first column of the figure above.
 
 2.  The most commonly measured form of time domain IP is the normalized
     area under the decay curve. It can be represented by the following
     equation, using parameters specified in the adjacent figure. The
-    decaying potential that follows *V*<sub>*s*</sub> is written as
-    *V*<sub>*s*</sub>(*t*).
+    decaying potential that follows $`V_s`$ is written as $`V_s (t)`$.
 
-Chargeability, *M*, is essentially the red area under the decay curve,
+Chargeability, $`M`$, is essentially the red area under the decay curve,
 normalized by the source voltage.
 
 > 
-> $$M = \frac{1}{V_P} \int  \\ V_S(t) \\ \mathrm{d}t$$
+> ``` math
+> M = \frac{1}{V_P} \int  \! V_S(t) \, \mathrm{d}t
+> ```
 
 <figure class="align-center">
 <img src="./images/source_and_measured_V.gif"
@@ -70,13 +70,14 @@ alt="./images/source_and_measured_V.gif" />
 
 ### Integrated Chargeability
 
-The integrated chargeability (*M*) characterizes the quantity of
+The integrated chargeability ($`M`$) characterizes the quantity of
 potential energy stored within a chargeable rock due to the accumulation
 of ionic charges. The integrated chargeability is defined as the area
-under the discharge curve normalized by the DC voltage
-(*V*<sub>*m*</sub>):
+under the discharge curve normalized by the DC voltage ($`V_m`$):
 
-$$M = \frac{1}{V_m} \int\_{t_1}^{t_2} V\_{off}(t) \\ dt$$
+``` math
+M = \frac{1}{V_m} \int_{t_1}^{t_2} V_{off}(t) \, dt
+```
 
 Numerical values for the integrated chargeability are typically given in
 ms.
@@ -102,26 +103,30 @@ domain are described below.
     less time to respond at higher frequencies, the signal is expected
     to be smaller at the higher frequency. Expressions for PFE are shown
     in the equations below. The data used in this calculation are
-    illustrated in the figure below. Recall that
-    *ρ*<sub>*a*</sub> = *K* ∣ *V* ∣ /*I* , where *K* is the geometric
-    factor based upon electrode geometry (see the Geophysical surveys
-    chapter, "DC resistivity" section), *V* is the measured potential,
-    and *I* is the source current.
+    illustrated in the figure below. Recall that $`\rho_a= K
+    \mid V \mid / I`$ , where $`K`$ is the geometric factor based upon
+    electrode geometry (see the Geophysical surveys chapter, "DC
+    resistivity" section), $`V`$ is the measured potential, and $`I`$ is
+    the source current.
 
 <figure class="align-center">
 <img src="./images/PFE.gif" alt="./images/PFE.gif" />
 </figure>
 
-$$PFE= 100 \left( \frac{\rho\_{a1} - \rho\_{a2}}{\rho\_{a2}}  \right)$$
+``` math
+PFE= 100 \left( \frac{\rho_{a1} - \rho_{a2}}{\rho_{a2}}  \right)
+```
 
 Alternatively:
 
-$$FE = \frac{V(f_1) - V(f_2)}{V(f_2)}$$
+``` math
+FE = \frac{V(f_1) - V(f_2)}{V(f_2)}
+```
 
 If the voltage version is used, the Frequency Effect (FE) can easily be
 converted to a percent frequency effect by multiplying by 100.
 
-1.  Data with units of phase are gathered by transmitting a sinusoidal
+2.  Data with units of phase are gathered by transmitting a sinusoidal
     source current. Then the phase difference between this source and
     measured potentials is recorded as a measure of chargeability. Units
     are usually milliradians. The following figure illustrates:
@@ -174,13 +179,15 @@ sets:
 
 The source is here an on-off duty cycle. As noted above, when time
 domain IP is recorded, chargeability is measured as the area under the
-decay curve normalized by "primary" voltage *V*<sub>*P*</sub>, using
+decay curve normalized by "primary" voltage $`V_P`$, using
 
-$$M = \frac{1}{V_P} \int\_{t_1}^{t_2}   \\ V_S(t) \\ \mathrm{d}t$$
+``` math
+M = \frac{1}{V_P} \int_{t_1}^{t_2}   \! V_S(t) \, \mathrm{d}t
+```
 
-The *t*<sub>1</sub> and *t*<sub>2</sub> times may be any limits within
-the off-time, and there are not really any standards, so comparison of
-different surveys can be difficult.
+The $`t_1`$ and $`t_2`$ times may be any limits within the off-time, and
+there are not really any standards, so comparison of different surveys
+can be difficult.
 
 Source (input) current is a square wave with 50% duty cycle (equal on
 and off times) as per resistivity (repeated cycles of +on, off, -on,
@@ -194,14 +201,14 @@ and negative cycles allows the "off-time" potential (i.e. voltages
 recorded when the transmitter is off) to be estimated, and any non-zero
 component removed.
 
-Many instruments record measured voltage, *V*<sub>*P*</sub>, just before
-the transmitter is turned off, and then again 10 times while voltages
-decay during the off times. The results can then provide a calculated
+Many instruments record measured voltage, $`V_P`$, just before the
+transmitter is turned off, and then again 10 times while voltages decay
+during the off times. The results can then provide a calculated
 chargeability and an estimated spontaneous potential. The adjacent
 figure illustrates each measured parameter. Note that if the transmitter
-is not on for a long enough time, *V*<sub>*P*</sub> will be measured
-before the charging time is finished, resulting in a voltage that is
-smaller than the actual *V*<sub>*P*</sub>.
+is not on for a long enough time, $`V_P`$ will be measured before the
+charging time is finished, resulting in a voltage that is smaller than
+the actual $`V_P`$.
 
 <figure class="align-center">
 <img src="./images/transmitter_on_off.gif"
@@ -220,22 +227,27 @@ The source is here a sinusoid.
 
 The percent frequency effect was defined above as either
 
-$$PFE= 100 \left( \frac{\rho\_{a1} - \rho\_{a2}}{\rho\_{a2}}  \right) \quad \textrm{or} \quad
-FE = \frac{V(f_2) - V(f_1)}{V(f_1)}$$
+``` math
+PFE= 100 \left( \frac{\rho_{a1} - \rho_{a2}}{\rho_{a2}}  \right) \quad \textrm{or} \quad
+FE = \frac{V(f_2) - V(f_1)}{V(f_1)}
+```
 
-Where *f*<sub>1</sub> is the DC or very low frequency, and
-*f*<sub>2</sub> is a higher frequency (a few tens to hundreds of Hertz)
-the second type of resistivities can be measured at frequencies on the
-order of a few tens to hundreds of Hertz.
+Where $`f_1`$ is the DC or very low frequency, and $`f_2`$ is a higher
+frequency (a few tens to hundreds of Hertz) the second type of
+resistivities can be measured at frequencies on the order of a few tens
+to hundreds of Hertz.
 
 ### Apparent Chargeability Measurements
 
-When the phase of voltage (*Δ**V*) with respect to input current ( I )
-is measured directly, the impedance Z of the ground at different
-frequencies (*ω*) can be determined based on the material. This requires
-careful synchronization between the receiver and the transmitter.
+When the phase of voltage ($`\Delta V`$) with respect to input current (
+I ) is measured directly, the impedance Z of the ground at different
+frequencies ($`\omega`$) can be determined based on the material. This
+requires careful synchronization between the receiver and the
+transmitter.
 
-$$Z(\omega ) = \frac{\Delta V (\omega)}{I (\omega)}$$
+``` math
+Z(\omega ) = \frac{\Delta V (\omega)}{I (\omega)}
+```
 
 In chargeable rocks, the measured voltage depends on the frequency of
 the alternating current. So in order to characterize the resistive
@@ -250,48 +262,55 @@ experimentally acquired resistivity values to a mathematical model
 (illstrated below). A well-established model for explaining the
 resistivities of chargeable rocks is the Cole-Cole model:
 
-$$\rho (\omega) = \rho_0 \Bigg \[ 1 - \eta \Bigg ( 1 - \frac{1}{1 + (i\omega\tau )^C} \Bigg ) \Bigg \]$$
+``` math
+\rho (\omega) = \rho_0 \Bigg [ 1 - \eta \Bigg ( 1 - \frac{1}{1 + (i\omega\tau )^C} \Bigg ) \Bigg ]
+```
 
-where *ρ*<sub>0</sub> is the DC resistivity and *η* is the intrinsic
-chargeability. Parameters *τ* and *C* define the rate at which ionic
-charges accumulate when an electric field is applied.
+where $`\rho_0`$ is the DC resistivity and $`\eta`$ is the intrinsic
+chargeability. Parameters $`\tau`$ and $`C`$ define the rate at which
+ionic charges accumulate when an electric field is applied.
 
 <figure class="align-center">
 <img src="images/electrode_chargeability_curve_fit.png"
 alt="images/electrode_chargeability_curve_fit.png" />
 </figure>
 
-Assuming *C* = 1, *τ* defines the exponential decay in voltage during
-the off-time measurements (see earlier). The conductivity of the rock
-can be obtained by taking the reciprocal of the complex resistivity:
+Assuming $`C=1`$, $`\tau`$ defines the exponential decay in voltage
+during the off-time measurements (see earlier). The conductivity of the
+rock can be obtained by taking the reciprocal of the complex
+resistivity:
 
-$$\sigma (\omega) = \frac{1}{\rho (\omega)}$$
+``` math
+\sigma (\omega) = \frac{1}{\rho (\omega)}
+```
 
 Additionally, Ohm's law still applies for chargeable rocks. Thus:
 
-*J⃗*(*ω*) = *σ*(*ω*)*E⃗*(*ω*)
+``` math
+\vec J (\omega) = \sigma (\omega) \vec E (\omega)
+```
 
 ## Choice of time, frequency or phase measurements
 
 The following lists a few factors affecting whether to choose time
 domain or frequency domain survey types:
 
--   Time domain methods are the most common since the IP signal is
-    measured directly. The decay signals are small, such as millivolts
-    or microvolts, so the signal-to-noise ratio can be a problem.
-    Stacking many repeat measurements is required.
--   Frequency domain methods require significantly smaller source
-    currents and are less sensitive to some sources of noise. However
-    the effects of EM coupling can be severe, and need to be removed.
-    ("EM coupling" is an unwanted signal which arises from inductive
-    interactions (like a transformer) between conductive near-surface
-    ground and the wires carrying transmitter current. It can completely
-    hide IP effects when it is severe).
--   See Smith, 1980, for a comparison of time domain and frequency
-    domain results recorded using three different instruments over the
-    same ore body. Such studies are rare because of the cost, so this is
-    an interesting examination of the pros and cons of various ways of
-    measuring IP.
+- Time domain methods are the most common since the IP signal is
+  measured directly. The decay signals are small, such as millivolts or
+  microvolts, so the signal-to-noise ratio can be a problem. Stacking
+  many repeat measurements is required.
+- Frequency domain methods require significantly smaller source currents
+  and are less sensitive to some sources of noise. However the effects
+  of EM coupling can be severe, and need to be removed. ("EM coupling"
+  is an unwanted signal which arises from inductive interactions (like a
+  transformer) between conductive near-surface ground and the wires
+  carrying transmitter current. It can completely hide IP effects when
+  it is severe).
+- See Smith, 1980, for a comparison of time domain and frequency domain
+  results recorded using three different instruments over the same ore
+  body. Such studies are rare because of the cost, so this is an
+  interesting examination of the pros and cons of various ways of
+  measuring IP.
 
 ## Examples of inverted field data
 

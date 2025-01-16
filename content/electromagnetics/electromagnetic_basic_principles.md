@@ -8,14 +8,15 @@ a closed circuit is proportional to the rate of change of magnetic flux
 through the circuit, or in even simpler terms: a changing magnetic field
 will induce an EMF.
 
-The magnetic flux *ϕ*<sub>*B*</sub> which crosses a closed loop is given
-by
+The magnetic flux $`\phi_B`$ which crosses a closed loop is given by
 
-*ϕ*<sub>*B*</sub> = ∫<sub>*a**r**e**a*</sub>*B⃗* ⋅ *n̂* *d**a⃗*
+``` math
+\phi_B = \int_{area} \vec{B} \cdot \hat{n} \; d\vec{a}
+```
 
-where *n̂* is the outward pointing normal vector for the loop and *B⃗* is
-the magnetic flux density, which is proportional to the magnetic field
-in free space. This is illustrated in the diagram below
+where $`\hat{n}`$ is the outward pointing normal vector for the loop and
+$`\vec{B}`$ is the magnetic flux density, which is proportional to the
+magnetic field in free space. This is illustrated in the diagram below
 
 <figure class="align-center">
 <img src="./images/IntFaradayDiagram-emf-version.svg"
@@ -25,14 +26,18 @@ alt="./images/IntFaradayDiagram-emf-version.svg" />
 Faraday's law relates the magnetic flux through the surface bordered by
 the loop to the induced EMF in the loop
 
-$$V = - \frac{d \phi_B}{dt}.$$
+``` math
+V = - \frac{d \phi_B}{dt}.
+```
 
-Recall that the current *I* flowing in the wire is related to the EMF
+Recall that the current $`I`$ flowing in the wire is related to the EMF
 through Ohm's law
 
-*V* = *I**R*,
+``` math
+V = IR,
+```
 
-where *R* is the electrical resistance of the circuit.
+where $`R`$ is the electrical resistance of the circuit.
 
 We can start to develop an intuition about Faraday's law using the
 example of a permanent magnet moving through a coil of wire. The
@@ -45,13 +50,13 @@ this example interactively using the applet below from
 
 We can observe several characteristics of EM induction using the applet:
 
-1.  The voltmeter only registers a signal when the magnet is moving,
+1)  The voltmeter only registers a signal when the magnet is moving,
     regardless of its absolute position.
-2.  The sign of the induced voltage changes depending on the direction
+2)  The sign of the induced voltage changes depending on the direction
     of motion and orientation of the magnet
-3.  The magnitude of the voltage depends on how quickly the magnet is
+3)  The magnitude of the voltage depends on how quickly the magnet is
     moving
-4.  All else being equal, the voltage induced in the four coil loop is
+4)  All else being equal, the voltage induced in the four coil loop is
     larger than in the two coil loop.
 
 **Lenz's Law**:The direction of the induced current in Faraday's law is
@@ -70,17 +75,17 @@ source will be approximately that of a perfect magnetic dipole when
 observed far enough from the loop. A good rule of thumb is that we can
 use the dipole approximation when the distance from the loop is more
 than five times its diameter. Put mathematically, the approximation
-holds when *r*  \> \> *a* where *r* is the distance from the observer to
-the center of the loop and *a* is the radius of the loop. The magnetic
-moment from a loop is *m⃗* = *I**A**n̂*, where *I* is the current in the
-loop, *A* is its area, and *n̂* is the unit vector perpendicular to the
-plane of the loop. In this course we will consider frequency domain
-transmitters. These are transmitters driven by a harmonic current, that
-is, a current that varies sinusoidally in time. The magnetic field of a
-dipole is given by the magnetization multiplied by a geometric factor,
-which implies that the primary magnetic field due to the transmitter
-will be harmonic in time:
-*H⃗*<sub>*p*</sub> = *H⃗*<sub>0</sub>cos (*ω**t*).
+holds when $`r\, >>\, a`$ where $`r`$ is the distance from the observer
+to the center of the loop and $`a`$ is the radius of the loop. The
+magnetic moment from a loop is $`\vec{m} = IA \hat{n}`$, where $`I`$ is
+the current in the loop, $`A`$ is its area, and $`\hat{n}`$ is the unit
+vector perpendicular to the plane of the loop. In this course we will
+consider frequency domain transmitters. These are transmitters driven by
+a harmonic current, that is, a current that varies sinusoidally in time.
+The magnetic field of a dipole is given by the magnetization multiplied
+by a geometric factor, which implies that the primary magnetic field due
+to the transmitter will be harmonic in time:
+$`\vec{H}_p = \vec{H}_0 \cos(\omega t)`$.
 
 <figure class="align-center">
 <img src="./images/mag-field-current-loop-v2.png" id="loop_dipole_field"
@@ -111,15 +116,15 @@ alt="./images/metal-detector-example.jpg" />
 detectors.</figcaption>
 </figure>
 
-In both cases we see that a current *I*<sub>0</sub> flowing in a
-transmitter coil generates a magnetic flux density **B**<sub>0</sub>. As
-**B**<sub>0</sub> changes in time, eddy currents are generated in
+In both cases we see that a current $`I_0`$ flowing in a transmitter
+coil generates a magnetic flux density $`\mathbf{B}_0`$. As
+$`\mathbf{B}_0`$ changes in time, eddy currents are generated in
 metallic objects. These eddy currents oscillate in time with the same
 periodicity as the transmitter current and generate a secondary magnetic
-field **B**′. The primary and secondary fields both pass through the
-receiver coil (in the handheld metal detector the transmitter and
-receiver coils are concentric) generating a secondary current *I*′ that
-can be measured.
+field $`\mathbf{B}'`$. The primary and secondary fields both pass
+through the receiver coil (in the handheld metal detector the
+transmitter and receiver coils are concentric) generating a secondary
+current $`I'`$ that can be measured.
 
 ## Circuit model for EM induction
 
@@ -137,7 +142,7 @@ alt="./images/Concepts_3loops-conductor-and-loop.png" />
 Eddy currents are generated in the buried body by changing magnetic flux
 passing through the body. We can learn a lot about the coupling between
 the transmitter, buried body and receiver by approximating the buried
-body by a wire coil with resistance *R* and inductance *L*. The
+body by a wire coil with resistance $`R`$ and inductance $`L`$. The
 resistance approximates the electrical resistivity of the earth and the
 inductance is a geometrical quantity that depends on the shape of the
 loop. The following discussion of the circuit model will be mostly
@@ -154,9 +159,9 @@ domain transmitters. We will only consider transmitters small enough
 that the primary magnetic fields they generate are approximately
 dipolar, as illustrated in figure `loop_dipole_field` above.
 Electromagnetic induction transmitters operate over range of
-frequencies---roughly 10<sup>1</sup> Hz - 10<sup>4</sup> Hz. Note that
-this is a much lower frequency band than is used in GPR surveys, which
-can range from 10<sup>6</sup> Hz - 10<sup>9</sup> Hz.
+frequencies---roughly $`10^1`$ Hz - $`10^4`$ Hz. Note that this is a
+much lower frequency band than is used in GPR surveys, which can range
+from $`10^6`$ Hz - $`10^9`$ Hz.
 
 ### Receiver
 
@@ -181,15 +186,17 @@ alt="./images/CouplingEffects.png" />
 
 The effect on the secondary field of the relative positions and
 orientations of the transmitter, receiver, and buried loop can be
-summarized by a coupling coefficient, which we will denote *C* . The
+summarized by a coupling coefficient, which we will denote $`C`$ . The
 ratio of the secondary field to the primary field is the product of
-coupling coefficient and an inductive response function *Q* that depends
-on the frequency of the transmitter and the resistance and inductance of
-the target loop:
+coupling coefficient and an inductive response function $`Q`$ that
+depends on the frequency of the transmitter and the resistance and
+inductance of the target loop:
 
-$$\frac{H_s}{H_p} = CQ(\alpha) = \frac{\alpha^2 + i\alpha}{1 + \alpha^2}$$
+``` math
+\frac{H_s}{H_p} = CQ(\alpha) = \frac{\alpha^2 + i\alpha}{1 + \alpha^2}
+```
 
-where *α* = *ω**L*/*R* is called the induction number. See
+where $`\alpha = \omega L/R`$ is called the induction number. See
 [em.geosci](http://em.geosci.xyz/content/maxwell3_fdem/circuitmodel_for_eminduction/understanding_harmonicEMresponse.html#)
 for full derivations of the coupling coefficient and inductive response
 function.
@@ -203,7 +210,7 @@ represented as a complex number whose real part is the in-phase
 secondary field and whose imaginary part is the quadrature signal.
 
 For a given coupling constant, the character of the secondary field can
-vary considerably as a function of the induction number *α*, as
+vary considerably as a function of the induction number $`\alpha`$, as
 illustrated in the following plot
 
 <figure class="align-center">
@@ -261,13 +268,14 @@ both an in-phase and an out-of-phase component. Each of these curves
 will have the same general shape as the one plotted above. We need only
 establish their relative amplitudes. From the general response curve we
 find that the in-phase (or real component) is larger than the
-out-of-phase (imaginary) component when *ω**σ* (or *ω**L*/*R*) is large.
+out-of-phase (imaginary) component when $`\omega \sigma`$ (or
+$`\omega L / R`$) is large.
 
 Below we plot the responses for a survey taken over a buried loop
 
 Because the body is conductive and the frequency of the survey is high,
-the value of *ω**L*/*R* is large and the in-phase response is larger
-than the quadrature response.
+the value of $`\omega L / R`$ is large and the in-phase response is
+larger than the quadrature response.
 
 <figure class="align-center">
 <img src="./images/dipole_response.jpg"
@@ -293,11 +301,11 @@ alt="./images/buried_object.jpg" />
 
 The laws of EM induction require that there be eddy currents that are
 also set up in the host. But any conductive material in which currents
-are flowing is a "lossy" medium. That is, there are *I*<sup>2</sup>*R*
-losses which convert the electromagnetic energy to heat. As a
-consequence the energy from the source does not propagate to arbitrarily
-large depths in the earth. The amplitude of the EM fields thus decrease
-due to geometrical spreading and attenuation.
+are flowing is a "lossy" medium. That is, there are $`I^2R`$ losses
+which convert the electromagnetic energy to heat. As a consequence the
+energy from the source does not propagate to arbitrarily large depths in
+the earth. The amplitude of the EM fields thus decrease due to
+geometrical spreading and attenuation.
 
 ### Primary field in a conductive earth
 
@@ -316,8 +324,9 @@ in the earth will depend upon:
 Considerable insight can be obtained by ignoring the geometry of the
 source and observing how a plane electromagnetic wave decays as it
 propagates into the earth. An incoming sinusoidal wave with frequency
-*ω* = 2*π**f* travels in the atmosphere at the speed of light
-*c* = 3 × 10<sup>8</sup> m/s and has a wavelength *λ* = *c*/*f*. When
+$`\omega = 2 \pi
+f`$ travels in the atmosphere at the speed of light
+$`c = 3 \times 10^8`$ m/s and has a wavelength $`\lambda = c/f`$. When
 the wave enters the conducting earth it still propagates as a sinusoid
 but it travels much slower and attenuates rapidly. An example, with
 numbers for speed and wavelength is given below.
@@ -336,20 +345,25 @@ depth according to the diagram given below.
 <img src="./images/field_decay.jpg" alt="./images/field_decay.jpg" />
 </figure>
 
-$$\begin{aligned}
-H  &= H_0 e^\frac{-(1-i)z}{\delta}\\\[0.4em\]
+``` math
+\begin{aligned}
+H  &= H_0 e^\frac{-(1-i)z}{\delta}\\[0.4em]
 \mid H \mid &= H_0 e^\frac{-z}{\delta}
-\end{aligned}$$
+\end{aligned}
+```
 
 **Skin Depth:** This is the depth by which the amplitude has decayed to
-1/*e* of its surface value. We have already encountered the concept of
-skin depth in the GPR unit. For a uniform halfspace of conductivity *σ*,
-and at the low frequencies used in EM induction surveys, the skin depth
-*δ* may be approximated as
+$`1/e`$ of its surface value. We have already encountered the concept of
+skin depth in the GPR unit. For a uniform halfspace of conductivity
+$`\sigma`$, and at the low frequencies used in EM induction surveys, the
+skin depth $`\delta`$ may be approximated as
 
-$$\delta \approx \sqrt{\frac{2}{\mu_0 \omega \sigma} } \approx 500\sqrt{\frac{\rho}{f}}$$
+``` math
+\delta \approx \sqrt{\frac{2}{\mu_0 \omega \sigma} } \approx 500\sqrt{\frac{\rho}{f}}
+```
 
-where *ρ* = 1/*σ* is resistivity and *ω*/(2*π*) is frequency.
+where $`\rho = 1/\sigma`$ is resistivity and $`\omega/(2\pi)`$ is
+frequency.
 
 ### At the Buried Body
 
@@ -357,18 +371,20 @@ There is a time varying magnetic field impinging upon the conductor.
 This sets up an electric force which causes currents to flow. The
 strength of the current is determined by Ohm's law:
 
-*J⃗* = *σ**E⃗*
+``` math
+\vec{J} = \sigma \vec{E}
+```
 
-where *J⃗* is current density in *A*/*m*<sup>2</sup> (amperes per meter
-squared) and *E⃗* is the electric field with units of Volts/meter. This
-is the version of Ohm's law for extended three-dimensional bodies,
-analogous to Ohm's law for circuits: *I* = *V*/*R*, where *R* is the
-electrical resistance of the circuit.
+where $`\vec{J}`$ is current density in $`A/m^2`$ (amperes per meter
+squared) and $`\vec{E}`$ is the electric field with units of
+Volts/meter. This is the version of Ohm's law for extended
+three-dimensional bodies, analogous to Ohm's law for circuits:
+$`I=V/R`$, where $`R`$ is the electrical resistance of the circuit.
 
 The currents in the body produce their own magnetic fields just as in
 the case of a loop. These currents will also vary with time and their
 magnetic field can be measured at the transmitter. We refer to these
-fields as the "secondary" magnetic field, $\vec{H_s}$. Note that the
+fields as the "secondary" magnetic field, $`\vec{H_s}`$. Note that the
 secondary field may be out of phase with the primary field.
 
 **Summary**
@@ -376,7 +392,8 @@ secondary field may be out of phase with the primary field.
 1.  A time varying current in a transmitter produces a time varying
     magnetic field which impinges upon a conductor in the ground.
 2.  The changing flux generates and electric field everywhere.
-3.  The electric field generates currents via Ohm's Law, *J⃗* = *σ**E⃗* .
+3.  The electric field generates currents via Ohm's Law,
+    $`\vec{J} = \sigma \vec{E}`$ .
 4.  The currents produce their own magnetic fields.
 5.  The receiver measures the sum of the primary and secondary fields,
     (or it measures associated voltages.)

@@ -10,10 +10,9 @@ complications encountered in real-life applications.
 
 Further details about instrumentation are provided later in this
 section. For now it is only necessary to understand that magnetic
-instruments can measure: (a) the total magnetic field \|**B**\|. (b) an
-individual component of **B**, such as *B*<sub>*x*</sub>,
-*B*<sub>*y*</sub> or *B*<sub>*z*</sub> (c) a gradient of the magnetic
-field
+instruments can measure: (a) the total magnetic field $`|\mathbf{B}|`$.
+(b) an individual component of $`\mathbf{B}`$, such as $`B_x`$, $`B_y`$
+or $`B_z`$ (c) a gradient of the magnetic field
 
 Of the above choices, by far the most common is the measurement of the
 total magnetic field. However, the same principles of survey design
@@ -28,9 +27,9 @@ effective survey that can optimize the amount of information gathered
 with the least amount time spent in the field. Here are few important
 parameters to keep in mind:
 
-> 1.  Coverage: the survey area must be large enough to capture the
+> 1)  Coverage: the survey area must be large enough to capture the
 >     anomalous signal
-> 2.  Sample interval: the data must be sampled finely enough so that
+> 2)  Sample interval: the data must be sampled finely enough so that
 >     the anomalous signal is captured with good fidelity.
 
 These concepts are clarified below:
@@ -41,24 +40,23 @@ The area over which the magnetic data are collected must be of great
 enough extent to capture the anomalous signal. If only part of the
 signal is measured it will be difficult to image the causative body or
 structure. `magnetic_coverage` compares two surveys over a dipping plane
-\[ Strike: 315<sup>∘</sup> , Dip: 45<sup>∘</sup> \]. Both surveys used
+\[ Strike: $`315^{\circ}`$ , Dip: $`45^{\circ}`$ \]. Both surveys used
 the same number of stations, hence the data acquistion cost would have
 been about the same. The example is small scale, with a plane being only
 3 x 3 meters but the survey design principles do not change with scale
 of the object.
 
-> -   In the first case (a), the survey area is only 2m x 2m and it
->     barely reaches the edge of the buried plane. Little can be said
->     about its horizontal extent. The survey managed to measure the
->     peak magnetic anomaly, but nothing can be inferred about a
->     possible geometry of the plane.
-> -   In the second case (b), the survey area is 8m x 8m and the
->     anomalous field has decayed to zero at the edges of the survey.
->     This is ideal. The survey area extends far away from the peak
->     values and approximately delineates the edges of the magnetized
->     object. A trained eye could potentially recognize the signature of
->     a dipping magnetic plane. (Of course we will do better by
->     inverting the data!)
+> - In the first case (a), the survey area is only 2m x 2m and it barely
+>   reaches the edge of the buried plane. Little can be said about its
+>   horizontal extent. The survey managed to measure the peak magnetic
+>   anomaly, but nothing can be inferred about a possible geometry of
+>   the plane.
+> - In the second case (b), the survey area is 8m x 8m and the anomalous
+>   field has decayed to zero at the edges of the survey. This is ideal.
+>   The survey area extends far away from the peak values and
+>   approximately delineates the edges of the magnetized object. A
+>   trained eye could potentially recognize the signature of a dipping
+>   magnetic plane. (Of course we will do better by inverting the data!)
 
 <figure class="align-center">
 <img src="./images/magnetic_coverage.png" id="magnetic_coverage"
@@ -78,7 +76,7 @@ with variable station spacing over a magnetic rod are presented in
 `magnetic_sampling`. The data acquired at a lower resolution gives
 little indication about the orientation of the magnetic rod. Only when
 the sampling interval is decreased can we distinguish a linear feature
-striking at 30<sup>∘</sup> N.
+striking at $`30^{\circ}`$ N.
 
 <figure class="align-center">
 <img src="./images/magnetic_sampling.png" id="magnetic_sampling"
@@ -156,26 +154,22 @@ note the changes in vertical scale as well as the changes in shape of
 the graph.
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -186,139 +180,82 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script><!-- InstanceEndEditable -->
-
-
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-    <td bgcolor="#ffffff" width="12">&nbsp;</td>
-
-    <td bgcolor="#ffffff"><!-- InstanceBeginEditable name="content" -->
-      
-      <form>
-        
-        <center>
+&#10;    <td bgcolor="#ffffff" width="12">&nbsp;</td>
+&#10;    <td bgcolor="#ffffff"><!-- InstanceBeginEditable name="content" -->
+      &#10;      <form>
+        &#10;        <center>
             <hr size="1" width="100%">
         <table cellspacing="0">
-
-            <tbody>
-
-              <tr>
-
-                <td valign="CENTER" width="46"><b>1.</b>
+&#10;            <tbody>
+&#10;              <tr>
+&#10;                <td valign="CENTER" width="46"><b>1.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-1.gif',1)" checked="checked" type="radio">
                 </td>
-
-                <td colspan="2" width="699">
-            
-                  At mid-northern latitudes (45°) the assymetric anomaly has the low end pointing north. Buried dykes are oriented east-west.</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>2.</b>
+&#10;                <td colspan="2" width="699">
+            &#10;                  At mid-northern latitudes (45°) the assymetric anomaly has the low end pointing north. Buried dykes are oriented east-west.</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>2.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-2.gif',1)" type="radio">
                 </td>
-
-                <td colspan="2" width="699">At mid-southern latitudes (45°) the anomalous &quot;low&quot; is on the south side.</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>3.</b>
+&#10;                <td colspan="2" width="699">At mid-southern latitudes (45°) the anomalous &quot;low&quot; is on the south side.</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>3.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-3.gif',1)" type="radio">
                 </td>
-
-                <td colspan="2" width="699">If buried dykes point north-south so that the survey line runs east-west, the anomaly recorded is very different.&nbsp;</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>4.</b>
+&#10;                <td colspan="2" width="699">If buried dykes point north-south so that the survey line runs east-west, the anomaly recorded is very different.&nbsp;</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>4.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-4.gif',1)" type="radio">
                 </td>
-
-                <td colspan="2" width="699">At the magnetic poles, anomalies are symmetric. (Note values for inclination and strike.)</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>5.</b>
+&#10;                <td colspan="2" width="699">At the magnetic poles, anomalies are symmetric. (Note values for inclination and strike.)</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>5.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-5.gif',1)" type="radio">
                 </td>
-
-                <td colspan="2" width="699">At the magnetic equator, anomalies are also symmetric, but opposite those at the magnetic poles.&nbsp;</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>6.</b>
+&#10;                <td colspan="2" width="699">At the magnetic equator, anomalies are also symmetric, but opposite those at the magnetic poles.&nbsp;</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>6.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-6.gif',1)" type="radio">
                 </td>
-
-                <td width="699">If you survey along a line that is at 45° to (rather than perpendicular) the buried 2D target, the anomaly is again very different.&nbsp;</td>
-
-              </tr>
-
-              <tr>
-
-                <td valign="top" width="46"><b>7.</b>
+&#10;                <td width="699">If you survey along a line that is at 45° to (rather than perpendicular) the buried 2D target, the anomaly is again very different.&nbsp;</td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td valign="top" width="46"><b>7.</b>
                   <input name="direction" value="OFF" onclick="MM_swapImage('dykes','','./../../_images/anom-7.gif',1)" type="radio">
                 </td>
-
-                <td width="699">If the shallower body included some remanent magnetization, the anomaly would now consist of the sum of induced and remanent magnetic fields. Compare to example <b>2.</b>, the &quot;normal&quot; anomaly in the southern hemisphere.&nbsp;
-                  
-              <hr size="1" width="100%">
+&#10;                <td width="699">If the shallower body included some remanent magnetization, the anomaly would now consist of the sum of induced and remanent magnetic fields. Compare to example <b>2.</b>, the &quot;normal&quot; anomaly in the southern hemisphere.&nbsp;
+                  &#10;              <hr size="1" width="100%">
                 </td>
-
-              </tr>
-
-              <tr>
-
-                <td width="46"><font size="-1">&nbsp;</font></td>
-
-                <td align="center" valign="CENTER" width="699"><font size="-1"><img src="./../../_images/anom-1.gif" name="dykes" alt="data over dykes" border="1" height="153" width="450"></font></td>
-
-              </tr>
-
-              <tr>
-
-                <td width="46"><font size="-1">&nbsp;</font></td>
-
-                <td align="center" valign="CENTER" width="699"><img src="./../../_images/anom-mod.gif" alt="buried dykes" border="1" height="153" width="450"> <br>
-
-                  Model earth has two 2D dykes both with susceptiblity <i>k</i> = 15 x 10<sup>3</sup>.</td>
-
-              </tr>
-      
-          </tbody>
-          
-        </table>
-
-        </center>
-
-      </form>
-
-      
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td width="46"><font size="-1">&nbsp;</font></td>
+&#10;                <td align="center" valign="CENTER" width="699"><font size="-1"><img src="./../../_images/anom-1.gif" name="dykes" alt="data over dykes" border="1" height="153" width="450"></font></td>
+&#10;              </tr>
+&#10;              <tr>
+&#10;                <td width="46"><font size="-1">&nbsp;</font></td>
+&#10;                <td align="center" valign="CENTER" width="699"><img src="./../../_images/anom-mod.gif" alt="buried dykes" border="1" height="153" width="450"> <br>
+&#10;                  Model earth has two 2D dykes both with susceptiblity <i>k</i> = 15 x 10<sup>3</sup>.</td>
+&#10;              </tr>
+      &#10;          </tbody>
+          &#10;        </table>
+&#10;        </center>
+&#10;      </form>
+&#10;      
       <center>
-        
-      <p> </p>
-
-      </center>
-
-    <!-- InstanceEndEditable --></td>
-
-  </tr>
-
-  </tbody>
+        &#10;      <p> </p>
+&#10;      </center>
+&#10;    <!-- InstanceEndEditable --></td>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
 
 ### Working with complex structures
@@ -346,26 +283,22 @@ the buttons.
 
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -376,10 +309,8 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script>
-
-<br> 
- 
-    <tr> 
+&#10;<br> 
+ &#10;    <tr> 
         <td bgcolor="#ffffff"><!-- InstanceBeginEditable name="content" --> 
           <form> 
           <center> 
@@ -440,28 +371,25 @@ function MM_initInteractions(){}
             </table> 
           </center> 
         </form>          
+
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -473,8 +401,7 @@ function MM_initInteractions(){}
 //-->
   </script>
 <br> 
- 
-    <tr> 
+ &#10;    <tr> 
         <td bgcolor="#ffffff"><!-- InstanceBeginEditable name="content" --> 
          Here again are the data generated from the single block, the 5 blocks 
 	  and the continuous Earth models:
@@ -499,18 +426,15 @@ function MM_initInteractions(){}
                     <p> </p> 
                      </td>   
                 </tr>
-
-                <td align="center" valign="center"><font size="-1"><img src="./../../_images/block-data.gif" name="dipoleapp" alt="Buried dipole response" border="1" height="238" width="300"></font></td> 
+&#10;                <td align="center" valign="center"><font size="-1"><img src="./../../_images/block-data.gif" name="dipoleapp" alt="Buried dipole response" border="1" height="238" width="300"></font></td> 
               </tbody> 
             </table> 
             <hr size="1" width="80%">
           </center> 
         </form> 
         <p> </p>
-          
-      <!-- InstanceEndEditable --></td> 
-  
-    </tr> 
+          &#10;      <!-- InstanceEndEditable --></td> 
+  &#10;    </tr> 
 
 The following table gives access to model, mesh and data files
 associated with these 3 models (uniform earth, 1 block, 5 blocks) for
@@ -588,44 +512,46 @@ and the cesium vapor magnetometers.
 
 ### Proton Precession Magnetometer
 
--   This instrument was the most common type before the mid 1990's. It
-    measures the amplitude of the magnetic field which is sometimes
-    referred to as the Total Field Intensity (TMI).
--   Advantages: Sensitive to 1 nT, small, rugged & reliable, not
-    sensitive to orientation.
--   Disadvantages: Takes \>1 sec to read, sensitive to high gradients.
--   The measurement process is related to nuclear magnetic resonance
-    (NMR). A proton source (possibly as simple as a volume of water) is
-    subjected to an artificial magnetic field, causing the protons to
-    align with the new field. When the artificial field is removed, the
-    protons precess back to their original orientation and their
-    precession frequency (called the *Larmor* precession frequency) is
-    measured. That frequency, *f*, is related directly to the strength
-    of the earth's field, (*B*<sub>*e*</sub>), according to the equation
-    below. The parameter, *γ*<sub>*p*</sub>, is the ratio of the
-    magnetic moment to spin angular momentum. It is called the
-    gyromagnetic ratio of a proton and is known to 0.001%;
-    *γ*<sub>*p*</sub> = 2.67520 × 10<sup>8</sup>*T*<sup>−1</sup>*s*<sup>−1</sup>.
+- This instrument was the most common type before the mid 1990's. It
+  measures the amplitude of the magnetic field which is sometimes
+  referred to as the Total Field Intensity (TMI).
+- Advantages: Sensitive to 1 nT, small, rugged & reliable, not sensitive
+  to orientation.
+- Disadvantages: Takes \>1 sec to read, sensitive to high gradients.
+- The measurement process is related to nuclear magnetic resonance
+  (NMR). A proton source (possibly as simple as a volume of water) is
+  subjected to an artificial magnetic field, causing the protons to
+  align with the new field. When the artificial field is removed, the
+  protons precess back to their original orientation and their
+  precession frequency (called the *Larmor* precession frequency) is
+  measured. That frequency, $`f`$, is related directly to the strength
+  of the earth's field, ($`B_e`$), according to the equation below. The
+  parameter, $`\gamma_p`$, is the ratio of the magnetic moment to spin
+  angular momentum. It is called the gyromagnetic ratio of a proton and
+  is known to 0.001%; $`\gamma_p = 2.67520 \times 10^8 T^{-1}
+  s^{-1}`$.
 
-$$f= \frac{\gamma_p B_e}{2 \pi}$$
+``` math
+f= \frac{\gamma_p B_e}{2 \pi}
+```
 
 ### Cesium (or optically pumped) magnetometer:
 
--   The physics behind this type of sensor is related to that of the
-    proton precession sensor, but it is more complicated. Although it is
-    more expensive than the above two sensor types, it is now the most
-    commonly used system for small scale work because it is 10 to 100
-    times more sensitive than the proton precession magnetometer.
--   The measurement process makes use of the gyromagnetic ratio of
-    electrons and of the quantum behavior of outer-shell electrons of
-    some elements (e.g. cesium). In this case, the relevant gyromagnetic
-    ratio is known to 1 part in 10<sup>7</sup>, and frequencies are near
-    233 khz, so these instruments are sensitive to 0.01 nT.
--   Advantages: More rapid readings, 1 or 2 orders of magnitude more
-    sensitive, works in high gradients.
--   Disadvantages: Optical pumping won't work when parallel or
-    perpendicular to the magnetic field direction (solved with multiple
-    sensors), ans also more expensive than proton precession.
+- The physics behind this type of sensor is related to that of the
+  proton precession sensor, but it is more complicated. Although it is
+  more expensive than the above two sensor types, it is now the most
+  commonly used system for small scale work because it is 10 to 100
+  times more sensitive than the proton precession magnetometer.
+- The measurement process makes use of the gyromagnetic ratio of
+  electrons and of the quantum behavior of outer-shell electrons of some
+  elements (e.g. cesium). In this case, the relevant gyromagnetic ratio
+  is known to 1 part in 10<sup>7</sup>, and frequencies are near 233
+  khz, so these instruments are sensitive to 0.01 nT.
+- Advantages: More rapid readings, 1 or 2 orders of magnitude more
+  sensitive, works in high gradients.
+- Disadvantages: Optical pumping won't work when parallel or
+  perpendicular to the magnetic field direction (solved with multiple
+  sensors), ans also more expensive than proton precession.
 
 ### 3-component magnetometers
 
@@ -641,15 +567,14 @@ borehole.
 
 #### Fluxgate Magnetometer
 
--   The fluxgate magnetometer was developed during WWII to detect
-    submarines. It measures the magnetic field in a specific direction
-    determined by the sensor's orientation. A complete measurement of
-    the field requires three individual (Cartesian) components of the
-    field ( such as *B*<sub>*x*</sub>, *B*<sub>*y*</sub>,
-    *B*<sub>*z*</sub> ).
--   It is generally difficult to get leveling and alignment accurate.
-    Sensor accuracy is 1 nT so orientation must be known to within .001
-    degrees.
+- The fluxgate magnetometer was developed during WWII to detect
+  submarines. It measures the magnetic field in a specific direction
+  determined by the sensor's orientation. A complete measurement of the
+  field requires three individual (Cartesian) components of the field (
+  such as $`B_x`$, $`B_y`$, $`B_z`$ ).
+- It is generally difficult to get leveling and alignment accurate.
+  Sensor accuracy is 1 nT so orientation must be known to within .001
+  degrees.
 
 #### SQUIDS
 
@@ -661,6 +586,6 @@ coming decade (2000 - 2010).
 
 ### Magnetic Gradiometer
 
--   These instruments use two sensors (any of those mentioned above) to
-    measure vertical or horizontal gradients.
--   They often employ two cesium magnetometers separated by about 1 m.
+- These instruments use two sensors (any of those mentioned above) to
+  measure vertical or horizontal gradients.
+- They often employ two cesium magnetometers separated by about 1 m.

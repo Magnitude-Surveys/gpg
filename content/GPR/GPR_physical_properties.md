@@ -4,24 +4,25 @@ Unlike the survey methods discussed previously, signals corresponding to
 ground penetrating radar (GPR) depend on a multitude of physical
 properties. The most important physical property to GPR is the
 `dielectric permittivity <physical_properties_dielectric_permittivity>`
-(*ε*), as it greatly influences the velocity, attenuation, reflection,
-refraction and transmission of radiowaves. These concepts will be
-presented in the following section. Dielectric permittivity is
+($`\varepsilon`$), as it greatly influences the velocity, attenuation,
+reflection, refraction and transmission of radiowaves. These concepts
+will be presented in the following section. Dielectric permittivity is
 considered the diagnostic physical property for GPR. In addition to the
 dielectric permittivity, the propagation of radiowaves through the Earth
 may depend significantly on the
-`electrical conductivity<physical_properties_conductivity>` (*σ*);
-provided the electrical conductivity of the Earth is sufficiently large.
-Radiowaves will also reflect off of very conductive objects buried in
-the Earth. If the Earth is magnetic, we may also need to consider the
-role of `magnetic permeability<physprop_mag_susc>` (*μ*).
+`electrical conductivity<physical_properties_conductivity>`
+($`\sigma`$); provided the electrical conductivity of the Earth is
+sufficiently large. Radiowaves will also reflect off of very conductive
+objects buried in the Earth. If the Earth is magnetic, we may also need
+to consider the role of `magnetic permeability<physprop_mag_susc>`
+($`\mu`$).
 
 ## Example: Microwaves
 
 In order to better understand the link between the dielectric
-permittivity (*ε*) and electromagnetic waves, let us consider a
-microwave oven. We know that microwaves heat food using electromagnetic
-radiation, but how do they work?
+permittivity ($`\varepsilon`$) and electromagnetic waves, let us
+consider a microwave oven. We know that microwaves heat food using
+electromagnetic radiation, but how do they work?
 
 <figure class="align-right">
 <img src="images_new/GPR_microwave_1.jpg" id="asdf"
@@ -31,7 +32,7 @@ alt="images_new/GPR_microwave_1.jpg" />
 
 Within a microwave oven, there is a source which generates
 high-frequency electromagnetic waves (f = 2.45 GHz). These waves move at
-roughly the speed of light (c = 3.00 × 10<sup>8</sup> m/s) and have
+roughly the speed of light (c = $`3.00 \times 10^8`$ m/s) and have
 wavelengths of about 12.2 cm. We can see from the figure on the right,
 that EM waves support electric and magnetic fields which oscillate.
 
@@ -52,7 +53,7 @@ All foods contain water to varying degrees. Water is unique from most
 other molecules because it is naturally polarized (carries an electric
 dipole moment). This property of water molecules makes them align with
 electric fields very easily; giving them a
-`high dielectric permittivity <GPR_table_velocity>` (*ε*<sub>*r*</sub> =
+`high dielectric permittivity <GPR_table_velocity>` ($`\varepsilon_r`$ =
 80). When electromagnetic waves come into contact with the water
 molecules in the food, the water molecules physically re-orient with the
 oscillation of the wave. This is because of the oscillating electric
@@ -81,10 +82,10 @@ polarized by the incoming microwaves, making them non-reactive.
 
 So what have we learned from this example?
 
-> -   Very conductive materials will reflect incoming electromagnetic
->     waves.
-> -   Materials containing water will become polarized from
->     electromagnetic waves.
-> -   Some materials do not absorb electromagnetic radiation easily.
-> -   The operating frequency of the source has a great impact on the
->     response of materials.
+> - Very conductive materials will reflect incoming electromagnetic
+>   waves.
+> - Materials containing water will become polarized from
+>   electromagnetic waves.
+> - Some materials do not absorb electromagnetic radiation easily.
+> - The operating frequency of the source has a great impact on the
+>   response of materials.

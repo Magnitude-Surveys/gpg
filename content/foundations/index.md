@@ -16,5 +16,9 @@ what is meant by inversion.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 seeing_underground/index foundations_sevensteps
 foundations_survey_methods foundations_model_types foundations_inversion
+
+</div>

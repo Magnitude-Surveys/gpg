@@ -311,14 +311,14 @@ the University of British Columbia Department of Civil Engineering.
 ## Other surveys
 
 Survey methods not discussed on this page include:  
--   Borehole geophysical methods
--   Radiometric methods, which involve investigating the radioactivity
-    of ground materials
--   Natural source and controlled source magnetotelluric methods (which
-    involve low frequency EM sources)
--   Spontaneous Potential methods, which involve measuring natural
-    voltages that occur in the ground due to movement of fluids or
-    chemical reactions between fluids and minerals
--   Nuclear magnetic resonance imaging, which uses the interaction of
-    time-varying magnetic fields with proton spins to measure the amount
-    of non-bound water.
+- Borehole geophysical methods
+- Radiometric methods, which involve investigating the radioactivity of
+  ground materials
+- Natural source and controlled source magnetotelluric methods (which
+  involve low frequency EM sources)
+- Spontaneous Potential methods, which involve measuring natural
+  voltages that occur in the ground due to movement of fluids or
+  chemical reactions between fluids and minerals
+- Nuclear magnetic resonance imaging, which uses the interaction of
+  time-varying magnetic fields with proton spins to measure the amount
+  of non-bound water.

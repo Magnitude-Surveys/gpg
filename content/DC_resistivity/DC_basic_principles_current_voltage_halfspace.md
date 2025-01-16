@@ -2,12 +2,13 @@
 
 ## Single electrode current source
 
-In order to derive a relation between measurements (*I*, *V* and
-geometry) and the required physical property (resistivity or *ρ* ), we
-must start by identifying how these parameters relate to electric field
-strength, *E* (Volts per meter), current density, *J* (Amps per unit
-area), and resistivity (Ohm-m) in the three dimensional situation of a
-field survey (the introduction defines resistivity and conductivity).
+In order to derive a relation between measurements ($`I`$, $`V`$ and
+geometry) and the required physical property (resistivity or $`\rho`$ ),
+we must start by identifying how these parameters relate to electric
+field strength, $`E`$ (Volts per meter), current density, $`J`$ (Amps
+per unit area), and resistivity (Ohm-m) in the three dimensional
+situation of a field survey (the introduction defines resistivity and
+conductivity).
 
 <figure class="align-right">
 <img src="./images/currents_in_earth.gif"
@@ -15,43 +16,57 @@ alt="./images/currents_in_earth.gif" />
 </figure>
 
 Consider first a uniform Earth and one electrode, which is pumping a
-current, *I*, into the ground. We want to find the electric potential
-within the ground at a distance, *r*, from the current source. The
+current, $`I`$, into the ground. We want to find the electric potential
+within the ground at a distance, $`r`$, from the current source. The
 current density in the ground is related to source current injected, and
 it flows radially outward from its point source. The potential measured
-at a surface defined by *r* is related to the electric field that exists
-in the ground because of the current. These two relations will be
+at a surface defined by $`r`$ is related to the electric field that
+exists in the ground because of the current. These two relations will be
 combined with the 3D form of Ohm's law to end up with an expression for
 conductivity (the physical property we want) in terms of the current
 source, measured potential, and the distance.
 
 First, by symmetry the current density out of the hemisphere of radius,
-*r*, is
+$`r`$, is
 
-$$J = \frac{I}{2 \pi r^2}     \qquad (1)$$
+``` math
+J = \frac{I}{2 \pi r^2}     \qquad (1)
+```
 
-and the current is flowing in a radial direction. Since *J* = *σ**E*
+and the current is flowing in a radial direction. Since $`J= \sigma E`$
 (Ohm's Law), the electric field must also be pointing radially outward.
 The relationship between the electric field and the potential is
 
-$$E = -\frac{dV(r)}{dr}$$
+``` math
+E = -\frac{dV(r)}{dr}
+```
 
-Combining the expression for *E*, Ohm's Law and equation 1, we have
+Combining the expression for $`E`$, Ohm's Law and equation 1, we have
 
-$$J = -\sigma \frac{dV(r)}{dr} &= \frac{I}{2 \pi r^2}$$
-$$\frac{dV(r)}{dr} &= \frac{-I}{2\pi \sigma r^2}$$
+``` math
+J = -\sigma \frac{dV(r)}{dr} &= \frac{I}{2 \pi r^2}
+```
+``` math
+\frac{dV(r)}{dr} &= \frac{-I}{2\pi \sigma r^2}
+```
 
 If we integrate,
 
-$$V(r) = \frac{I}{2 \pi \sigma r} + C$$
+``` math
+V(r) = \frac{I}{2 \pi \sigma r} + C
+```
 
 chose
 
-*V*(∞) → *C* = 0
+``` math
+V(\infty) \longrightarrow C = 0
+```
 
 So the potential due to a point current electrode at the surface is:
 
-$$V(r) = \frac{I}{2 \pi \sigma r}$$
+``` math
+V(r) = \frac{I}{2 \pi \sigma r}
+```
 
 The electric potential inside the earth caused by the radial flow of
 current is illustrated in the diagram below.
@@ -65,10 +80,12 @@ current is illustrated in the diagram below.
 </figure>
 
 At the surface, where measurements are made, the potential is infinite
-at the current electrode because *r* = 0, and it decays with distance.
+at the current electrode because $`r=0`$, and it decays with distance.
 
-$$V(r) = \frac{I}{2 \pi \sigma r} = \frac {I \rho} 
-{2 \pi r}$$
+``` math
+V(r) = \frac{I}{2 \pi \sigma r} = \frac {I \rho} 
+{2 \pi r}
+```
 
 ## Two electrode current sources
 
@@ -80,8 +97,8 @@ alt="./images/two_electrodes.gif" />
 In a geophysical survey, current is injected into the ground using two
 electrodes. It is convenient to label the electrodes as
 
-1.  positive current electrode (carries a current +*I*)
-2.  negative current electrode (carries a current −*I*)
+1.  positive current electrode (carries a current $`+I`$)
+2.  negative current electrode (carries a current $`-I`$)
 
 <figure class="align-right">
 <img src="./images/fieldlines.gif" alt="./images/fieldlines.gif" />
@@ -170,7 +187,7 @@ spacing.
 The graph shown below plots the potential that would be measured along
 the surface of the earth for a fixed 2-electrode source. The voltage we
 would observe with our voltmeter (between purple electrodes) is the
-**difference** in potential at the two voltage electrodes, *Δ**V*.
+**difference** in potential at the two voltage electrodes, $`\Delta V`$.
 
 <figure class="align-center">
 <img src="./images/pot_difference.gif"
@@ -183,42 +200,35 @@ The path of the current in the earth after it is injected with two
 electrodes depends upon the distribution of electrical resistivity. If
 the Earth is uniform, current flows in a regular three dimensional
 pattern under the electrodes as illustrated Figure 1. The north slice
-number 8 (flagged with a \*) is similar to the type of image commonly
-shown in texts to indicate how current flows in two dimensions under a
-pair of source electrodes.
+number 8 (flagged with a $`\ast`$) is similar to the type of image
+commonly shown in texts to indicate how current flows in two dimensions
+under a pair of source electrodes.
 
 > <script language="JavaScript" type="text/JavaScript">
->
-> function MM_swapImgRestore() { //v3.0
+> &#10;function MM_swapImgRestore() { //v3.0
 >   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 > }
->
-> function MM_findObj(n, d) { //v4.01
+> &#10;function MM_findObj(n, d) { //v4.01
 >   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
 >     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
 >   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
 >   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
 >   if(!x && d.getElementById) x=d.getElementById(n); return x;
 > }
->
-> function MM_swapImage() { //v3.0
+> &#10;function MM_swapImage() { //v3.0
 >   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
 >    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 > }
->
-> function MM_preloadImages() { //v3.0
+> &#10;function MM_preloadImages() { //v3.0
 >   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
 >     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
 >     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 > }
 > MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif');
 >   </script>
->
->
->
->
->
->    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+> &#10;
+> &#10;
+> &#10;   <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
 >       <tbody> 
 >             <tr> 
 >             <td colspan="2" valign="top"> <div class="caption"> Figure 1. 

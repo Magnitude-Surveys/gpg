@@ -15,7 +15,11 @@ differently enough that they are classified separately.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 electromagnetic_introduction electromagnetic_physical_properties
 electromagnetic_basic_principles electromagnetic_survey
 electromagnetic_data electromagnetic_processing
 electromagnetic_interpretation electromagnetic_applet
+
+</div>

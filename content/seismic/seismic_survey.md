@@ -18,4 +18,8 @@ followed by an introduction to understanding survey geometry.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 seismic_sources seismic_receivers seismic_survey_geometry
+
+</div>

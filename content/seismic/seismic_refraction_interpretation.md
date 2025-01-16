@@ -7,11 +7,11 @@ reflection is being done - a topic covered in geop301). Sometimes it is
 not possible to obtain refracted arrivals from each and every refracting
 horizon. There are two reasons why the second layer might go undetected.
 
-**1. The Second Layer is a Low Velocity Layer:** If *v*<sub>2</sub> \< *v*<sub>1</sub> the  
+**1. The Second Layer is a Low Velocity Layer:** If $`v_2 < v_1`$ the  
 incoming wave will refract towards the normal and there will be no
-critical refraction along the upper boundary. Assuming
-*v*<sub>3</sub> \> *v*<sub>1</sub> the first arrival travel time curve
-will look as shown in the second half of the figure.
+critical refraction along the upper boundary. Assuming $`v_3 > v_1`$ the
+first arrival travel time curve will look as shown in the second half of
+the figure.
 
 <figure class="align-left">
 <img src="./images/low_velocity_schematic.gif"
@@ -47,9 +47,9 @@ The headwave travels at the speed of the underlying medium and that
 velocity might vary laterally. This produces another complication when
 interpreting the first arrivals. Consider the two velocity models and
 traveltime curves given below. The traveltime curves are the same. We
-note that the crossover point between *v*<sub>2*a*</sub> and
-*v*<sub>2*b*</sub> in (b) is always shifted away from the shotpoint with
-respect to the location of the position of the subsurface change.
+note that the crossover point between $`v_{2a}`$ and $`v_{2b}`$ in (b)
+is always shifted away from the shotpoint with respect to the location
+of the position of the subsurface change.
 
 <figure class="align-left">
 <img src="./images/lateral_velocity_a.gif"
@@ -65,7 +65,7 @@ To determine which structure is correct we need another shot. It could
 be a reversed shot, or a shot that is off the end of the profile. If the
 shot is offset then the travel times from the two velocities are shifted
 as indicated below. In (a) the traveltime curve is shifted to the left
-by an amount *S*. In (b) a constant time increment is added to each
+by an amount $`S`$. In (b) a constant time increment is added to each
 arrival and the location of the crossover remains the same.
 
 <figure class="align-center">
@@ -96,11 +96,11 @@ The diagram here shows an example where the spread is moved.
 > 1.  For the shot at x-position 140 feet , data from the shot at 100
 >     feet can fill in arrival times between positions 0 and 40 feet.
 > 2.  For the shot at 100 feet, data from 140 can phantom in artificial
->     arrivals that arrive before *x*<sub>*c**r**i**t*</sub>. The data
->     can help define the intercept time because we now have more points
->     to help estimate a straight line. Note that these phantomed values
->     don't actually exist but they are valid data for helping us
->     estimate the slope and intercept for the particular refractor.
+>     arrivals that arrive before $`x_{crit}`$. The data can help define
+>     the intercept time because we now have more points to help
+>     estimate a straight line. Note that these phantomed values don't
+>     actually exist but they are valid data for helping us estimate the
+>     slope and intercept for the particular refractor.
 
 # Static Data Corrections
 
@@ -113,11 +113,12 @@ velocity.
 plane, that is, to define a flat surface on which the data might have
 been recorded. The importance of this lies in the fact that all of our
 interpretation formulae assume that the upper surface of the earth is
-flat. Let *h*<sub>*S*</sub> and *h*<sub>*D*</sub> respectively denote
-the height of the shot and receiver about the datum plane (negative
-heights are allowed). The angle that the waves in this region are
-travelling upward or downward is determined by Snell's law. If
-*v*<sub>*n*</sub> denotes the velocity of the refractor then the
-elevation correction is
+flat. Let $`h_S`$ and $`h_D`$ respectively denote the height of the shot
+and receiver about the datum plane (negative heights are allowed). The
+angle that the waves in this region are travelling upward or downward is
+determined by Snell's law. If $`v_n`$ denotes the velocity of the
+refractor then the elevation correction is
 
-$$t\_{elev} = -(h_S + h_D)\frac{(v_n^2 - v_1^2)^\frac{1}{2}}{v_1v_n}$$
+``` math
+t_{elev} = -(h_S + h_D)\frac{(v_n^2 - v_1^2)^\frac{1}{2}}{v_1v_n}
+```

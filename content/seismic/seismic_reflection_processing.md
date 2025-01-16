@@ -38,10 +38,14 @@ creation of a final seismic reflection section:
 <figcaption>type (1)</figcaption>
 </figure>
 
+<div class="toctree" maxdepth="1">
+
 seismic_reflection_seismogram seismic_reflection_filtering
 seismic_reflection_processing_fundamental
 seismic_reflection_static_corrections seismic_reflection_stacking
 seismic_reflection_migration
+
+</div>
 
 > [!NOTE]
 > From Kearey, Philip and Micheal Brooks, 'An Introduction to

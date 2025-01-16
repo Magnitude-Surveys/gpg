@@ -31,17 +31,16 @@ oil field.</figcaption>
 Three methods were employed to resolve the the local anomaly from the
 regional anomaly.
 
--   First, a third degree polynomial surface was fitted to the Bouguer
-    anomaly map; then the resulting trend was subtracted from the
-    Bouguer anomaly map. The result is shown in Figure 1b, with the
-    oil-producing structure overlaid as a gray zone. Good correspondence
-    between the residual anomaly and the geological structure of
-    interest is evident.
--   The second trend removal technique involved calculating a vertical
-    gradient map from the Bouguer anomaly map. Results were similarly
-    successful at delineating the structure.
--   The third method involved harmonic analysis of data along the
-    profile. Please refer to the original paper for details.
+- First, a third degree polynomial surface was fitted to the Bouguer
+  anomaly map; then the resulting trend was subtracted from the Bouguer
+  anomaly map. The result is shown in Figure 1b, with the oil-producing
+  structure overlaid as a gray zone. Good correspondence between the
+  residual anomaly and the geological structure of interest is evident.
+- The second trend removal technique involved calculating a vertical
+  gradient map from the Bouguer anomaly map. Results were similarly
+  successful at delineating the structure.
+- The third method involved harmonic analysis of data along the profile.
+  Please refer to the original paper for details.
 
 ## Discussion
 
@@ -50,20 +49,20 @@ trend, the vertical gradient, the residual after subtracting the trend
 from the Bouguer anomaly, and the forward modeled response to structures
 associated with the oil field. Several points are worth noting:
 
--   It is not surprising that the original gravity survey with spacial
-    interval of 800 m failed to identify the target. Clearly, 200 m
-    spacing was much more appropriate.
--   The anomaly associated with interesting structures is easy to miss
-    if the regional trend is not properly removed.
--   Trend removal is implicit when gradient filtering is applied.
-    Vertical gradient filtering is shown, but horizontal gradients would
-    also likely identify the structure.
--   Significant fault zones are identified by high lateral gradients in
-    both the residual and the vertical gradient profiles.
--   The 2D model used to calculate an expected response (using the
-    commonly applied method of Telwani) was well understood at the time
-    of the test. There are undoubtedly other structures that could
-    produce similar gravitational response at the surface
+- It is not surprising that the original gravity survey with spacial
+  interval of 800 m failed to identify the target. Clearly, 200 m
+  spacing was much more appropriate.
+- The anomaly associated with interesting structures is easy to miss if
+  the regional trend is not properly removed.
+- Trend removal is implicit when gradient filtering is applied. Vertical
+  gradient filtering is shown, but horizontal gradients would also
+  likely identify the structure.
+- Significant fault zones are identified by high lateral gradients in
+  both the residual and the vertical gradient profiles.
+- The 2D model used to calculate an expected response (using the
+  commonly applied method of Telwani) was well understood at the time of
+  the test. There are undoubtedly other structures that could produce
+  similar gravitational response at the surface
 
 > <figure class="align-center">
 > <img src="images/gravmc2_f2.gif" alt="images/gravmc2_f2.gif" />
@@ -82,4 +81,4 @@ drilling that has taken place since the Garber field was discovered in
 ## Original Reference
 
 This example is summarized from C. Ferris, 1987, *Gravity anomaly
-resolution at the Garber field*, Geophysics, 52, #11, 1570-1579.
+resolution at the Garber field*, Geophysics, 52, \#11, 1570-1579.

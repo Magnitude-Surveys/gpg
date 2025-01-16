@@ -5,7 +5,7 @@ layer can be before the reflections from its top and its bottom become
 indistinguishable. This depends upon the shape of the seismic source
 wavelet. The shape, or more particularly the signal wavelength depends
 upon the frequency and the velocity of the materials. Recall that
-*λ* = *v**t*.
+$`\lambda = vt`$.
 
 <figure class="right align-center">
 <img src="./images/pulse1.gif" alt="./images/pulse1.gif" />

@@ -9,16 +9,17 @@ normalizations that might have been applied to the data. In addition,
 they sometimes provide valuable information about earth structure.
 
 As an illustration, `DCR_DpDp_Simple` (a) shows an earth model
-consisting of a single prism (*ρ* = 10 *Ω* ⋅ *m*) buried in a uniform
-halfspace (*ρ* = 100 *Ω* ⋅ *m*). A dipole-dipole survey is carried out
-along a line that passes directly above the conductive prism. The
-resulting pseudosection is shown in `DCR_DpDp_Simple` (b). The prism is
-manifested as a region of lower apparent resistivity in the center of
-the image and there are <span class="title-ref">wings</span> extending
-outwards and downward. The apex of the image can be used to estimate the
-horizontal location of the prism but the depth to the body is less
-evident since the vertical scale of the pseudosection is in
-<span class="title-ref">n-values</span> and not in meters.
+consisting of a single prism ($`\rho=10\; \Omega \cdot m`$) buried in a
+uniform halfspace ($`\rho= 100\; \Omega \cdot m`$). A dipole-dipole
+survey is carried out along a line that passes directly above the
+conductive prism. The resulting pseudosection is shown in
+`DCR_DpDp_Simple` (b). The prism is manifested as a region of lower
+apparent resistivity in the center of the image and there are
+<span class="title-ref">wings</span> extending outwards and downward.
+The apex of the image can be used to estimate the horizontal location of
+the prism but the depth to the body is less evident since the vertical
+scale of the pseudosection is in <span class="title-ref">n-values</span>
+and not in meters.
 
 Despite the above success, the situation worsens if the earth is more
 complex. This is illustrated in `DCR_DpDp_Simple` (c) where some
@@ -88,13 +89,13 @@ used for the inversion of the dipole-dipole data
 (`DCR_TwoSpheres_Simple` (b)) are provided in `twospheres_inv_table`.
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | Number of sources | 43 |
 | Number of data | 540 |
-| Data uncertainties | 2%\|*d*\|(*p**e**r**c**e**n**t**a**g**e*) + 2 × 10<sup>−5</sup>*V* (floor) |
-| Mesh Size | 10 × 10 × 10 meters |
-| Reference conductivity | 0.01 S/m |
-| Regularization Scales ( *α*<sub>*s*</sub>, *α*<sub>*x*</sub>, *α*<sub>*y*</sub>, *α*<sub>*z*</sub> ) | 0.01, 1, 1, 1 |
+| Data uncertainties | $`2\%|d| (percentage) + 2 \times 10^{-5} V`$ (floor) |
+| Mesh Size | $`10 \times 10 \times 10`$ meters |
+| Reference conductivity | $`0.01`$ S/m |
+| Regularization Scales ( $`\alpha_s, \alpha_x,\alpha_y,\alpha_z`$ ) | $`0.01, 1, 1, 1`$ |
 
 : 2D Inversion parameters
 
@@ -103,11 +104,11 @@ after convergence of the algorithm.
 
 **Important comments:**
 
-1.  Even though there are no contaminating near-surface blocks the
+1)  Even though there are no contaminating near-surface blocks the
     pseudosection does not clearly indicate two bodies. This is in
     contrast to `DCR_DpDp_Simple` (a) where a single prism was clearly
     identified in the pseudosection.
-2.  The two spheres are recovered but they have lower conductivity
+2)  The two spheres are recovered but they have lower conductivity
     contrasts with respect to the halfspace than do the true spheres.
     This occurs for three reasons: (i) the inversion generates smooth
     models and this extends structures and reduces amplitudes; (ii) the
@@ -141,9 +142,9 @@ resistivity model that has near-surface inhomogeneities
 
 **Important comments:**
 
-1.  The pseudosection of data is complicated and dominated by the
+1)  The pseudosection of data is complicated and dominated by the
     near-surface conductors.
-2.  The inversion recovers the contaminating surface conductors. It also
+2)  The inversion recovers the contaminating surface conductors. It also
     recovers the two spheres with about the same fidelity as in the
     simple case.
 
@@ -176,27 +177,29 @@ In its simplest form, the DOI analysis requires the data to be inverted
 twice with all parameters the same except for the background
 conductivity. For the two-sphere example shown in
 `DCR_TwoSpheres_Simple` (c), the synthetic data is inverted a second
-time with a reference halfspace conductivity of 10 *Ω* ⋅ *m*.
+time with a reference halfspace conductivity of $`10\; \Omega \cdot m`$.
 `DCR_TwoSpheres_DOI` (a) shows the recovered 2D resistivity model. Note
 that the region away from the electrode locations returns to a value
 close to the reference model.
 
 We now have a discretized volume of the Earth and two conductivity
 models that can equally reproduced the observed data. Let
-*σ*<sub>1</sub>, *σ*<sub>2</sub> be the conductivity values recovered at
-some location (*x,z*), a DOI index is calculated as:
+$`\sigma_1, \sigma_2`$ be the conductivity values recovered at some
+location (*x,z*), a DOI index is calculated as:
 
-$$DOI(x,y) = 1 - \big\| \frac{\sigma_1(x,y) - \sigma_2(x,y)}{\sigma_1^{ref} - \sigma_2^{ref}} \big\|\\,$$
+``` math
+DOI(x,y) = 1 - \big| \frac{\sigma_1(x,y) - \sigma_2(x,y)}{\sigma_1^{ref} - \sigma_2^{ref}} \big|\;,
+```
 
 where the DOI index will approach 1 for similar model values obtained
 with both inversions regardless of the chosen reference models
-*σ*<sub>1</sub><sup>*r**e**f*</sup>, *σ*<sub>2</sub><sup>*r**e**f*</sup>.
-Conversely, the DOI will approach 0 where the recovered models return to
-their respective reference conductivities. `DCR_TwoSpheres_DOI` (b)
-presents the calculated DOI index for the two-sphere problem, showing a
-lower confidence over the bottom half of the domain. The DOI mask is
-applied to our preferred 2D model, presented in `DCR_TwoSpheres_DOI`
-(c), with transparency applied proportionally to the DOI index.
+$`\sigma_1^{ref}, \sigma_2^{ref}`$. Conversely, the DOI will approach 0
+where the recovered models return to their respective reference
+conductivities. `DCR_TwoSpheres_DOI` (b) presents the calculated DOI
+index for the two-sphere problem, showing a lower confidence over the
+bottom half of the domain. The DOI mask is applied to our preferred 2D
+model, presented in `DCR_TwoSpheres_DOI` (c), with transparency applied
+proportionally to the DOI index.
 
 ### Downloads
 

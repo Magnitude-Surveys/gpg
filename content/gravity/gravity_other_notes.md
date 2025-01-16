@@ -6,11 +6,11 @@ The earth's shape can be approximated by an oblate (squashed) ellipsoid
 approximating mean sea-level. The "flattening" of the ellipsoid is at
 the poles; i.e. radius at equator \> radius at poles. The reference
 spheroid is described by the following equation, which gives the
-theoretical value of gravity as a function of latitude *ϕ*. Coefficients
-were standardized in 1979, but earlier work may have used other
-coefficients. Plugging in 0 and 90 degrees yields approximately 9.780
-m/s<sup>2</sup> and 9.832 m/s<sup>2</sup>for values of gravitational
-acceleration at the equator and poles respectively.
+theoretical value of gravity as a function of latitude $`\phi`$.
+Coefficients were standardized in 1979, but earlier work may have used
+other coefficients. Plugging in 0 and 90 degrees yields approximately
+9.780 m/s<sup>2</sup> and 9.832 m/s<sup>2</sup>for values of
+gravitational acceleration at the equator and poles respectively.
 
 ## The gravimetric geoid
 
@@ -85,9 +85,8 @@ accurate terrain at each station.
 
 The gradients of Earth's gravity field can be estimated from a simple
 map of gz by calculating horizontal first and second derivatives.
-Actually measuring the three gradients (*g*<sub>*z*</sub>,
-*g*<sub>*x*</sub>, *g*<sub>*y*</sub>) may be desirable for several
-reasons.
+Actually measuring the three gradients ($`g_z`$, $`g_x`$, $`g_y`$) may
+be desirable for several reasons.
 
 However, interpretation of gravity gradiometry is not trivial. There was
 a whole session on this topic at the August 2000 annual meeting of the
@@ -102,23 +101,23 @@ gravity gradiometry data\*" in April 1999.
 Here are notes on characteristics of a modern, semi-automatic
 ground-based, portable instrument:
 
--   Many instruments now use a small solid state accelerometer, and the
-    measure changes in capacitance due to varying spacing.
--   Sensors are in a controlled temperature vacuum; the quartz element
-    temperature is monitored and corrected.
--   Instruments correct for leveling errors up to 200 sec of arc.
--   *g* is sampled at 1 s intervals and no result is displayed until it
-    is deemed statistically reliable by the on-board micro-computer.
--   Movements are now "static," meaning there is no need to "amplify"
-    the mass movement, as is necessary with mechanical systems. Roughly
-    1% of mass support is by electrostatic feedback to keep it near the
-    null position.
--   Automatic internal drift correction is commonly built-in, allowing
-    for repeatability of 0.02 mgal over several months. Base station
-    measurements are still needed to account for tidal effects.
--   Most systems now make use of digital storage of data, location
-    parameters, drift, and computed tidal correction, all for download
-    to a PC.
+- Many instruments now use a small solid state accelerometer, and the
+  measure changes in capacitance due to varying spacing.
+- Sensors are in a controlled temperature vacuum; the quartz element
+  temperature is monitored and corrected.
+- Instruments correct for leveling errors up to 200 sec of arc.
+- $`g`$ is sampled at 1 s intervals and no result is displayed until it
+  is deemed statistically reliable by the on-board micro-computer.
+- Movements are now "static," meaning there is no need to "amplify" the
+  mass movement, as is necessary with mechanical systems. Roughly 1% of
+  mass support is by electrostatic feedback to keep it near the null
+  position.
+- Automatic internal drift correction is commonly built-in, allowing for
+  repeatability of 0.02 mgal over several months. Base station
+  measurements are still needed to account for tidal effects.
+- Most systems now make use of digital storage of data, location
+  parameters, drift, and computed tidal correction, all for download to
+  a PC.
 
 ## Absolute gravity measurements
 
@@ -127,7 +126,7 @@ by using the free-fall method. An object is dropped inside a vacuum
 chamber and the descent of the freely-falling object is monitored very
 accurately using a laser interferometer. Specifications include:
 
--   Accuracy: 2 microGal (observed agreement between FG5 instruments)
--   Precision: 15 microGal/√(Hz) at a quiet site \[e.g. About 1 microGal
-    in 3.75 minutes or 0.1 microGal in 6.25 hours\]
--   Operating dynamic range: world-wide
+- Accuracy: 2 microGal (observed agreement between FG5 instruments)
+- Precision: 15 microGal/√(Hz) at a quiet site \[e.g. About 1 microGal
+  in 3.75 minutes or 0.1 microGal in 6.25 hours\]
+- Operating dynamic range: world-wide

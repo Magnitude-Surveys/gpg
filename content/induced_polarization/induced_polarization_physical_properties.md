@@ -93,20 +93,20 @@ contributes towards the induced polarization within the rock.
 
 Tables (from Telford et al, 1976) provide a very general guide to the
 integrated chargeabilities of materials. Because different intervals of
-integration \[*t*<sub>1</sub>, *t*<sub>2</sub>\] are used for each
-table, chargeability values cannot be compared between tables. However,
-we can infer several things from these tables:
+integration $`[t_1,t_2]`$ are used for each table, chargeability values
+cannot be compared between tables. However, we can infer several things
+from these tables:
 
--   The individual properties of rocks results in a variation in
-    chargeability (click `here<table_chargeability_rocks>` for table).
--   Chargeability increases as the % abundance of sulphide minerals
-    increases (click `here<table_chargeability_sulphide>` for table).
--   Highly porous rocks such as extrusive volcanics and sandstones are
-    more chargeable than hard rocks such as granites and limestones
-    (click `here<table_chargeability_sulphide>` for table).
--   The type of ore-mineralization impacts the chargeability of rocks to
-    varying degrees (click `here<table_chargeability_minerals>` for
-    table).
+- The individual properties of rocks results in a variation in
+  chargeability (click `here<table_chargeability_rocks>` for table).
+- Chargeability increases as the % abundance of sulphide minerals
+  increases (click `here<table_chargeability_sulphide>` for table).
+- Highly porous rocks such as extrusive volcanics and sandstones are
+  more chargeable than hard rocks such as granites and limestones (click
+  `here<table_chargeability_sulphide>` for table).
+- The type of ore-mineralization impacts the chargeability of rocks to
+  varying degrees (click `here<table_chargeability_minerals>` for
+  table).
 
 ## Factors Impacting Chargeability
 

@@ -12,43 +12,42 @@ below.
 
 **Regarding the Survey**
 
-> -   What is the Tx-Rx separation distance?
-> -   What is the operating frequency and wavelet pulse width?
-> -   What do you know about the local physical properties? high/low
->     conductivity? high/low dielectric permittivity?
-> -   Is the ground dry or saturated (permittivity)? Does the ground
->     contain features which may scatter the signal?
-> -   Having considered the previous statements, what do you think the
->     resolution and probing distance are?
+> - What is the Tx-Rx separation distance?
+> - What is the operating frequency and wavelet pulse width?
+> - What do you know about the local physical properties? high/low
+>   conductivity? high/low dielectric permittivity?
+> - Is the ground dry or saturated (permittivity)? Does the ground
+>   contain features which may scatter the signal?
+> - Having considered the previous statements, what do you think the
+>   resolution and probing distance are?
 
 **Regarding the Data**
 
-> -   When is the earliest useful signal you measure? When is the
->     latest?
-> -   Why can't you see anything after the latest signal? Attenuation?
->     Strong reflector?
-> -   Can you infer a layer velocity and turn the travel time axis into
->     an apparent distance axis?
-> -   Is there a reverse in polarity of the wavelet signal? What does
->     that tell you about *ε*<sub>1</sub> and *ε*<sub>2</sub> for an
->     interface?
+> - When is the earliest useful signal you measure? When is the latest?
+> - Why can't you see anything after the latest signal? Attenuation?
+>   Strong reflector?
+> - Can you infer a layer velocity and turn the travel time axis into an
+>   apparent distance axis?
+> - Is there a reverse in polarity of the wavelet signal? What does that
+>   tell you about $`\varepsilon_1`$ and $`\varepsilon_2`$ for an
+>   interface?
 
 **Recognizing Features**
 
-> -   Do you notice any hyperbolic features? Indicates point reflector
->     for zero-offset. Indicates layer for common midpoint.
-> -   For hyperbolic signatures (or signatures from other discrete
->     shapes), what does the slope tell you about the propagation
->     velocity of the medium it's in?
-> -   Based on the slope, is the object above ground (noise), or below
->     ground (potential target)?
-> -   Are there any linear features (zero-offset)?
-> -   Do linear features indicate a flat or dipping interface? Is the a
->     method you can use to get the dip?
-> -   Are you able to get signals from anything below an obvious
->     reflector? What does that say about *ε*<sub>1</sub> and
->     *ε*<sub>2</sub>?
-> -   Can slopes and hyperbolas be used to obtain layer velocities?
+> - Do you notice any hyperbolic features? Indicates point reflector for
+>   zero-offset. Indicates layer for common midpoint.
+> - For hyperbolic signatures (or signatures from other discrete
+>   shapes), what does the slope tell you about the propagation velocity
+>   of the medium it's in?
+> - Based on the slope, is the object above ground (noise), or below
+>   ground (potential target)?
+> - Are there any linear features (zero-offset)?
+> - Do linear features indicate a flat or dipping interface? Is the a
+>   method you can use to get the dip?
+> - Are you able to get signals from anything below an obvious
+>   reflector? What does that say about $`\varepsilon_1`$ and
+>   $`\varepsilon_2`$?
+> - Can slopes and hyperbolas be used to obtain layer velocities?
 
 <figure class="align-center">
 <img src="images_new/GPR_interp_check_list.png"
@@ -160,10 +159,11 @@ dissolve the rock and decrease structural integrity. The goal of this
 survey was to map the location of intruding water and locate its source.
 
 **Physical Properties** In general, anhydrite minerals such as potash
-have relative permittivities *ε*<sub>*r*</sub> ∼ 5. On the other hand,
-water as a very high dielectric permittivity (*ε* = 80). Because these
-two units have such different dielectric permittivities, we expect a
-large reflection where radiowaves come into contact with the water.
+have relative permittivities $`\varepsilon_r \sim 5`$. On the other
+hand, water as a very high dielectric permittivity
+($`\varepsilon = 80`$). Because these two units have such different
+dielectric permittivities, we expect a large reflection where radiowaves
+come into contact with the water.
 
 **Survey**: GPR profiles were collected along the lengths of mine shafts
 using a common offset configuration.

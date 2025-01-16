@@ -47,11 +47,11 @@ strikes the 12 guage shell. This creates the seismic
 energy.</figcaption>
 </figure>
 
-1.  A simple heavy hammer on a baseplate is inexpensive and safe for
+3.  A simple heavy hammer on a baseplate is inexpensive and safe for
     small jobs. When shear waves are required, a baseplate with ribs
     that penetrate the ground is used, and it is struck on it's side.
     This is a simple way to produce shear waves.
-2.  Finally, vibroseis is a more expensive source used mainly for
+4.  Finally, vibroseis is a more expensive source used mainly for
     reflection surveying. The input is a frequency varying sinusoid
     (called a chirp signal). Multiple vibrators are often used. There
     are systems ranging in size from handheld units like pavement
@@ -94,14 +94,14 @@ href="http://creativecommons.org/licenses/by-sa/2.5">CC BY-SA
 2.5</a>.</figcaption>
 </figure>
 
-1.  Water gun: Water is ejected by a piston and there is a cavity behind
+2.  Water gun: Water is ejected by a piston and there is a cavity behind
     the water jet. There is an implosion but no bubbles because no extra
     air has been introduced. Click [here](https://vimeo.com/70134132)
     for a video of a water gun source in action.
-2.  Sparkers: The electric charge held on a large bank of capacitors is
+3.  Sparkers: The electric charge held on a large bank of capacitors is
     discharged directly into the water. This ionizes the water and
     creates a plasma pulse. Voltages of ~4kV, and currents of ~200A are
     involved.
-3.  Boomers: These involve the discharge of capacitors through a coil.
+4.  Boomers: These involve the discharge of capacitors through a coil.
     The changing voltage impinges upon an aluminum plate and the
     interaction of the magnetic fields drives the plate backward.

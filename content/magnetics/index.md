@@ -21,6 +21,10 @@ mineral exploration, unexploded ordnance detection, and archeology.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 magnetics_introduction magnetics_physical_property
 magnetics_basic_principles magnetics_survey magnetics_data
 magnetics_processing magnetics_interpretation magnetics_applet
+
+</div>

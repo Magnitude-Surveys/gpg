@@ -102,7 +102,7 @@ contributes towards the induced polarization within the rock.
 To demonstrate the effects of induced polarization on geophysical
 measurements, consider a specific example where a current generator,
 hooked to the ground as in a DC survey, is turned on. At some location,
-the electric potential (*V*) is measured. In non-chargeable rocks, an
+the electric potential ($`V`$) is measured. In non-chargeable rocks, an
 instantaneous increase in the measured potential occurs when the source
 is switched on. When the source is switched off, the current through the
 Earth returns immediately to zero and so is the measured potential. This
@@ -115,31 +115,34 @@ alt="images/images_duplicates/IP_source.gif" />
 
 If the ground is chargeable, there will also be an instantaneous jump in
 the measured potential when the source is switched on; we denote as
-*V*<sub>*σ*</sub>. However, the subsequent build-up of ionic charges
-during the on-time results in a corresponding increase in the measured
+$`V_\sigma`$. However, the subsequent build-up of ionic charges during
+the on-time results in a corresponding increase in the measured
 potential; which is sometimes referred to as the over-voltage.
 Eventually, the build-up of ionic charges reaches saturation, resulting
-in a final measured potential (*V*<sub>*m*</sub>). In general, the
-measured potential after the source is switched (*V*<sub>*o**n*</sub>)
-can be expressed as:
+in a final measured potential ($`V_m`$). In general, the measured
+potential after the source is switched ($`V_{on}`$) can be expressed as:
 
 <figure class="align-right">
 <img src="images/chargeability_physics2.png"
 alt="images/chargeability_physics2.png" />
 </figure>
 
-*V*<sub>*o**n*</sub>(*t*) = *V*<sub>*σ*</sub> + *V*<sub>*s*</sub>\[1 − *e*<sup>−*t*/*τ*</sup>\]
+``` math
+V_{on}(t) = V_\sigma + V_s \Big[ 1 - e^{-t/\tau } \Big]
+```
 
-where *V*<sub>*s*</sub> is the amplitude of the over-voltage and *τ* is
-a constant which determines the rate at which the induced polarization
+where $`V_s`$ is the amplitude of the over-voltage and $`\tau`$ is a
+constant which determines the rate at which the induced polarization
 forms.
 
 When the source is switched off, there is an instantaneous drop in the
-measured potential equal to *V*<sub>*σ*</sub>. Subsequently, the
-accumulated charges begin to diffuse, resulting in a measured potential
-which decays according to:
+measured potential equal to $`V_\sigma`$. Subsequently, the accumulated
+charges begin to diffuse, resulting in a measured potential which decays
+according to:
 
-*V*<sub>*o**f**f*</sub>(*t*) = *V*<sub>*s*</sub> *e*<sup>−*t*/*τ*</sup>
+``` math
+V_{off}(t) = V_s \, e^{-t/\tau}
+```
 
 This decaying off-time potential is commonly called the discharge curve.
 We use the discharge curve to characterize the chargeable properties of
@@ -150,19 +153,23 @@ the Earth.
 It is convenient to consider "chargeabilty" as an independent physical
 property but in reality it is an integral component of the electrical
 conductivity. It describes how the conductivity changes with frequency.
-If *σ*<sub>0</sub> denotes the conductivity at zero frequency and if
-*σ*<sub>∞</sub> is the conductivity at infinite frequency then the
+If $`\sigma_0`$ denotes the conductivity at zero frequency and if
+$`\sigma_\infty`$ is the conductivity at infinite frequency then the
 chargeability is
 
-$$\eta = \frac{\sigma\_\infty -\sigma_0}{\sigma\_\infty}$$
+``` math
+\eta = \frac{\sigma_\infty -\sigma_0}{\sigma_\infty}
+```
 
-This is a dimensionless number varying between 0 \< *η* \< 1. It is
+This is a dimensionless number varying between 0 \< $`\eta`$ \< 1. It is
 often referred to as the intrinsic chargeability. The above definition
 is equivalent to defining the intrinsic chargeability as the ratio
-between the amplitude of the over-voltage (*V*<sub>*s*</sub>) and the DC
-voltage (*V*<sub>*m*</sub>):
+between the amplitude of the over-voltage ($`V_s`$) and the DC voltage
+($`V_m`$):
 
-$$\eta = \frac{V_s}{V_m}$$
+``` math
+\eta = \frac{V_s}{V_m}
+```
 
 The intrinsic chargeability for materials is rarely provided in tables.
 Rather, numbers based upon laboratory measurements of some
@@ -176,37 +183,37 @@ measurements can be in time or frequency and the units of the
     possible to measure it exactly in the field. The figure to the right
     shows voltage measured when the transmitter is first turned on and
     then turned off some time later. Using parameters from this figure,
-    one definition of chargeability is
-    *M* = *V*<sub>*S*</sub>/*V*<sub>*P*</sub> where *V*<sub>*S*</sub>
-    and *V*<sub>*P*</sub> are the steady state and "secondary"
-    potentials, respectively.
+    one definition of chargeability is $`M = V_S / V_P`$ where $`V_S`$
+    and $`V_P`$ are the steady state and "secondary" potentials,
+    respectively.
 
-    > -   The leading edge potential *V*<sub>*σ*</sub> is what would be
-    >     measured in the absence of chargeability. This potential would
-    >     yield the ground's resistivity.
-    > -   The steady state, *V*<sub>*P*</sub> (with a subscript *m* in
-    >     the figure above), often referred to as the primary potential,
-    >     is the combined effect of current flowing in the ground and
-    >     charges built up under the influence of the imposed electric
-    >     field.
-    > -   The secondary potential is entirely due to the charge
-    >     imbalance resulting from the build-up of charge.
-    > -   Using this form, chargeability *M* will be 0 ≤ *M* \< 1. If
-    >     *M* = 0 the measured potential will follow the input current
-    >     waveform exactly with no charging or discharging involved, as
-    >     shown in the first column of the figure above.
+    > - The leading edge potential $`V_{\sigma}`$ is what would be
+    >   measured in the absence of chargeability. This potential would
+    >   yield the ground's resistivity.
+    > - The steady state, $`V_P`$ (with a subscript *m* in the figure
+    >   above), often referred to as the primary potential, is the
+    >   combined effect of current flowing in the ground and charges
+    >   built up under the influence of the imposed electric field.
+    > - The secondary potential is entirely due to the charge imbalance
+    >   resulting from the build-up of charge.
+    > - Using this form, chargeability $`M`$ will be $`0 ≤ M < 1`$. If
+    >   $`M =
+    >   0`$ the measured potential will follow the input current
+    >   waveform exactly with no charging or discharging involved, as
+    >   shown in the first column of the figure above.
 
 2.  The most commonly measured form of time domain IP is the normalized
     area under the decay curve. It can be represented by the following
     equation, using parameters specified in the adjacent figure. The
-    decaying potential that follows *V*<sub>*s*</sub> is written as
-    *V*<sub>*s*</sub>(*t*).
+    decaying potential that follows $`V_s`$ is written as $`V_s (t)`$.
 
-Chargeability, *M*, is essentially the red area under the decay curve,
+Chargeability, $`M`$, is essentially the red area under the decay curve,
 normalized by the source voltage.
 
 > 
-> $$M = \frac{1}{V_P} \int  \\ V_S(t) \\ \mathrm{d}t$$
+> ``` math
+> M = \frac{1}{V_P} \int  \! V_S(t) \, \mathrm{d}t
+> ```
 
 <figure class="align-center">
 <img src="../induced_polarization/images/source_and_measured_V.gif"
@@ -215,13 +222,14 @@ alt="../induced_polarization/images/source_and_measured_V.gif" />
 
 **Integrated Chargeability**
 
-The integrated chargeability (*M*) characterizes the quantity of
+The integrated chargeability ($`M`$) characterizes the quantity of
 potential energy stored within a chargeable rock due to the accumulation
 of ionic charges. The integrated chargeability is defined as the area
-under the discharge curve normalized by the DC voltage
-(*V*<sub>*m*</sub>):
+under the discharge curve normalized by the DC voltage ($`V_m`$):
 
-$$M = \frac{1}{V_m} \int\_{t_1}^{t_2} V\_{off}(t) \\ dt$$
+``` math
+M = \frac{1}{V_m} \int_{t_1}^{t_2} V_{off}(t) \, dt
+```
 
 Numerical values for the integrated chargeability are typically given in
 ms.
@@ -247,27 +255,31 @@ domain are described below.
     less time to respond at higher frequencies, the signal is expected
     to be smaller at the higher frequency. Expressions for PFE are shown
     in the equations below. The data used in this calculation are
-    illustrated in the figure below. Recall that
-    *ρ*<sub>*a*</sub> = *K* ∣ *V* ∣ /*I* , where *K* is the geometric
-    factor based upon electrode geometry (see the Geophysical surveys
-    chapter, "DC resistivity" section), *V* is the measured potential,
-    and *I* is the source current.
+    illustrated in the figure below. Recall that $`\rho_a= K
+    \mid V \mid / I`$ , where $`K`$ is the geometric factor based upon
+    electrode geometry (see the Geophysical surveys chapter, "DC
+    resistivity" section), $`V`$ is the measured potential, and $`I`$ is
+    the source current.
 
 <figure class="align-center">
 <img src="../induced_polarization/images/PFE.gif"
 alt="../induced_polarization/images/PFE.gif" />
 </figure>
 
-$$PFE= 100 \left( \frac{\rho\_{a1} - \rho\_{a2}}{\rho\_{a2}}  \right)$$
+``` math
+PFE= 100 \left( \frac{\rho_{a1} - \rho_{a2}}{\rho_{a2}}  \right)
+```
 
 Alternatively:
 
-$$FE = \frac{V(f_1) - V(f_2)}{V(f_2)}$$
+``` math
+FE = \frac{V(f_1) - V(f_2)}{V(f_2)}
+```
 
 If the voltage version is used, the Frequency Effect (FE) can easily be
 converted to a percent frequency effect by multiplying by 100.
 
-1.  Data with units of phase are gathered by transmitting a sinusoidal
+2.  Data with units of phase are gathered by transmitting a sinusoidal
     source current. Then the phase difference between this source and
     measured potentials is recorded as a measure of chargeability. Units
     are usually milliradians. The following figure illustrates:
@@ -326,14 +338,16 @@ impedence element for a circuit.
 **Integrated Chargeability Measurements**
 
 For integrated chargeability measurements, a source is used to drive
-direct current (*I*) through the rock core. During the on-time, the
-voltage (*V*<sub>*m*</sub>) is measured across the sample. Next, the
-source is switched off. During the off-time, the potential across the
-rock is measured as it decays. The off-time measurements are used to
-define the discharge curve for the sample, which is then used to obtain
-the integrated chargeability according to:
+direct current ($`I`$) through the rock core. During the on-time, the
+voltage ($`V_m`$) is measured across the sample. Next, the source is
+switched off. During the off-time, the potential across the rock is
+measured as it decays. The off-time measurements are used to define the
+discharge curve for the sample, which is then used to obtain the
+integrated chargeability according to:
 
-$$M = \frac{1}{V_m} \int\_{t_1}^{t_2} V\_{off}(t) \\ dt$$
+``` math
+M = \frac{1}{V_m} \int_{t_1}^{t_2} V_{off}(t) \, dt
+```
 
 For practical measurements, we do not integrate over the entire
 discharge curve. Instead, a finite interval of integration is chosen.
@@ -344,11 +358,14 @@ s to 1.1 s.
 
 Intrinsic chargeability measurements are very similar to
 conductivity/resistivity measurements. In this case, the source is used
-to drive alternating current (*I*) through the core sample. By measuring
-the voltage drop (*Δ**V*) accross the length of the sample, Ohm's law
-can be used to determine the circuit impedence (*Z*) caused by the rock:
+to drive alternating current ($`I`$) through the core sample. By
+measuring the voltage drop ($`\Delta V`$) accross the length of the
+sample, Ohm's law can be used to determine the circuit impedence ($`Z`$)
+caused by the rock:
 
-$$Z(\omega ) = \frac{\Delta V (\omega)}{I (\omega)}$$
+``` math
+Z(\omega ) = \frac{\Delta V (\omega)}{I (\omega)}
+```
 
 In chargeable rocks, the measured voltage drop depends on the frequency
 of the alternating current. So in order to characterize the resistive
@@ -356,55 +373,64 @@ properties of the rock, we need to determine the impedence over a
 spectrum of frequencies.
 
 The resistivity of the sample at each frequency can be obtained from the
-impedence, the length of the core (*L*) and its cross-sectional area
-(*A*) using Pouillet's law:
+impedence, the length of the core ($`L`$) and its cross-sectional area
+($`A`$) using Pouillet's law:
 
-$$\rho (\omega) = \frac{Z(\omega) A}{L}$$
+``` math
+\rho (\omega) = \frac{Z(\omega) A}{L}
+```
 
 In order to characterize the rock's chargeable properties, we fit the
 experimentally acquired resistivity values to a mathematical model
 (illstrated below). A well-established model for explaining the
 resistivities of chargeable rocks is the Cole-Cole model:
 
-$$\rho (\omega) = \rho_0 \Bigg \[ 1 - \eta \Bigg ( 1 - \frac{1}{1 + (i\omega\tau )^C} \Bigg ) \Bigg \]$$
+``` math
+\rho (\omega) = \rho_0 \Bigg [ 1 - \eta \Bigg ( 1 - \frac{1}{1 + (i\omega\tau )^C} \Bigg ) \Bigg ]
+```
 
-where *ρ*<sub>0</sub> is the DC resistivity and *η* is the intrinsic
-chargeability. Parameters *τ* and *C* define the rate at which ionic
-charges accumulate when an electric field is applied.
+where $`\rho_0`$ is the DC resistivity and $`\eta`$ is the intrinsic
+chargeability. Parameters $`\tau`$ and $`C`$ define the rate at which
+ionic charges accumulate when an electric field is applied.
 
 <figure class="align-center">
 <img src="images/electrode_chargeability_curve_fit.png"
 alt="images/electrode_chargeability_curve_fit.png" />
 </figure>
 
-Assuming *C* = 1, *τ* defines the exponential decay in voltage during
-the off-time measurements (see earlier). The conductivity of the rock
-can be obtained by taking the reciprocal of the complex resistivity:
+Assuming $`C=1`$, $`\tau`$ defines the exponential decay in voltage
+during the off-time measurements (see earlier). The conductivity of the
+rock can be obtained by taking the reciprocal of the complex
+resistivity:
 
-$$\sigma (\omega) = \frac{1}{\rho (\omega)}$$
+``` math
+\sigma (\omega) = \frac{1}{\rho (\omega)}
+```
 
 Additionally, Ohm's law still applies for chargeable rocks. Thus:
 
-*J⃗*(*ω*) = *σ*(*ω*)*E⃗*(*ω*)
+``` math
+\vec J (\omega) = \sigma (\omega) \vec E (\omega)
+```
 
 ### Chargeabilities of Common Rocks
 
 Tables (from Telford et al, 1976) provide a very general guide to the
 integrated chargeabilities of materials. Because different intervals of
-integration \[*t*<sub>1</sub>, *t*<sub>2</sub>\] are used for each
-table, chargeability values cannot be compared between tables. However,
-we can infer several things from these tables:
+integration $`[t_1,t_2]`$ are used for each table, chargeability values
+cannot be compared between tables. However, we can infer several things
+from these tables:
 
--   The individual properties of rocks results in a variation in
-    chargeability (click `here<table_chargeability_rocks>` for table).
--   Chargeability increases as the % abundance of sulphide minerals
-    increases (click `here<table_chargeability_sulphide>` for table).
--   Highly porous rocks such as extrusive volcanics and sandstones are
-    more chargeable than hard rocks such as granites and limestones
-    (click `here<table_chargeability_sulphide>` for table).
--   The type of ore-mineralization impacts the chargeability of rocks to
-    varying degrees (click `here<table_chargeability_minerals>` for
-    table).
+- The individual properties of rocks results in a variation in
+  chargeability (click `here<table_chargeability_rocks>` for table).
+- Chargeability increases as the % abundance of sulphide minerals
+  increases (click `here<table_chargeability_sulphide>` for table).
+- Highly porous rocks such as extrusive volcanics and sandstones are
+  more chargeable than hard rocks such as granites and limestones (click
+  `here<table_chargeability_sulphide>` for table).
+- The type of ore-mineralization impacts the chargeability of rocks to
+  varying degrees (click `here<table_chargeability_minerals>` for
+  table).
 
 ### Factors Impacting Chargeability
 

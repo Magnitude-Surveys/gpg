@@ -1,3 +1,8 @@
 @ECHO OFF 
 ECHO Hello World
-FOR /r "." %%i IN (*.rst) DO pandoc -f rst -t markdown_github "%%~fi" -o "%%~dpni.md"
+setlocal enabledelayedexpansion
+FOR /r "." %%i IN (*.rst) DO (
+echo %%~fi
+pandoc -f rst -t gfm "%%~fi" -o "%%~dpni.md"
+)
+endLocal

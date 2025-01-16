@@ -23,12 +23,16 @@ etc.
 
 Below we provide some examples of commonly used earth parameterizations.
 
+<div class="sidebar">
+
 **Uniform halfspace**
 
 <figure class="align-center">
 <img src="./images/modelytpes_0d.gif"
 alt="./images/modelytpes_0d.gif" />
 </figure>
+
+</div>
 
 1.  **A "uniform halfspace"** means the earth beneath the surface has
     the same physical property value. No topography is permitted and the
@@ -40,6 +44,8 @@ alt="./images/modelytpes_0d.gif" />
 site characterization, contaminated ground, or other shallow
 investigation projects
 
+<div class="sidebar">
+
 **Buried objects**
 
 <figure class="align-center">
@@ -47,7 +53,9 @@ investigation projects
 alt="./images/modelytpes_0obj.gif" />
 </figure>
 
-1.  When **buried objects** are the focus, the earth is usually
+</div>
+
+2.  When **buried objects** are the focus, the earth is usually
     considered to be uniform all around the object. The object itself
     may be represented with a more or less complicated set of
     parameters.
@@ -55,13 +63,17 @@ alt="./images/modelytpes_0obj.gif" />
 **Typical geoscience tasks:** Finding or characterizing buried
 utilities, tanks, UXOs, or other objects.
 
+<div class="sidebar">
+
 **1D (layered) models**
 
 <figure class="align-center">
 <img src="./images/1d-interp.gif" alt="./images/1d-interp.gif" />
 </figure>
 
-1.  In a **1D model**, the physical property is assumed to vary only in
+</div>
+
+3.  In a **1D model**, the physical property is assumed to vary only in
     one direction (usually depth). The earth is commonly divided into
     layers (cells), each of which has a constant value of physical
     property. Surveys that are designed to yield 1D results are often
@@ -71,13 +83,17 @@ utilities, tanks, UXOs, or other objects.
 **Typical geoscience tasks:** Layered Earth problems, such as hydrology,
 overburden thickness, clay layer detection, etc.
 
+<div class="sidebar">
+
 **2D models**
 
 <figure class="align-center">
 <img src="./images/2d-interp.gif" alt="./images/2d-interp.gif" />
 </figure>
 
-1.  In a **2D model**, the physical property is assumed to vary in two
+</div>
+
+4.  In a **2D model**, the physical property is assumed to vary in two
     directions, usually depth and the direction parallel to a survey
     line. Surveys that yield 2D results are interpreted as cross
     sections. The assumption is that the structures extend without
@@ -86,6 +102,8 @@ overburden thickness, clay layer detection, etc.
 **Typical geoscience tasks:** Detailed geologic structure
 characterization such as defining ore bodies or other geologic features
 
+<div class="sidebar">
+
 **3D models**
 
 <figure class="align-center">
@@ -93,7 +111,9 @@ characterization such as defining ore bodies or other geologic features
 alt="./images/modelytpes_3d.gif" />
 </figure>
 
-1.  In a **3D model**, the subsurface is divided into prismatic cells.
+</div>
+
+5.  In a **3D model**, the subsurface is divided into prismatic cells.
     Each cell is assumed to have a constant physical property. This is
     the most general parameterization and 3D inversion is computatinally
     intensive.

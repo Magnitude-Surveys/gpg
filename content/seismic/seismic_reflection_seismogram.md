@@ -14,16 +14,15 @@ for visual clarity). This produces the "normal incidence" seismogram.
 
 The procedure for generating the ideal seismogram is as follows:
 
-1.  Begin with a geologic section.
-2.  Compute the acoustic impedance as a function of depth by taking the
+1)  Begin with a geologic section.
+2)  Compute the acoustic impedance as a function of depth by taking the
     product of the density and velocity logs
-3.  Compute the reflection (and transmission) coefficients as a function
+3)  Compute the reflection (and transmission) coefficients as a function
     of depth. This yields a reflection log.
-4.  Convert to time. Each layer has a defined velocity. The incremental
-    (two-way) travel time on each layer is
-    *Δ**t*<sub>*i*</sub> = 2*h*<sub>*i*</sub>/*v*<sub>*i*</sub>. This
-    yields a reflection function on the two-way travel time domain.
-5.  Convolve the reflectivity function with a source wavelet. This
+4)  Convert to time. Each layer has a defined velocity. The incremental
+    (two-way) travel time on each layer is $`\Delta t_i = 2h_i / v_i`$.
+    This yields a reflection function on the two-way travel time domain.
+5)  Convolve the reflectivity function with a source wavelet. This
     yields the desired ideal seismogram.
 
 The figure below illustrates the procedure:
@@ -35,13 +34,14 @@ alt="./images/three_layer_schematic.gif" />
 
 The acoustic impedance for the ith layer is given by:
 
-*Z*<sub>*i*</sub> = *ρ*<sub>*i*</sub>*v*<sub>*i*</sub>
+``` math
+Z_i = \rho_{i} v_{i}
+```
 
-If the amplitude of the incident ray is *A*<sub>0</sub> and the
-amplitude of reflection is *A*<sub>1</sub>, then the reflection
-coefficient *R* is *A*<sub>1</sub>/*A*<sub>0</sub>. Similarly, if the
-amplitude of the transmitted wave is *A*<sub>2</sub>, then the
-transmission coefficient *T* is *A*<sub>2</sub>/*A*<sub>0</sub>.
+If the amplitude of the incident ray is $`A_0`$ and the amplitude of
+reflection is $`A_1`$, then the reflection coefficient $`R`$ is
+$`A_1/A_0`$. Similarly, if the amplitude of the transmitted wave is
+$`A_2`$, then the transmission coefficient $`T`$ is $`A_2/A_0`$.
 
 <figure class="align-center">
 <img src="./images/Reflection_Transmission.jpg"
@@ -50,31 +50,35 @@ alt="./images/Reflection_Transmission.jpg" />
 
 Using boundary conditions to ensure the continuity of stresses and
 displacements at the interface between we can express the reflection and
-transmission coefficients in terms of the acoustic impedance. Where *i*
-denotes the layer the wave is in and *j* denotes the layer that the
-transmitted wave passes into.
+transmission coefficients in terms of the acoustic impedance. Where
+$`i`$ denotes the layer the wave is in and $`j`$ denotes the layer that
+the transmitted wave passes into.
 
-$$R\_{i,j} =\frac{Z\_{j} - Z\_{i}}{Z\_{j} + Z\_{i}}$$
+``` math
+R_{i,j} =\frac{Z_{j} - Z_{i}}{Z_{j} + Z_{i}}
+```
 
 and
 
-$$T\_{i,j} = \frac{2Z_i}{Z\_{j} + Z\_{i}}$$
+``` math
+T_{i,j} = \frac{2Z_i}{Z_{j} + Z_{i}}
+```
 
-Given the amplitude of the incident wave *A*<sub>0</sub> you can
-calculate the amplitude of a transmitted of reflected waves in any
-layer. For example, the amplitude of the transmitted wave in the 3rd
-layer is equal to
-*A*<sub>0</sub>*T*<sub>1, 2</sub>*T*<sub>2, 3</sub> = *A*<sub>2</sub>*T*<sub>2, 3</sub>
-and the amplitude of the reflected wave from the top of the 3rd layer in
-the 1st layer is
-*A*<sub>0</sub>*T*<sub>1, 2</sub>*R*<sub>2, 3</sub>*T*<sub>2, 1</sub>.
+Given the amplitude of the incident wave $`A_0`$ you can calculate the
+amplitude of a transmitted of reflected waves in any layer. For example,
+the amplitude of the transmitted wave in the 3rd layer is equal to
+$`A_0 T_{1,2} T_{2,3} = A_2 T_{2,3}`$ and the amplitude of the reflected
+wave from the top of the 3rd layer in the 1st layer is
+$`A_0 T_{1,2} R_{2,3} T_{2,1}`$.
 
 We then convert the reflectivity log from reflectivity as a function of
 depth to reflectivity as a function of time. The total travel time is
 the sum of the incremental times for a particular reflection. The
-incremental 2 way travel time for layer *i* is:
+incremental 2 way travel time for layer $`i`$ is:
 
-$$\Delta  t_i = \frac{2h_i}{v}$$
+``` math
+\Delta  t_i = \frac{2h_i}{v}
+```
 
 The normal incidence seismic trace is then obtained by the convolution
 of a seismic wavelet (input pulse) with the reflectivity function. The

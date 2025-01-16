@@ -3,10 +3,10 @@
 Earth layers can often be approximated as planar, but they are rarely
 horizontal. The next level of complication is to assume that the layers
 have some dip associated with them. Consider a single interface which is
-dipping at an angle *θ* with respect to the horizontal. The critical
-angle is still defined by the angle that an incoming wave must make with
-respect to the **normal** of the refractor. This is shown by the diagram
-below.
+dipping at an angle $`\theta`$ with respect to the horizontal. The
+critical angle is still defined by the angle that an incoming wave must
+make with respect to the **normal** of the refractor. This is shown by
+the diagram below.
 
 <figure class="align-center">
 <img src="./images/dip_layer_S_R_schematic1.gif"
@@ -22,15 +22,15 @@ Arrival times of the refracted wave will still appear as a straight line
 on the travel time plot. However, as the refracted wave moves updip the
 waves have less distance to travel to the surface. The travel time is
 reduced and thus the slope of the line is reduced. The velocity
-recovered from using this slope is called *v*<sub>2*u*</sub> , and is
-called the updip "apparent" velocity. This will be larger than the true
-velocity of the layer.
+recovered from using this slope is called $`v_{2u}`$ , and is called the
+updip "apparent" velocity. This will be larger than the true velocity of
+the layer.
 
 Conversely, if you are downdip then the distance traveled by the
 refracted wave increases with distance and it takes longer for the waves
 to reach you. The slope of the refracted arrival on the travel time plot
-will increase and the apparent downdip velocity *v*<sub>2*d*</sub>
-estimated from this slope will be smaller than the true velocity.
+will increase and the apparent downdip velocity $`v_{2d}`$ estimated
+from this slope will be smaller than the true velocity.
 
 <figure class="align-center">
 <img src="./images/dip_layer_S_R_schematic.gif"
@@ -47,9 +47,10 @@ provides only an apparent velocity and no indication that there is a
 dipping interface.**
 
 Intuitively, if we want to obtain another parameter (namely the dip
-angle, designated *γ*), then we need more data. We can achieve this by
-having two shots so that both updip and downdip apparent velocities can
-be obtained. This requires shots at both ends of the spread.
+angle, designated $`\gamma`$), then we need more data. We can achieve
+this by having two shots so that both updip and downdip apparent
+velocities can be obtained. This requires shots at both ends of the
+spread.
 
 <figure class="align-center">
 <img src="./images/dip_layers_geom.gif"
@@ -57,13 +58,13 @@ alt="./images/dip_layers_geom.gif" />
 </figure>
 
 Consider the geometry and travel time curves shown to the right. Note
-that *h* is depth (vertical distance) of the interface beneath the shot
-at A. The distance from A to the normal of the interface is given by
-*z*. These quantities are given by (*h*′, *z*′) for the source at D. The
-traveltimes *t*<sub>*A**D*</sub> (time for the wave to go from A to D)
-and *t*<sub>*D**A*</sub> (the time for the wave to go from D to A) are
-called the "reciprocal times." It is should be obvious from geometry
-that these time are equal.
+that $`h`$ is depth (vertical distance) of the interface beneath the
+shot at A. The distance from A to the normal of the interface is given
+by $`z`$. These quantities are given by $`(h', z')`$ for the source at
+D. The traveltimes $`t_{AD}`$ (time for the wave to go from A to D) and
+$`t_{DA}`$ (the time for the wave to go from D to A) are called the
+"reciprocal times." It is should be obvious from geometry that these
+time are equal.
 
 <figure class="align-center">
 <img src="./images/reciprocal_times.gif"
@@ -84,48 +85,58 @@ ruler is an acceptable way of finding these times.
 
 The traveltime for receivers in the downdip direction is
 
-$$t_2 = \frac{x\sin(\theta + \gamma)}{v_1} + \frac{2z\cos\theta}{v_1} = \frac{x}{v\_{2d}}+{t_i} \quad (1)$$
+``` math
+t_2 = \frac{x\sin(\theta + \gamma)}{v_1} + \frac{2z\cos\theta}{v_1} = \frac{x}{v_{2d}}+{t_i} \quad (1)
+```
 
 The traveltime in the updip direction is
 
-$$t^{\prime}\_2 = \frac{x\sin(\theta-\gamma)}{v_1} + \frac{2z^{\prime}\cos\theta}{v_1} = \frac{x}{v\_{2u}}+{t^{\prime}\_i}   \quad (2)$$
+``` math
+t^{\prime}_2 = \frac{x\sin(\theta-\gamma)}{v_1} + \frac{2z^{\prime}\cos\theta}{v_1} = \frac{x}{v_{2u}}+{t^{\prime}_i}   \quad (2)
+```
 
-So measurement of *v*<sub>2*d*</sub> and *v*<sub>2*u*</sub> can be used
-to obtain values for the critical angle *θ* and the dip *γ*.
+So measurement of $`v_{2d}`$ and $`v_{2u}`$ can be used to obtain values
+for the critical angle $`\theta`$ and the dip $`\gamma`$.
 
-$$\frac{1}{v\_{2d}} = \frac{sin(\theta + \gamma)}{v_1} \rightarrow \theta + \gamma = sin^{-1}\Big( \frac{v_1}{v\_{2d}}\Big)$$
+``` math
+\frac{1}{v_{2d}} = \frac{sin(\theta + \gamma)}{v_1} \rightarrow \theta + \gamma = sin^{-1}\Big( \frac{v_1}{v_{2d}}\Big)
+```
 
-$$\frac{1}{v\_{2u}} = \frac{sin(\theta - \gamma)}{v_1} \rightarrow \theta - \gamma = sin^{-1}\Big( \frac{v_1}{v\_{2u}}\Big)$$
+``` math
+\frac{1}{v_{2u}} = \frac{sin(\theta - \gamma)}{v_1} \rightarrow \theta - \gamma = sin^{-1}\Big( \frac{v_1}{v_{2u}}\Big)
+```
 
-There are two equations in two unknowns *θ* and *γ*, therefore we can
-solve for both unknowns. The result of solving for *θ* and *γ* is
+There are two equations in two unknowns $`\theta`$ and $`\gamma`$,
+therefore we can solve for both unknowns. The result of solving for
+$`\theta`$ and $`\gamma`$ is
 
-$$\gamma = \frac{1}{2} \bigg\[ sin^{-1}\bigg( \frac{v_1}{v\_{2d}} \bigg) - sin^{-1}\bigg( \frac{v_1}{v\_{2u}}  \bigg) \bigg\]$$
+``` math
+\gamma = \frac{1}{2} \bigg[ sin^{-1}\bigg( \frac{v_1}{v_{2d}} \bigg) - sin^{-1}\bigg( \frac{v_1}{v_{2u}}  \bigg) \bigg]
+```
 
-$$\theta = \frac{1}{2} \bigg\[ sin^{-1}\bigg( \frac{v_1}{v\_{2d}} \bigg) + sin^{-1}\bigg( \frac{v_1}{v\_{2u}}  \bigg) \bigg\]$$
+``` math
+\theta = \frac{1}{2} \bigg[ sin^{-1}\bigg( \frac{v_1}{v_{2d}} \bigg) + sin^{-1}\bigg( \frac{v_1}{v_{2u}}  \bigg) \bigg]
+```
 
 Now, how do we use these relations? Start by recalling what we want: We
-want depths under each end of the survey line (*h* and *h*′) and two
+want depths under each end of the survey line ($`h`$ and $`h'`$) and two
 true velocities. This is as much as we will obtain from a two-shot
 (forward and reverse) seismic refraction survey. We have, or can
-measure, velocities *v*<sub>1</sub>, *v*<sub>2*u*</sub> and
-*v*<sub>2*d*</sub> , and two intercept times *t*<sub>*i*</sub> and
-*t*′<sub>*i*</sub>. The intercepts *t*<sub>*i*</sub> and
-*t*′<sub>*i*</sub> can be used to calculate *z* and *z*′ (using
-equations (1) and (2) above) because *x* = 0 when
-*t*<sub>2</sub> = *t*<sub>*i*</sub> or
-*t*′<sub>2</sub> = *t*′<sub>*i*</sub> and the angle *θ* can be found
-using the three velocities obtainable from the T-X plot. Finally, true
-depths *h* and *h*′ can be found using these slant depths and the
-relation we found for dip, *γ* .
+measure, velocities $`v_1`$, $`v_{2u}`$ and $`v_{2d}`$ , and two
+intercept times $`t_i`$ and $`t'_i`$. The intercepts $`t_i`$ and
+$`t'_i`$ can be used to calculate $`z`$ and $`z'`$ (using equations (1)
+and (2) above) because $`x=0`$ when $`t_2=t_i`$ or $`t'_2=t'_i`$ and the
+angle $`\theta`$ can be found using the three velocities obtainable from
+the T-X plot. Finally, true depths $`h`$ and $`h'`$ can be found using
+these slant depths and the relation we found for dip, $`\gamma`$ .
 
-What about true refractor velocity, *v*<sub>2</sub> ? Snell's law can of
-course be invoked. The critical angle *θ* (referred to above) is
+What about true refractor velocity, $`v_2`$ ? Snell's law can of course
+be invoked. The critical angle $`\theta`$ (referred to above) is
 obtained from the relation involving updip and downdip velocities, and
-the known value of *v*<sub>1</sub> . A less accurate version of
-*v*<sub>2</sub> can be obtained by averaging *v*<sub>2</sub>*d* and
-*v*<sub>2</sub>*u* but your average value will be wrong by a factor of
-cos (*γ*) , or 2% to 3% for dips of about 12 degrees.
+the known value of $`v_1`$ . A less accurate version of $`v_2`$ can be
+obtained by averaging $`v_2d`$ and $`v_2u`$ but your average value will
+be wrong by a factor of $`\cos(\gamma)`$ , or 2% to 3% for dips of about
+12 degrees.
 
 ## Profile Geometries
 
@@ -142,7 +153,7 @@ dip. The most common acquisition geometries are:
 alt="./images/profile_geom1.gif" />
 </figure>
 
-1.  Split spread (receivers are spread out from the shot in both
+2.  Split spread (receivers are spread out from the shot in both
     directions).
 
 <figure class="align-center">
@@ -150,7 +161,7 @@ alt="./images/profile_geom1.gif" />
 alt="./images/profile_geom2.gif" />
 </figure>
 
-1.  Single end roll-along.
+3.  Single end roll-along.
 
 <figure class="align-center">
 <img src="./images/profile_geom3.gif"

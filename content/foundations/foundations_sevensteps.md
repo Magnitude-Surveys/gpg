@@ -1,9 +1,17 @@
+<div id="foundations_sevensteps">
+
+<div class="sidebar">
+
 **Seven Steps**
 
 <figure class="align-center">
 <img src="./images/icon_whats-there.gif"
 alt="./images/icon_whats-there.gif" />
 </figure>
+
+</div>
+
+</div>
 
 # A seven-step framework for applied geophysics
 
@@ -18,15 +26,15 @@ to achieve a final outcome.
     Establish the geoscience objectives, consider conventional practice,
     and identify how geophysics might contribute. This could include:
 
-    > -   Mapping geology
-    > -   Locating buried objects
-    > -   Obtaining 3D images of the subsurface
+    > - Mapping geology
+    > - Locating buried objects
+    > - Obtaining 3D images of the subsurface
 
 > Assemble prior information that might be relevant. Details for using
 > the seven-step procedure will depend upon what information is sought
 > and what is available.
 
-1.  **Properties:** Understand how geologic and human-made materials of
+2.  **Properties:** Understand how geologic and human-made materials of
     relevance to the problem can be characterized by physical
     properties. The key is to find a physical property of the sought
     object/geology that is different from that of the surrounding
@@ -34,14 +42,14 @@ to achieve a final outcome.
     the geoscience problem being investigated. Important physical
     properties are:
 
-    > -   Density
-    > -   Compressional wave and shear wave velocities
-    > -   Magnetic susceptibility
-    > -   Electrical conductivity (or resistivity)
-    > -   Electrical chargeability
-    > -   Dielectric permittivity
+    > - Density
+    > - Compressional wave and shear wave velocities
+    > - Magnetic susceptibility
+    > - Electrical conductivity (or resistivity)
+    > - Electrical chargeability
+    > - Dielectric permittivity
 
-2.  **Surveys:** Select a geophysical survey that is sensitive to the
+3.  **Surveys:** Select a geophysical survey that is sensitive to the
     physical property of relevance to the problem. Design an effective
     and efficient methodology for collecting the field data. This will
     involve forward modelling and processing of the simulated data as

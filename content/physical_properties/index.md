@@ -19,15 +19,19 @@ As part of the GPG, we will focus on the following physical properties:
 and `chargeability<induced_polarization_physical_properties_duplicate>`.
 For each physical property:
 
-> -   Relevant quantities are defined.
-> -   We explain how the physical property can be measured.
-> -   Physics associated with the physical property are explained.
-> -   A common range of values for rocks and materials is provided.
-> -   Factors impacting the physical property are explained.
+> - Relevant quantities are defined.
+> - We explain how the physical property can be measured.
+> - Physics associated with the physical property are explained.
+> - A common range of values for rocks and materials is provided.
+> - Factors impacting the physical property are explained.
 
 **Contents:**
+
+<div class="toctree" maxdepth="1">
 
 physical_properties_density magnetics_susceptibility_duplicate
 seismic_velocity_duplicate physical_properties_dielectric_permittivity
 physical_properties_conductivity
 induced_polarization_physical_properties_duplicate tables/index
+
+</div>

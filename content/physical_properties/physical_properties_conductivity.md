@@ -1,17 +1,19 @@
 # Electrical Conductivity
 
-Electrical conductivity (*σ*) is a physical property that describes how
-easily electric currents can flow through a medium when subjected to an
-applied electric field. More specifically, it defines the relationship
-between the electrical current density (*J⃗*) within a material, and the
-electric field (*E⃗*) :
+Electrical conductivity ($`\sigma`$) is a physical property that
+describes how easily electric currents can flow through a medium when
+subjected to an applied electric field. More specifically, it defines
+the relationship between the electrical current density ($`\vec J`$)
+within a material, and the electric field ($`\vec E`$) :
 
 <figure class="align-right">
 <img src="./images/conductivity_physics_diagram.png"
 alt="./images/conductivity_physics_diagram.png" />
 </figure>
 
-*J⃗* = *σ**E⃗*
+``` math
+\vec J = \sigma \vec E
+```
 
 Within rocks and other materials, there are free electrical charges.
 When an electric field is applied to a material, these charges
@@ -20,37 +22,43 @@ charges to move through the material along the direction of the applied
 field; with positive charges moving parallel to the field and negative
 charges moving in the opposite direction. The size of the flow of
 electrical charges through a material is known as electrical current
-(*I⃗*). Current density represents the amount of current flowing per unit
-cross-sectional area (*A*), where:
+($`\vec I`$). Current density represents the amount of current flowing
+per unit cross-sectional area ($`A`$), where:
 
-$$\vec J = \frac{\vec I}{A}$$
+``` math
+\vec J = \frac{\vec I}{A}
+```
 
-In conductive materials (larger *σ*), free charges move quite easily and
-strong currents may be induced by a relatively weak electrical field. In
-contrast, resistive materials (smaller *σ*) require strong electrical
-fields in order to produce any significant current.
+In conductive materials (larger $`\sigma`$), free charges move quite
+easily and strong currents may be induced by a relatively weak
+electrical field. In contrast, resistive materials (smaller $`\sigma`$)
+require strong electrical fields in order to produce any significant
+current.
 
 **Resistivity**: An equivalent physical property to the conductivity is
-the resistivity (*ρ*). By definition, the resistivity of a material is
-the reciprocal of its conductivity:
+the resistivity ($`\rho`$). By definition, the resistivity of a material
+is the reciprocal of its conductivity:
 
-$$\rho = \frac{1}{\sigma}$$
+``` math
+\rho = \frac{1}{\sigma}
+```
 
 Both the electrical conductivity and resistivity are acceptable for
 describing the conductive properties of rocks and they are sometimes
 used interchangeably. Parameters used to define the conductive
 properties and their associated S.I. units are summarized below.
 
-| **Property**     | **Symbol** | **Units**         |
-|------------------|------------|-------------------|
-| Electric Field   | *E⃗*        | V/m               |
-| Current Density  | *J⃗*        | A/m  <sup>2</sup> |
-| Electric Current | *I⃗*        | A                 |
-| Conductivity     | *σ*        | S/m or mS/m       |
-| Resistivity      | *ρ*        | *Ω*⋅  m           |
+| **Property**     | **Symbol** | **Units**           |
+|------------------|------------|---------------------|
+| Electric Field   | $`\vec E`$ | V/m                 |
+| Current Density  | $`\vec J`$ | A/m $`\!^2`$        |
+| Electric Current | $`\vec I`$ | A                   |
+| Conductivity     | $`\sigma`$ | S/m or mS/m         |
+| Resistivity      | $`\rho`$   | $`\Omega\cdot\!`$ m |
 
 where V is volts, A is Amperes and S is Siemens. Millisiemens per meter
-(mS/m) are often used (1000 mS/m = 1 S/m). Thus 1 mS/m = 1000 *Ω*⋅  m.
+(mS/m) are often used (1000 mS/m = 1 S/m). Thus 1 mS/m = 1000
+$`\Omega\cdot\!`$ m.
 
 ## Conductivity Measurements
 
@@ -64,25 +72,30 @@ where it acts as a resistive element for a circuit.
 alt="./images/electrode_conductivity_measurements.png" />
 </figure>
 
-Next, a source is used to drive direct current (*I*) through the core
-sample. By measuring the voltage drop (*Δ**V*) accross the length of the
-sample, Ohm's law can be used to determine the circuit resistance (*R*)
-caused by the rock:
+Next, a source is used to drive direct current ($`I`$) through the core
+sample. By measuring the voltage drop ($`\Delta V`$) accross the length
+of the sample, Ohm's law can be used to determine the circuit resistance
+($`R`$) caused by the rock:
 
-$$R = \frac{\Delta V}{I}$$
+``` math
+R = \frac{\Delta V}{I}
+```
 
-The measured resistance increases proportional to the length (*L*) of
+The measured resistance increases proportional to the length ($`L`$) of
 the core sample. We expect this given that the current must flow through
 more of the resistive material. The measured resistance is also
-inversely proportional to the cross-sectional area (*A*) of the sample.
-This relationship can be understood by comparing the net resistance of
-two identical resistors in parallel to a single resistor in series.
+inversely proportional to the cross-sectional area ($`A`$) of the
+sample. This relationship can be understood by comparing the net
+resistance of two identical resistors in parallel to a single resistor
+in series.
 
 Ultimately, the resistivity of the sample can be obtained from the
 measured resistance, the length of the core and its cross-sectional area
 using Pouillet's law:
 
-$$\rho = \frac{R A}{L}$$
+``` math
+\rho = \frac{R A}{L}
+```
 
 ## Conductivities of Common Rocks
 
@@ -91,13 +104,13 @@ for common rock types is shown below. Note that the scale is
 logarithmic, indicating a huge variability in conductivity/resistivity
 among rocks. From this chart we can infer several things:
 
--   Massive sulphides and graphite-bearing rocks are by far the most
-    conductive.
--   Carbonate rocks and unconsolidated sediments are very resistive
--   Weathered igneous and metamorphic rocks are more conductive than
-    unweathered igneous and metamorphic rocks.
--   Sedimentary rocks containing clays are generally more conductive.
--   Salt water is more conductive than fresh water.
+- Massive sulphides and graphite-bearing rocks are by far the most
+  conductive.
+- Carbonate rocks and unconsolidated sediments are very resistive
+- Weathered igneous and metamorphic rocks are more conductive than
+  unweathered igneous and metamorphic rocks.
+- Sedimentary rocks containing clays are generally more conductive.
+- Salt water is more conductive than fresh water.
 
 <figure class="align-center">
 <img src="./images/images_duplicates/resistivity_table.png"

@@ -7,7 +7,7 @@ refraction and reflection techniques, it is quite new and has been
 mainly used for geotechnical work. For more information on the MASW
 technique please see
 
--   <http://www.masw.com/WhatisMASW.html>
--   <http://www.kgs.ku.edu/software/surfseis/Publications/ParkEtAl2007.pdf>
--   <http://www.kgs.ku.edu/software/surfseis/masw.html>
--   <http://www.masw.com/files/MIL-99-03.pdf>
+- <http://www.masw.com/WhatisMASW.html>
+- <http://www.kgs.ku.edu/software/surfseis/Publications/ParkEtAl2007.pdf>
+- <http://www.kgs.ku.edu/software/surfseis/masw.html>
+- <http://www.masw.com/files/MIL-99-03.pdf>

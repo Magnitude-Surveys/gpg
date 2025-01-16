@@ -92,18 +92,17 @@ electrodes for this type of galvanic work.
 > for easy handling are most common (figure to the right).</figcaption>
 > </figure>
 
--   For small scale work, some systems are available that use
-    multiconductor cable, and possibly "smart" electrodes that can be
-    switched between input and measurement functions by computer.
--   For large scale work, this is not practical because of the large
-    currents involved (up to a hundred Amps or so in some cases).
-    Multiconductor cables with individual wires capable of carrying that
-    current would be prohibitively heavy for mineral exploration
-    surveys, which commonly involve profile lines several kilometers
-    long.
--   However, there are some systems that use multiconductor seismic
-    cable for the potentials while requiring the normal single, heavy
-    gauge wire for the current source.
+- For small scale work, some systems are available that use
+  multiconductor cable, and possibly "smart" electrodes that can be
+  switched between input and measurement functions by computer.
+- For large scale work, this is not practical because of the large
+  currents involved (up to a hundred Amps or so in some cases).
+  Multiconductor cables with individual wires capable of carrying that
+  current would be prohibitively heavy for mineral exploration surveys,
+  which commonly involve profile lines several kilometers long.
+- However, there are some systems that use multiconductor seismic cable
+  for the potentials while requiring the normal single, heavy gauge wire
+  for the current source.
 
 ## Variations on the theme
 
@@ -124,8 +123,8 @@ source. This procedure is being implemented in borehole projects, as
 well as surface surveys. Examples of systems that work in this manner
 are given in the following list (as of January 2007).
 
--   <https://www.agiusa.com> (images to the right)
--   <http://www.zonge.com/>
+- <https://www.agiusa.com> (images to the right)
+- <http://www.zonge.com/>
 
 > <figure class="align-right">
 > <img src="./images/ohm_mapper.jpg" alt="./images/ohm_mapper.jpg" />

@@ -1,9 +1,11 @@
 # Density
 
-Density (*ρ*) is defined as the mass (*m*) contained within a material
-per unit volume (*V*):
+Density ($`\rho`$) is defined as the mass ($`m`$) contained within a
+material per unit volume ($`V`$):
 
-$$\rho = \frac{m}{V}$$
+``` math
+\rho = \frac{m}{V}
+```
 
 Please note that mass (the quantity of matter within an object) should
 not be confused with weight (the downward force exerted by an object due
@@ -15,18 +17,20 @@ In some cases, the density of a material is represented instead by its
 specific gravity. Specific gravity defines the ratio of a material's
 density to that of water:
 
-$$S.G. = \frac{\rho}{\rho_w}$$
+``` math
+S.G. = \frac{\rho}{\rho_w}
+```
 
-where the density of water *ρ*<sub>*w*</sub> = 1,000 kg/m  <sup>3</sup>
-(or 1 g/cm  <sup>3</sup>). Parameters used to define density and their
-associated units are summarized below.
+where the density of water $`\rho_w`$ = 1,000 kg/m $`\!^3`$ (or 1 g/cm
+$`\!^3`$). Parameters used to define density and their associated units
+are summarized below.
 
-| Property         | Symbol   | Units                                    |
-|------------------|----------|------------------------------------------|
-| Density          | *ρ*      | g/cm  <sup>3</sup> or kg/m  <sup>3</sup> |
-| Mass             | *m*      | g or kg                                  |
-| Volume           | *V*      | cm  <sup>3</sup> or m  <sup>3</sup>      |
-| Specific Gravity | *S*.*G*. | *Unitless*                               |
+| Property         | Symbol   | Units                          |
+|------------------|----------|--------------------------------|
+| Density          | $`\rho`$ | g/cm $`\!^3`$ or kg/m $`\!^3`$ |
+| Mass             | $`m`$    | g or kg                        |
+| Volume           | $`V`$    | cm $`\!^3`$ or m $`\!^3`$      |
+| Specific Gravity | $`S.G.`$ | *Unitless*                     |
 
 ## Density Measurements
 
@@ -40,29 +44,32 @@ The most basic method for measuring a rock's bulk density can be
 performed in two steps. First, the mass (M) of the rock is obtained
 using a weight scale. Next, the rock is fully immersed into a volume of
 water contained in a graduated cylinder. The amount of water which is
-displaced by the rock is equal to the volume (*V*) of the sample. The
+displaced by the rock is equal to the volume ($`V`$) of the sample. The
 density of the rock is obtained from
 
-$$\rho = \frac{m}{V}$$
+``` math
+\rho = \frac{m}{V}
+```
 
 This method is simple but it is often not sufficiently accurate for
 geophysical purposes.
 
 **Hydrostatic Weighting**
 
-For this method, the mass of the rock (*m*<sub>*a*</sub>) is first
-measured using a conventional scale. The rock is then immersed into a
-bath of water, where its underwater weight is measured and used to
-obtain an apparent mass (*m*<sub>*w*</sub>). Where *ρ*<sub>*w*</sub> =
-1000 kg/m  <sup>3</sup> is the density of water, the density of the rock
-is given by:
+For this method, the mass of the rock ($`m_{a}`$) is first measured
+using a conventional scale. The rock is then immersed into a bath of
+water, where its underwater weight is measured and used to obtain an
+apparent mass ($`m_{w}`$). Where $`\rho_w`$ = 1000 kg/m $`\!^3`$ is the
+density of water, the density of the rock is given by:
 
 <figure class="align-right">
 <img src="./images/hydrostatic_weighting_legend.jpg"
 alt="./images/hydrostatic_weighting_legend.jpg" />
 </figure>
 
-$$\rho = \frac{m_a}{m_a - m_w} \times \rho_w$$
+``` math
+\rho = \frac{m_a}{m_a - m_w} \times \rho_w
+```
 
 This method does poorly if the rock is unconsolidated or porous.
 Unconsolidated rocks tend to break apart when immersed in water. The
@@ -78,15 +85,16 @@ density is not recovered using this method, as we are not accounting for
 the rock's pore space.
 
 Pycnometers typically consist of a hollow chamber with a known initial
-volume (*V*<sub>*c*</sub>). Once a rock has been placed in the chamber,
-the volume of the chamber is changed, resulting in a change in gas
-pressure around the rock. The change in gas pressure is used to
-determine how much of the chamber is filled with gas
-(*V*<sub>*s*</sub>). The difference between *V*<sub>*c*</sub> and
-*V*<sub>*s*</sub> represents the volume of solid material comprising the
-rock. The skeletal density of the rock is therefore:
+volume ($`V_c`$). Once a rock has been placed in the chamber, the volume
+of the chamber is changed, resulting in a change in gas pressure around
+the rock. The change in gas pressure is used to determine how much of
+the chamber is filled with gas ($`V_s`$). The difference between $`V_c`$
+and $`V_s`$ represents the volume of solid material comprising the rock.
+The skeletal density of the rock is therefore:
 
-$$\rho\_{sk} = \frac{m}{V_c - V_s}$$
+``` math
+\rho_{sk} = \frac{m}{V_c - V_s}
+```
 
 **Gamma-Gamma Density Logging**
 
@@ -108,15 +116,15 @@ materials are summarized below. Note that the density ranges for
 different rock types can overlap. Some general comments pertaining to
 densities are:
 
--   Igneous and metamorphic rock are generally more dense than
-    sedimentary rocks.
--   Mafic igneous rocks are generally more dense than felsic igneous
-    rocks.
--   Higher metamorphic grade rocks such as eclogite and amphibolite are
-    more dense than low grade metamorphic rocks such as slate and
-    phyllite.
--   Metal ore-bearing rocks are generally much denser than other rock
-    types. One exception is bauxite.
+- Igneous and metamorphic rock are generally more dense than sedimentary
+  rocks.
+- Mafic igneous rocks are generally more dense than felsic igneous
+  rocks.
+- Higher metamorphic grade rocks such as eclogite and amphibolite are
+  more dense than low grade metamorphic rocks such as slate and
+  phyllite.
+- Metal ore-bearing rocks are generally much denser than other rock
+  types. One exception is bauxite.
 
 To see the range of densities for specific rock types, click the links
 in the table.
@@ -203,8 +211,8 @@ are dictated by the abundances of other elements such as: aluminum,
 iron, calcium, sodium, potassium and magnesium.
 
 In igneous rocks, density generally decreases with respect to the %
-abundance of silica (Si0  <sub>2</sub>) contained within the rock. Using
-this relationship, igeneous rocks are classified as being felsic,
+abundance of silica (Si0 $`\!_2`$) contained within the rock. Using this
+relationship, igeneous rocks are classified as being felsic,
 intermediate, mafic or ultramafic. Rocks with lower silica content
 (mafic) tend to contain higher abundances of heavier elements like
 magnesium and iron; making mafic rocks denser than rocks with a higher
@@ -213,12 +221,12 @@ typically more dense than the continental crust (felsic). The
 classification of igeneous rocks based on % silica content can be seen
 below:
 
-| Igneous Rock Type | % Silica (SiO  <sub>2</sub>) | Density  |
-|-------------------|------------------------------|----------|
-| Felsic            | 65% \<                       | Lowest   |
-| Indermediate      | 55% - 65%                    | Moderate |
-| Mafic             | 45% - 55%                    | High     |
-| Ultramafic        | \< 45%                       | Highest  |
+| Igneous Rock Type | % Silica (SiO $`\!_2`$) | Density  |
+|-------------------|-------------------------|----------|
+| Felsic            | 65% \<                  | Lowest   |
+| Indermediate      | 55% - 65%               | Moderate |
+| Mafic             | 45% - 55%               | High     |
+| Ultramafic        | \< 45%                  | Highest  |
 
 Similar relationships between composition and density are much harder to
 obtain for sedimentary and metamorphic rocks. For sedimentary rocks, the

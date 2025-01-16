@@ -32,73 +32,62 @@ about the subsurface distribution of electrical conductivity.
 > function MM_swapImgRestore() { //v3.0
 >   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 > }
->
-> function MM_preloadImages() { //v3.0
+> &#10;function MM_preloadImages() { //v3.0
 >   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
 >     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
 >     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 > }
->
-> function MM_findObj(n, d) { //v4.01
+> &#10;function MM_findObj(n, d) { //v4.01
 >   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
 >     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
 >   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
 >   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
 >   if(!x && d.getElementById) x=d.getElementById(n); return x;
 > }
->
-> function MM_swapImage() { //v3.0
+> &#10;function MM_swapImage() { //v3.0
 >   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
 >    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 > }
->
-> MM_preloadImages('./../../../_images/resist-eg1.jpg','./../../../_images/resist-eg2.jpg','./../../../_images/resist-eg3.jpg','./../../../_images/resist-eg.jpg')
+> &#10;MM_preloadImages('./../../../_images/resist-eg1.jpg','./../../../_images/resist-eg2.jpg','./../../../_images/resist-eg3.jpg','./../../../_images/resist-eg.jpg')
 > </script>
->
->    <table cellspacing="0" width="100%"> 
+> &#10;   <table cellspacing="0" width="100%"> 
 >       <tbody> 
 >         <tr> 
 >           <td colspan="4" class="caption" valign="top"> <b>Figure 2.</b> An example of how the distribution of a physical property (electrical conductivity in this case) can be measured to provide information about geologic materials.
 >           </td> 
 >         </tr> 
->
->         <tr> 
+> &#10;        <tr> 
 >           <td align="top" valign="CENTER" width="100%" colspan="4"><img src="./../../../_images/resist-eg1.jpg" name="resist" id="resist"></td>
 >         </tr>
->
->         <tr>
+> &#10;        <tr>
 >           <td valign="top" width="10"><font size="-1"><b>a. </b> </font></td> 
 >           <td valign="top" width="10"><font size="-1"> 
 >             <input name="resist" value="OFF" onclick="MM_swapImage('resist','','./../../../_images/resist-eg1.jpg',1)" checked="checked" type="radio"> 
 >             </font></td> 
 >           <td colspan="2"><font size="-1"> The physical properties under this surface are unknown. A geophysical survey- DC resistivity in this case - is used to generate data.</font></td> 
 >         </tr> 
->
->         <tr>
+> &#10;        <tr>
 >           <td valign="top" width="10"><font size="-1"><b>b. </b> </font></td> 
 >           <td valign="top" width="10"><font size="-1"> 
 >             <input name="resist" value="OFF" onclick="MM_swapImage('resist','','./../../../_images/resist-eg2.jpg',1)" type="radio"> 
 >             </font></td> 
 >           <td colspan="2"><font size="-1"> Current is injected into the ground, and resulting voltages are measured as electrode geometry varies. In this case, voltages get smaller as electrodes are separated further and further apart.</font></td> 
 >         </tr> 
->
->         <tr>
+> &#10;        <tr>
 >           <td valign="top" width="10"><font size="-1"><b>c. </b> </font></td> 
 >           <td valign="top" width="10"><font size="-1"> 
 >             <input name="resist" value="OFF" onclick="MM_swapImage('resist','','./../../../_images/resist-eg3.jpg',1)" type="radio"> 
 >             </font></td> 
 >           <td colspan="2"><font size="-1"> <b>Inversion </b>of this data set produces an estimate of a "layered earth" or 1D model of the relevant physical property - electrical conductivity.</font></td> 
 >         </tr> 
->
->         <tr>
+> &#10;        <tr>
 >           <td valign="top" width="10"><font size="-1"><b>d. </b> </font></td> 
 >           <td valign="top" width="10"><font size="-1"> 
 >             <input name="resist" value="OFF" onclick="MM_swapImage('resist','','./../../../_images/resist-eg.jpg',1)" type="radio"> 
 >             </font></td> 
 >           <td colspan="2"><font size="-1"> <b>Interpretation</b> converts the model into geologic information.</font></td> 
 >         </tr> 
->
->       </tbody>
+> &#10;      </tbody>
 >     </table>
 >     <br>
 

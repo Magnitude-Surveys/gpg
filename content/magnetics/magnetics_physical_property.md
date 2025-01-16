@@ -1,10 +1,12 @@
 # Susceptibility
 
-The magnetic susceptibility (*κ*) defines how easily a rock becomes
-magnetized when it is subjected to a magnetic field **H**. The
-relationship is:
+The magnetic susceptibility ($`\kappa`$) defines how easily a rock
+becomes magnetized when it is subjected to a magnetic field
+$`\mathbf{H}`$. The relationship is:
 
-**M** = *κ***H**.
+``` math
+\mathbf{M}=\kappa \mathbf{H}.
+```
 
 Background information about susceptility, how it is measured and tables
 of values are provided in `magnetic susceptibility<physprop_mag_susc>`.

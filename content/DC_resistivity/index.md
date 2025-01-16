@@ -6,9 +6,9 @@
 
 In this section we look at Direct Current (DC) resistivity surveys. The
 physical property of for DC surveys is
-`electrical conductivity<physical_properties_conductivity>` *σ*
-(Siemens/meter) (or if you prefer its inverse, resistivity *ρ* (Ohm \*
-meter)). For these surveys, the source is current injected into the
+`electrical conductivity<physical_properties_conductivity>` $`\sigma`$
+(Siemens/meter) (or if you prefer its inverse, resistivity $`\rho`$ (Ohm
+\* meter)). For these surveys, the source is current injected into the
 ground, and the receivers measure the strength of the current and
 voltage differences.
 
@@ -23,5 +23,9 @@ different subsurface information.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 DC_physical_properties DC_basic_principles_index DC_surveys DC_data
 DC_interpretation DC_instruments DC_examples
+
+</div>

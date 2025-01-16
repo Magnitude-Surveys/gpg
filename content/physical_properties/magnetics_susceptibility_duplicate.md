@@ -1,51 +1,63 @@
 # Susceptibility
 
-Magnetic susceptibility (*κ*) quantifies the magnetization (*M⃗*) a rock
-or mineral experiences when it is subjected to an applied magnetic field
-(*H⃗*). This relationship takes the form:
+Magnetic susceptibility ($`\kappa`$) quantifies the magnetization
+($`\vec M`$) a rock or mineral experiences when it is subjected to an
+applied magnetic field ($`\vec H`$). This relationship takes the form:
 
-*M⃗* = *κ**H⃗*
+``` math
+\vec M = \kappa \vec H
+```
+
+<div id="physprop_magnetization">
 
 **Magnetization**
+
+</div>
 
 Within the mineral grains comprising rocks, there are tiny magnetized
 volumes (magnetic domains) which behave like small bar magnets. The
 direction and magnitude of each magnetic domain is defined by its
-magnetic dipole moment (*m⃗*). Magnetization (*M⃗*) is defined as the
-dipole moment per unit volume within a material.
+magnetic dipole moment ($`\vec m`$). Magnetization ($`\vec M`$) is
+defined as the dipole moment per unit volume within a material.
 
-Let *m⃗*<sub>*i*</sub> be the magnetic dipole moment of the
-*i*<sup>th</sup> particle or magnetic domain. Within a volume (*V*), the
-total magnetic moment is the sum of all individual magnetic moments,
-thus:
+Let $`\vec m_i`$ be the magnetic dipole moment of the $`i^\textrm{th}`$
+particle or magnetic domain. Within a volume ($`V`$), the total magnetic
+moment is the sum of all individual magnetic moments, thus:
 
 <figure class="align-right">
 <img src="images/magnetization_physics.png"
 alt="images/magnetization_physics.png" />
 </figure>
 
-*m⃗* = ∑<sub>*i*</sub>*m⃗*<sub>*i*</sub>
+``` math
+\vec{m}= \sum_i \vec m_i
+```
 
 And since magnetization is the dipole moment per unit volume:
 
-$$\vec M = \frac {\vec m}{V} = \frac {1}{V} \sum_i \vec m_i$$
+``` math
+\vec M = \frac {\vec m}{V} = \frac {1}{V} \sum_i \vec m_i
+```
 
-where the units for magnetization are Am  <sup>2</sup>/m  <sup>3</sup> =
-A/m.
+where the units for magnetization are Am $`\! ^2`$/m $`\! ^3`$ = A/m.
+
+<div id="physprop_magnetic_field">
 
 **Magnetic Field**
 
-The magnetic field *H⃗* is responsible for applying a magnetic force to a
-material. Magnetic dipoles subjected to magnetic fields will attempt to
-align in the direction of *H⃗*. The magnetization process is illustrated
-in the following interactive figure.
+</div>
+
+The magnetic field $`\vec H`$ is responsible for applying a magnetic
+force to a material. Magnetic dipoles subjected to magnetic fields will
+attempt to align in the direction of $`\vec H`$. The magnetization
+process is illustrated in the following interactive figure.
 
 When there is no external magnetic field, individual magnetic moments
-*m⃗*<sub>*i*</sub> within a volume are generally disordered and hence
-don't produce a net magnetic field. However, when the material is
-subjected to an external magnetic field, *H⃗*, the magnetic moments try
-to re-orient themselves along the direction of the field. This results
-in a net magnetization which produces a secondary magnetic field. The
+$`\vec m_i`$ within a volume are generally disordered and hence don't
+produce a net magnetic field. However, when the material is subjected to
+an external magnetic field, $`\vec H`$, the magnetic moments try to
+re-orient themselves along the direction of the field. This results in a
+net magnetization which produces a secondary magnetic field. The
 following interactive figure illustrates this process:
 
 <script language="JavaScript" type="text/JavaScript">
@@ -55,27 +67,23 @@ function MM_preloadImages() { //v3.0
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 //-->
 </script>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%"> 
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%"> 
   <tbody> 
     <tr> 
       <td bgcolor="#ffffff" width="12">&nbsp;</td> 
@@ -100,8 +108,7 @@ function MM_swapImage() { //v3.0
               </td> 
             </tr> 
           </tbody> 
-                    
-
+                    &#10;
 </table> 
 </tr>
 </tbody>
@@ -112,53 +119,64 @@ For many materials, the strength of the alignment of the magnetic
 moments increases linearly with the strength of the applied field. The
 magnetic susceptibility therefore defines a constant of proportionality.
 
+<div id="physprop_mag_permeability">
+
 **Magnetic Permeability**
 
-In magnetic problems, a more fundamental physical property is the
-magnetic permeability (*μ*). Magnetic permeability relates the magnetic
-field (*H⃗*) to the magnetic flux density (*B⃗*). This constitutive
-relationship is written as follows:
+</div>
 
-*B⃗* = *μ**H⃗*
+In magnetic problems, a more fundamental physical property is the
+magnetic permeability ($`\mu`$). Magnetic permeability relates the
+magnetic field ($`\vec H`$) to the magnetic flux density ($`\vec B`$).
+This constitutive relationship is written as follows:
+
+``` math
+\vec B = \mu \vec H
+```
 
 The magnetic flux density depends on the magnetization within the
 material and can be written as:
 
-*B⃗* = *μ*<sub>0</sub>(*H⃗* + *M⃗*)
+``` math
+\vec B = \mu_0 \big ( \vec H + \vec M \big )
+```
 
-where *μ*<sub>0</sub> = 4*π* × 10<sup>−7</sup> H/m is the permeability
-of free-space. The permeability of free-space represents the
-relationship between *B⃗* and *H⃗* when the material is non-magnetic. For
-materials in which *M⃗* = *κ**H⃗*, the magnetic permeability can be
-defined in terms of the magnetic susceptibility as follows:
+where $`\mu_0 = 4\pi \times 10^{-7}`$ H/m is the permeability of
+free-space. The permeability of free-space represents the relationship
+between $`\vec B`$ and $`\vec H`$ when the material is non-magnetic. For
+materials in which $`\vec M = \kappa \vec H`$, the magnetic permeability
+can be defined in terms of the magnetic susceptibility as follows:
 
-*μ* = *μ*<sub>0</sub>(1 + *κ*)
+``` math
+\mu = \mu_0 (1 + \kappa )
+```
 
 **Relative Permeability**
 
-Relative permeability (*μ*<sub>*r*</sub>) defines the ratio between the
-magnetic permeability of the material and the permeability of
-free-space:
+Relative permeability ($`\mu_r`$) defines the ratio between the magnetic
+permeability of the material and the permeability of free-space:
 
-$$\mu_r = \frac{\mu}{\mu_0}$$
+``` math
+\mu_r = \frac{\mu}{\mu_0}
+```
 
 According to the above definitions, both magnetic susceptibility and
 magnetic permeability are diagnostic physical properties associated with
 the magnetic characteristics of materials. In the literature, it is
-common to see physical property tables which use *μ*, *μ*<sub>*r*</sub>,
-or *κ*. For most rocks, the susceptibility is small and charcterizing
-the magnetic properties in terms of *κ* is convenient. Parameters used
-to define magnetic properties and their associated units are tabulated
-below.
+common to see physical property tables which use $`\mu`$, $`\mu_r`$, or
+$`\kappa`$. For most rocks, the susceptibility is small and
+charcterizing the magnetic properties in terms of $`\kappa`$ is
+convenient. Parameters used to define magnetic properties and their
+associated units are tabulated below.
 
-| **Property**             | **Symbol**        | **Units**  |
-|--------------------------|-------------------|------------|
-| Magnetic Field Intensity | *H⃗*               | A/m        |
-| Magnetic Flux Density    | *B⃗*               | T          |
-| Magnetization            | *M⃗*               | A/m        |
-| Magnetic Susceptibility  | *κ*               | *Unitless* |
-| Magnetic Permeability    | *μ*               | H/m        |
-| Relative Permeability    | *μ*<sub>*r*</sub> | *Unitless* |
+| **Property**             | **Symbol** | **Units**  |
+|--------------------------|------------|------------|
+| Magnetic Field Intensity | $`\vec H`$ | A/m        |
+| Magnetic Flux Density    | $`\vec B`$ | T          |
+| Magnetization            | $`\vec M`$ | A/m        |
+| Magnetic Susceptibility  | $`\kappa`$ | *Unitless* |
+| Magnetic Permeability    | $`\mu`$    | H/m        |
+| Relative Permeability    | $`\mu_r`$  | *Unitless* |
 
 Some useful conversions for units are:
 
@@ -171,7 +189,9 @@ define the magnetic susceptibilities for rocks. Although it is unitless,
 the value of susceptibility is different when given in cgs as opposed to
 SI. The translation between cgs and SI units is:
 
-*κ* (SI) = 4*π**κ* (cgs)
+``` math
+\kappa \; \textrm{(SI)} = 4 \pi \kappa \; \textrm{(cgs)}
+```
 
 The SI system is the current preferred standard among most
 geophysicists, but you will find cgs used in older references and texts.
@@ -210,15 +230,15 @@ rock types are shown below. Note that the scale is logarithmic,
 indicating a large variability in magnetic susceptibility among rocks.
 From these charts we can infer several things:
 
--   Rocks with a high magnetite content are by far the most susceptible
-    (see red vertical red lines denoting % magnetite content).
--   Although hematite and magnetite are both iron-oxide minerals, only
-    magnetite is particularly susceptible.
--   Igneous and metamorphic rocks tend to be more susceptible than
-    sedimentary rocks. However, there is a very wide range of overlap.
--   Mafic igneous rocks are more susceptible than felsic igneous rocks.
--   Mineralized rocks such as skarns and banded-iron formations are
-    generally more susceptible than the surrounding country rock.
+- Rocks with a high magnetite content are by far the most susceptible
+  (see red vertical red lines denoting % magnetite content).
+- Although hematite and magnetite are both iron-oxide minerals, only
+  magnetite is particularly susceptible.
+- Igneous and metamorphic rocks tend to be more susceptible than
+  sedimentary rocks. However, there is a very wide range of overlap.
+- Mafic igneous rocks are more susceptible than felsic igneous rocks.
+- Mineralized rocks such as skarns and banded-iron formations are
+  generally more susceptible than the surrounding country rock.
 
 A more detailed analysis of rock magnetic properties can be found in
 Clark and Emerson (1991).

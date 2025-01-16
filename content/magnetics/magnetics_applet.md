@@ -18,27 +18,28 @@ alt="./images/magnetic_dipole_applet.png" />
 
 ## Background summary
 
--   The `link<earth_s_field>` shows the earth’s field that is the result
-    of a large magnet at the center.
--   At any point on the earth the magnetic field is characterized by
-    \|*B*<sub>0</sub>\|, *I*, *D*.
--   A magnetizable body (with susceptibility kappa), located anywhere on
-    the earth, becomes magnetized. It’s field is like that of a magnetic
-    dipole oriented in the direction of the earth’s field at that
-    location.
+- The `link<earth_s_field>` shows the earth’s field that is the result
+  of a large magnet at the center.
+- At any point on the earth the magnetic field is characterized by
+  $`|B_0|`$, $`I`$, $`D`$.
+- A magnetizable body (with susceptibility kappa), located anywhere on
+  the earth, becomes magnetized. It’s field is like that of a magnetic
+  dipole oriented in the direction of the earth’s field at that
+  location.
 
-$$\mathbf{B} = \frac{\mu_0}{4\pi}\Big(\frac{3\mathbf{r}(\mathbf{m}\cdot \mathbf{r})}{r^5}-\frac{\mathbf{m}}{r^3}\Big)$$
+``` math
+\mathbf{B} = \frac{\mu_0}{4\pi}\Big(\frac{3\mathbf{r}(\mathbf{m}\cdot \mathbf{r})}{r^5}-\frac{\mathbf{m}}{r^3}\Big)
+```
 
--   The strength of the magnet is **m** = *κ***H**<sub>**0**</sub>
-    Volume
--   The plots show various data: Bt is the projection of the anomalous
-    field onto the direction of the earth’s field
--   Bx,By,Bz are projections in the x (northing), y (easting) and z
-    (vertically down) directions
--   Bg: is a vertical gradient
--   For the app, the observation is 1 meter above the earth’s surface.
-    The depth relates to how far beneath the surface the dipole is
-    situated. A depth of 10 means the dipole is 11m below the sensor.
+- The strength of the magnet is $`\mathbf{m}=\kappa\mathbf{H_0}`$ Volume
+- The plots show various data: Bt is the projection of the anomalous
+  field onto the direction of the earth’s field
+- Bx,By,Bz are projections in the x (northing), y (easting) and z
+  (vertically down) directions
+- Bg: is a vertical gradient
+- For the app, the observation is 1 meter above the earth’s surface. The
+  depth relates to how far beneath the surface the dipole is situated. A
+  depth of 10 means the dipole is 11m below the sensor.
 
 ## Learning with the Magnetic Dipole Applet
 
@@ -48,70 +49,69 @@ various directions. Do that first and then click on the profile button.
 
 ### Testing the formula for a dipole (link)
 
--   The field should drop of 1/*r*<sup>3</sup>. Does it?
--   The field should depend linearly on m. Does it?
+- The field should drop of $`1/r^3`$. Does it?
+- The field should depend linearly on m. Does it?
 
 ### Bodies at the pole: Earth’s field is vertical
 
--   What is the inclination required to simulate a field that is
-    vertically downward?
+- What is the inclination required to simulate a field that is
+  vertically downward?
 
--   Think what the data should like like in plan view. Before you click
-    buttons, Sketch on a piece of paper what you are anticipating for
-    Bt, Bx, By and Bz
+- Think what the data should like like in plan view. Before you click
+  buttons, Sketch on a piece of paper what you are anticipating for Bt,
+  Bx, By and Bz
 
--   How does Bt compare with Bz? Why?
+- How does Bt compare with Bz? Why?
 
--   Why is Bx negative towards the north but positive towards the south?
+- Why is Bx negative towards the north but positive towards the south?
 
--   Why does By look like a rotated version of Bx?
+- Why does By look like a rotated version of Bx?
 
--   What happens when you change the declination of the inducing field?
-    Why?
+- What happens when you change the declination of the inducing field?
+  Why?
 
--   From the default settings, with depth=10 m, try to estimate the
-    depth using
+- From the default settings, with depth=10 m, try to estimate the depth
+  using
 
-    > -   half width of the Bt anomaly estimated from the color map
-    > -   the profile provided at the bottom.
-    > -   How do these compare with the value provided by the app when
-    >     you click half-width?
+  > - half width of the Bt anomaly estimated from the color map
+  > - the profile provided at the bottom.
+  > - How do these compare with the value provided by the app when you
+  >   click half-width?
 
--   Change the “depth” to be 1m.
+- Change the “depth” to be 1m.
 
-    > -   Attempt to carry out the same depth of burial analysis
-    > -   What do you need to alter to obtain a well-sampled anomaly and
-    >     good estimates of the depth?
+  > - Attempt to carry out the same depth of burial analysis
+  > - What do you need to alter to obtain a well-sampled anomaly and
+  >   good estimates of the depth?
 
 ### Bodies at the equator: Earth’s field is horizontal
 
 Suppose I=0 (equivalent to having an object buried at the equator.
 
--   What is the inclination and declination required to simulate a field
-    that is horizontal and pointing north?
+- What is the inclination and declination required to simulate a field
+  that is horizontal and pointing north?
 
--   Think what the data should like in plan view. Before you click
-    buttons, Sketch on a piece of paper what you are anticipating for
+- Think what the data should like in plan view. Before you click
+  buttons, Sketch on a piece of paper what you are anticipating for
 
-    > -   Bt, Bx, By and Bz
+  > - Bt, Bx, By and Bz
 
--   Bt looks like one of the components, {Bx, By, Bz}. Which one? Why?
+- Bt looks like one of the components, {Bx, By, Bz}. Which one? Why?
 
--   Now change the declination to D=90.
+- Now change the declination to D=90.
 
-    > -   If you are facing north, which way is the earth’s field
-    >     pointing? To your right, or to your left?
-    >
-    > -   Why is the Bt magnetic anomaly negative on the positive east
-    >     side.
-    >
-    > -   The By anomaly is interesting.
-    >
-    >     > -   What is the name for that type of pattern?
-    >     > -   Usually, if you collect data along two perpendicular
-    >     >     lines directly over the top of the object you are
-    >     >     looking for, you will see signal from the body. Why do
-    >     >     we not see anything in this example?
+  > - If you are facing north, which way is the earth’s field pointing?
+  >   To your right, or to your left?
+  >
+  > - Why is the Bt magnetic anomaly negative on the positive east side.
+  >
+  > - The By anomaly is interesting.
+  >
+  >   > - What is the name for that type of pattern?
+  >   > - Usually, if you collect data along two perpendicular lines
+  >   >   directly over the top of the object you are looking for, you
+  >   >   will see signal from the body. Why do we not see anything in
+  >   >   this example?
 
 ## Learning with the Monopole window of the applet
 
@@ -129,43 +129,43 @@ fact that we now have a monopole changes many of the diagrams.
 
 ### Testing the formula for a monopole (`link<magnetics_charges>`)
 
--   The field should drop of 1/*r*<sup>2</sup>. Does it?
--   The field should depend linearly on m. Does it?
+- The field should drop of $`1/r^2`$. Does it?
+- The field should depend linearly on m. Does it?
 
 ### A vertical pipe in a vertical field
 
--   What values of I and D will you use to conduct this simulation?
+- What values of I and D will you use to conduct this simulation?
 
--   Think what the data should like in plan view. Before you click
-    buttons, sketch on paper what you are anticipating for:
+- Think what the data should like in plan view. Before you click
+  buttons, sketch on paper what you are anticipating for:
 
-    > -   Bt, Bx, By and Bz
+  > - Bt, Bx, By and Bz
 
--   How does Bt compare with Bz? Why?
+- How does Bt compare with Bz? Why?
 
--   Why is Bx negative towards the north but positive towards the south?
+- Why is Bx negative towards the north but positive towards the south?
 
--   Why does By look like a rotated version of Bx?
+- Why does By look like a rotated version of Bx?
 
--   From the default settings, with depth=10 m, try to estimate the
-    depth using halfwidths estimated by different techniques. The
-    relationship between halfwidth and depth for a monopole can be found
-    in the GPG (`link<half_width>`);
+- From the default settings, with depth=10 m, try to estimate the depth
+  using halfwidths estimated by different techniques. The relationship
+  between halfwidth and depth for a monopole can be found in the GPG
+  (`link<half_width>`);
 
-    > -   half width of the Bt anomaly estimated from the color map
-    > -   the profile provided at the bottom.
-    > -   How do these compare with the value provided by the app when
-    >     you click half-width?
+  > - half width of the Bt anomaly estimated from the color map
+  > - the profile provided at the bottom.
+  > - How do these compare with the value provided by the app when you
+  >   click half-width?
 
--   Change the “depth” to be 1m.
+- Change the “depth” to be 1m.
 
-    > -   Attempt to carry out the same depth of burial analysis
-    > -   What do you need to alter to obtain a well-sampled anomaly and
-    >     good estimates of the depth?
+  > - Attempt to carry out the same depth of burial analysis
+  > - What do you need to alter to obtain a well-sampled anomaly and
+  >   good estimates of the depth?
 
 ### A horizontal pipe at the equator
 
--   What values of I and D will you use to conduct this simulation?
--   Sketch a plan view of the fields {Bt, Bx, By and Bz} and compare
-    with the maps generated by the app
--   Bt looks like one of the components, {Bx, By, Bz}. Which one? Why?
+- What values of I and D will you use to conduct this simulation?
+- Sketch a plan view of the fields {Bt, Bx, By and Bz} and compare with
+  the maps generated by the app
+- Bt looks like one of the components, {Bx, By, Bz}. Which one? Why?

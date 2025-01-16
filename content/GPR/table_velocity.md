@@ -4,13 +4,13 @@ Here are the approximate dielectric permittivities, electrical
 conductivities and radiowave velocities for various materials. Average
 velocity refers to a ballpark value for each material.
 
-> -   Note that the electrical conductivity is in units milli-Siemens
->     per meter
-> -   Note that the velocity is in meters per nanosecond. To convert
->     this to m/s, simply multiply by 10<sup>−9</sup>.
+> - Note that the electrical conductivity is in units milli-Siemens per
+>   meter
+> - Note that the velocity is in meters per nanosecond. To convert this
+>   to m/s, simply multiply by $`10^{-9}`$.
 
 | **Material** | **Relative Permittivity** | **Conductivity (mS/m)** | **Average Velocity (m/ns)** |
-|-------------|--------------------|------------------|---------------------|
+|----|----|----|----|
 | Air | 1 | 0 | 0.3 |
 | Fresh Water | 80 | 0.5 | 0.033 |
 | Sea Water | 80 | 3000 | 0.01 |

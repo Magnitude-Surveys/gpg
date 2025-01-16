@@ -16,16 +16,18 @@ side of the radargram.
 To convert the two-way travel time to apparent depth, we must choose a
 propagation velocity. This may be acquired from the initial radargram,
 from a-priori information, or sometimes left as the speed of light
-(*c* = 3.00 × 10<sup>8</sup> m/s). The conversion between each vertical
+($`c = 3.00 \times 10^8`$ m/s). The conversion between each vertical
 axis is given by:
 
-$$d_a = \frac{V t}{2}$$
+``` math
+d_a = \frac{V t}{2}
+```
 
-where *d*<sub>*a*</sub> is the apparent depth, *V* is the propagation
-velocity and *t* is the two-way travel time. Below, we see an example
-where the propagation velocity is *V* = 0.13 m/ns. From this, we can
-infer that the linear feature in the radargram is roughly 7-8 m away
-from the source and receiver.
+where $`d_a`$ is the apparent depth, $`V`$ is the propagation velocity
+and $`t`$ is the two-way travel time. Below, we see an example where the
+propagation velocity is $`V = 0.13`$ m/ns. From this, we can infer that
+the linear feature in the radargram is roughly 7-8 m away from the
+source and receiver.
 
 <figure class="align-center">
 <img src="images_new/GPR_travel_time_2_depth.png"
@@ -47,12 +49,14 @@ Signals measured at earlier times are much stronger than signals which
 are measured at later times. This may be due to scattering, attenuation,
 geometric spreading or reflection/transmission events. As a result, it
 may not be easy to distinguish important features in the data at later
-times. To account for this, the raw data *d*<sub>*r**a**w*</sub>(*t*)
-for each reading is multiplied by a gain function *g*(*t*) as follows:
+times. To account for this, the raw data $`d_{raw}(t)`$ for each reading
+is multiplied by a gain function $`g(t)`$ as follows:
 
-*d*(*t*) = *g*(*t*) × *d*<sub>*r**a**w*</sub>(*t*)
+``` math
+d(t) = g(t) \times d_{raw}(t)
+```
 
-where *d*(*t*) is the data represented in the radargram. The gain
+where $`d(t)`$ is the data represented in the radargram. The gain
 function itself is a positive function which increases in magnitude as a
 function of time. Thus a larger gain is applied to raw data at later
 times. An example of the gain function is shown on the right. As we can
@@ -76,7 +80,7 @@ surveys.
 ## Stacking
 
 GPR signals travel at velocities close to the speed of light (c =
-3.00 × 10<sup>8</sup> m/s). As a result, the total travel times for GPR
+$`3.00 \times 10^8`$ m/s). As a result, the total travel times for GPR
 signals are on the order of 100s of nanoseconds. Because of this, it is
 easy to repeat the same GPR shot many times over a short interval.
 

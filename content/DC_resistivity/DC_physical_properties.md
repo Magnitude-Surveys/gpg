@@ -1,12 +1,12 @@
 # Conductivity
 
 As part of the electromagnetics methods, DC resistivity is sensitive to
-`electrical conductivity<physical_properties_conductivity>` *σ*
+`electrical conductivity<physical_properties_conductivity>` $`\sigma`$
 (Siemens/meter). We sometimes work with the inverse of conductivity
-which is electrical resistivity *ρ* which has units *Ω**m* (ohm-meters).
-Electrical conductivity is a bulk property of material that
-characterizes the ease that current flows through the material when an
-electrical force is applied. Electric current (units of Amperes)
+which is electrical resistivity $`\rho`$ which has units $`\Omega m`$
+(ohm-meters). Electrical conductivity is a bulk property of material
+that characterizes the ease that current flows through the material when
+an electrical force is applied. Electric current (units of Amperes)
 quantifies the amount of charge that is moving by an observer in one
 second.
 
@@ -27,10 +27,10 @@ essentially insulators. Exceptions include magnetite, specular hematite,
 carbon, graphite, pyrite, and pyrrhotite. Therefore conduction is
 largely electrolytic, so conductivity depends mainly upon:
 
-> -   porosity;
-> -   hydraulic permeability, which describes how pores are
->     interconnected;
-> -   moisture content;
-> -   concentration of dissolved electrolytes;
-> -   temperature and phase of pore fluid;
-> -   amount and composition of colloids (clay content).
+> - porosity;
+> - hydraulic permeability, which describes how pores are
+>   interconnected;
+> - moisture content;
+> - concentration of dissolved electrolytes;
+> - temperature and phase of pore fluid;
+> - amount and composition of colloids (clay content).

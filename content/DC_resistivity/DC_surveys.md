@@ -1,10 +1,14 @@
 # Surveys
 
+<div class="sidebar">
+
 **DC Resistivity**
 
 <figure class="align-center">
 <img src="./images/icon_dc.gif" alt="./images/icon_dc.gif" />
 </figure>
+
+</div>
 
 In resistivity surveying, information about the subsurface distribution
 of electrical conductivity is obtained by examining how currents flow in
@@ -97,9 +101,9 @@ remove the (poorly known) SP signals.
 It is tempting to compare the earth to a resistor in an electric circuit
 (`resistance`, `resistivity`). However, it is important to recognize the
 difference between resistance and resistivity. If we apply Ohm's law,
-*R* = *V*/*I* we will have a resistance, which is in units of Ohms. This
-is *not* the ground's resistivity, which has units of Ohm-m. We do not
-want the resistance of this circuit, we want a measure of the ground's
+$`R=V/I`$ we will have a resistance, which is in units of Ohms. This is
+*not* the ground's resistivity, which has units of Ohm-m. We do not want
+the resistance of this circuit, we want a measure of the ground's
 resistivity.
 
 <figure class="align-center">
@@ -114,20 +118,20 @@ alt="./images/figure4b.gif" />
 <figcaption>The earth in a DC circuit</figcaption>
 </figure>
 
-In order to derive the relation between measurements (*I*, *V*,
-geometry) and the required physical property (resistivity, *ρ* ) we
+In order to derive the relation between measurements ($`I`$, $`V`$,
+geometry) and the required physical property (resistivity, $`\rho`$ ) we
 start from first principles (see the section called "Physical principles
 of DC resistivity". The derivation is a three step process:
 
--   First find a relation for potential due to a point source of current
-    at the surface of a uniform medium. The expression will look like
-    Ohm's law with the addition of terms involving the distance between
-    source and potential measurement location.
--   Next, the potential due to two sources (actually, a source and a
-    sink) is the superposition of potentials due to each one.
--   Finally, since we must make potential measurements using two
-    electrodes, an expression for potential difference can be derived as
-    the difference between relations for potential at single electrodes.
+- First find a relation for potential due to a point source of current
+  at the surface of a uniform medium. The expression will look like
+  Ohm's law with the addition of terms involving the distance between
+  source and potential measurement location.
+- Next, the potential due to two sources (actually, a source and a sink)
+  is the superposition of potentials due to each one.
+- Finally, since we must make potential measurements using two
+  electrodes, an expression for potential difference can be derived as
+  the difference between relations for potential at single electrodes.
 
 > <figure class="align-center">
 > <img src="./images/DCR_Gradient-Schlumberger_Array.svg"
@@ -143,18 +147,22 @@ The measured voltage for any arrangement of electrodes can be derived
 from `surveydesign` as follows for an half-space:
 
 > 
-> $$\begin{aligned}
-> \Delta V &= \frac{I \rho}{2 \pi} \left \\ \frac{1}{r\_{AM}} - \frac{1}{r\_{BM}} - \frac{1}{r\_{AN}} + \frac{1}{r\_{BN}}      \right \\\\\[0.8em\]
-> \end{aligned}$$
+> ``` math
+> \begin{aligned}
+> \Delta V &= \frac{I \rho}{2 \pi} \left \{ \frac{1}{r_{AM}} - \frac{1}{r_{BM}} - \frac{1}{r_{AN}} + \frac{1}{r_{BN}}      \right \}\\[0.8em]
+> \end{aligned}
+> ```
 >
-> $$\begin{aligned}
+> ``` math
+> \begin{aligned}
 > \Delta V &=I \rho G\\
-> \end{aligned}$$
+> \end{aligned}
+> ```
 
-**G** is a geometric factor (including the factor 1/2*π*), which depends
-upon the locations of electrodes. *ρ* is the resistivity of the
-half-space. For heterogeneous subsurface, see the secton `DC_data` for
-more information about apparent resistivity.
+**G** is a geometric factor (including the factor $`1/2 \pi`$), which
+depends upon the locations of electrodes. $`\rho`$ is the resistivity of
+the half-space. For heterogeneous subsurface, see the secton `DC_data`
+for more information about apparent resistivity.
 
 ## Survey configurations
 
@@ -233,30 +241,25 @@ center for acquiring sounding data.
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif');
+&#10;MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif');
 </script>
-
-
+&#10;
  <table border="1" cellpadding="1" cellspacing="1" width="100%"> 
           <tbody> 
             <tr> 
@@ -338,28 +341,27 @@ alt="images/dcr_3dgeneral.png" />
 boreholes.</figcaption>
 </figure>
 
--   Equatorial dipole-dipole array (`SurveyConfiguration`), which is
-    used primarily for very shallow work such as archaeological
-    investigations.
--   Twin Probe configuration (basically a Wenner Gamma in
-    `SurveyConfiguration` above, but with spacing more like
-    dipole-dipole) is also used mainly for very shallow investigations
-    such as archaeological work.
--   The so-called E-Scan technique is a pole-pole configuration.
-    However, it is organized by planting a large number of electrodes
-    all over the area of interest, without trying to stay on a grid or
-    on lines. Potentials are recorded at all electrodes and one is used
-    for a current source. Then a new electrode becomes a current source,
-    and all potentials are recorded. Once an electrode has been used as
-    a source, it is never used again. This large data set must be
-    inverted in order to obtain interpretable information. The E-Scan
-    technique is expensive but it has been used in the exploration for
-    geothermal energy and minerals.
--   Off-line profiling involves moving the sources along one survey line
-    and recording potentials using electrodes planted along a different
-    (usually parallel) line.
--   There are also numerous other proprietary or experimental electrode
-    configurations designed for 3D interpretation.
+- Equatorial dipole-dipole array (`SurveyConfiguration`), which is used
+  primarily for very shallow work such as archaeological investigations.
+- Twin Probe configuration (basically a Wenner Gamma in
+  `SurveyConfiguration` above, but with spacing more like dipole-dipole)
+  is also used mainly for very shallow investigations such as
+  archaeological work.
+- The so-called E-Scan technique is a pole-pole configuration. However,
+  it is organized by planting a large number of electrodes all over the
+  area of interest, without trying to stay on a grid or on lines.
+  Potentials are recorded at all electrodes and one is used for a
+  current source. Then a new electrode becomes a current source, and all
+  potentials are recorded. Once an electrode has been used as a source,
+  it is never used again. This large data set must be inverted in order
+  to obtain interpretable information. The E-Scan technique is expensive
+  but it has been used in the exploration for geothermal energy and
+  minerals.
+- Off-line profiling involves moving the sources along one survey line
+  and recording potentials using electrodes planted along a different
+  (usually parallel) line.
+- There are also numerous other proprietary or experimental electrode
+  configurations designed for 3D interpretation.
 
 **Azimuthal arrays** are used to investigate the horizontal electrical
 anisotropy near the surface. Electrode configurations are usually one of

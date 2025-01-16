@@ -7,14 +7,14 @@ noise which may contaminate GPR data.
 
 On this page, you will learn about:
 
-> -   Common offset, common midpoint and transillumination surveys.
-> -   Where these surveys are most effective.
-> -   What is the source signal used in GPR.
-> -   The properties of the source signal and how it impacts the
->     effectiveness of GPR surveys.
-> -   The resolution of GPR surveys.
-> -   The probing distance of GPR surveys.
-> -   Sources of noise and their impact on GPR surveys.
+> - Common offset, common midpoint and transillumination surveys.
+> - Where these surveys are most effective.
+> - What is the source signal used in GPR.
+> - The properties of the source signal and how it impacts the
+>   effectiveness of GPR surveys.
+> - The resolution of GPR surveys.
+> - The probing distance of GPR surveys.
+> - Sources of noise and their impact on GPR surveys.
 
 ## Common Offset Survey
 
@@ -55,30 +55,34 @@ In GPR, a **thin pipe** will act as a point reflector. According to the
 geometry of the problem, the total travel time of the GPR signal as it
 reflects off the pipe is given by:
 
-$$t_p = \frac{2 L_2}{V} = \frac{2 \sqrt{ (x - x_p)^2 + d^2}}{V}$$
+``` math
+t_p = \frac{2 L_2}{V} = \frac{2 \sqrt{ (x - x_p)^2 + d^2}}{V}
+```
 
-where *V* is the propagation velocity (light gray region) and *d* is the
-depth to the pipe. As we can see in the radargram, the arrival times for
-a compact object form a hyperbola. When we are directly above the pipe
-(*x* = *x*<sub>*p*</sub>), the total travel time is smallest and equal
-to:
+where $`V`$ is the propagation velocity (light gray region) and $`d`$ is
+the depth to the pipe. As we can see in the radargram, the arrival times
+for a compact object form a hyperbola. When we are directly above the
+pipe ($`x = x_p`$), the total travel time is smallest and equal to:
 
-$$t_p (x_p) = \frac{2 d}{V}$$
+``` math
+t_p (x_p) = \frac{2 d}{V}
+```
 
 For the **block**, things are a little more complicated. Above the face
-of the block (*x*<sub>*L*</sub> = 6 m to *x*<sub>*R*</sub> = 16 m), the
-signal measured by the receiver reflects directly. However, the return
-signal at locations outside the margins of the block occur on the
-points. As a result, the total travel time for reflected signals off the
-block are given by:
+of the block ($`x_L`$ = 6 m to $`x_R`$ = 16 m), the signal measured by
+the receiver reflects directly. However, the return signal at locations
+outside the margins of the block occur on the points. As a result, the
+total travel time for reflected signals off the block are given by:
 
-$$\begin{aligned}
-t_b = \begin{cases} \dfrac{2 \sqrt{(x-x_L)^2 + h^2}}{V} \\\\\\ &\textrm{for} \\\\\\ x \< x_L \\
-\dfrac{2h}{V} \\\\\\ &\textrm{for} \\\\\\ x_L \leq x \leq x_R \\
-\dfrac{2 \sqrt{(x-x_R)^2 + h^2}}{V} \\\\\\ &\textrm{for} \\\\\\ x \> x_R \end{cases}
-\end{aligned}$$
+``` math
+\begin{aligned}
+t_b = \begin{cases} \dfrac{2 \sqrt{(x-x_L)^2 + h^2}}{V} \;\;\; &\textrm{for} \;\;\; x < x_L \\
+\dfrac{2h}{V} \;\;\; &\textrm{for} \;\;\; x_L \leq x \leq x_R \\
+\dfrac{2 \sqrt{(x-x_R)^2 + h^2}}{V} \;\;\; &\textrm{for} \;\;\; x > x_R \end{cases}
+\end{aligned}
+```
 
-where *h* is the depth to the top of the block. As we can see from the
+where $`h`$ is the depth to the top of the block. As we can see from the
 previous equation, we expect to see a flat feature the block's radargram
 signature. Then on either size of the block, the radargram signature
 resembles one-half of a hyperbola.
@@ -88,24 +92,28 @@ resembles one-half of a hyperbola.
 In order to locate buried objects, we first need to use the radargram to
 obtain a velocity for the medium. Let us begin by considering the pipe.
 Notice that at large offset distances from the horizontal location of
-the pipe (i.e. when *x* − *x*<sub>*p*</sub> ≫ *d*), the travel time for
-the pipe becomes:
+the pipe (i.e. when $`x - x_p \gg d`$), the travel time for the pipe
+becomes:
 
-$$t_p = \frac{2 L_2}{V} \approx \frac{2 }{V} \Bigg ( (x - x_p) + \frac{1}{2} d \Bigg ) \\\\\\ \textrm{for} \\\\\\ \Delta x_2 \gg d$$
+``` math
+t_p = \frac{2 L_2}{V} \approx \frac{2 }{V} \Bigg ( (x - x_p) + \frac{1}{2} d \Bigg ) \;\;\; \textrm{for} \;\;\; \Delta x_2 \gg d
+```
 
-Therefore, each end of the hyperbolic signature has a slope *m* = ±2/*V*
-(red dashed lines). The slope on the radargram can ultimately be used as
-a crude approximation for the medium velocity. Once the medium velocity
-has been obtained, the depth to the object can be calculated using the
-minimum travel time. The minimum travel time for the pipe (blue dashed
-line) is given by:
+Therefore, each end of the hyperbolic signature has a slope
+$`m = \pm 2/V`$ (red dashed lines). The slope on the radargram can
+ultimately be used as a crude approximation for the medium velocity.
+Once the medium velocity has been obtained, the depth to the object can
+be calculated using the minimum travel time. The minimum travel time for
+the pipe (blue dashed line) is given by:
 
-$$t_0 = \frac{2d}{V}$$
+``` math
+t_0 = \frac{2d}{V}
+```
 
 Notice that for the block the travel time also shows a slope of
-*m* = ±2/*V* as we move far enough away. As a result, we can approximate
-the medium velocity using the block's radargram signature then use its
-minimum travel time to get the depth.
+$`m = \pm 2/V`$ as we move far enough away. As a result, we can
+approximate the medium velocity using the block's radargram signature
+then use its minimum travel time to get the depth.
 
 **Resolving Buried Objects: Method 2**
 
@@ -116,31 +124,37 @@ must use a different method for determining the medium velocity.
 Let us first consider the **pipe**. The total travel time for the
 reflected GPR signal is given by:
 
-$$t_p = \frac{2 L_2}{V} = \frac{2 \sqrt{ (x - x_p)^2 + d^2}}{V}$$
+``` math
+t_p = \frac{2 L_2}{V} = \frac{2 \sqrt{ (x - x_p)^2 + d^2}}{V}
+```
 
 When we are directly over the pipe, we will have a minimum travel time
 equal to (blue dashed line):
 
-$$t_0 = \frac{2d}{V}$$
+``` math
+t_0 = \frac{2d}{V}
+```
 
 By combining the two previous equations, we see that:
 
-$$V = 2 \sqrt{\dfrac{(x - x_p )^2}{t^2 - t_0^2}}$$
+``` math
+V = 2 \sqrt{\dfrac{(x - x_p )^2}{t^2 - t_0^2}}
+```
 
-where (*x*, *t*) represents are arbitrary point on the hyperbolic
-signature within the radargram. Given that *t*<sub>0</sub> and
-*x*<sub>*p*</sub> can be obtained directly from the radargram, **any
-other point** on the hyperbola can be used to determine the propagation
-velocity of the medium. This may come in handy when a portion of the
-hyperbola is obstructed by other signals. Also note that once *V* is
-determined, the definition of *t*<sub>0</sub> can be used to determine
-the depth of the object.
+where ($`x`$, $`t`$) represents are arbitrary point on the hyperbolic
+signature within the radargram. Given that $`t_0`$ and $`x_p`$ can be
+obtained directly from the radargram, **any other point** on the
+hyperbola can be used to determine the propagation velocity of the
+medium. This may come in handy when a portion of the hyperbola is
+obstructed by other signals. Also note that once $`V`$ is determined,
+the definition of $`t_0`$ can be used to determine the depth of the
+object.
 
 Notice that for locations to the left and to the right of the block, the
 total travel time behaves like a hyperbola. Therefore, we can use the
-same approach. The only difference being that *x*<sub>*p*</sub> is
-replaced by either *x*<sub>*L*</sub> or *x*<sub>*R*</sub>; which depends
-on the side of the block's signature you use.
+same approach. The only difference being that $`x_p`$ is replaced by
+either $`x_L`$ or $`x_R`$; which depends on the side of the block's
+signature you use.
 
 ### Dipping Layers
 
@@ -170,13 +184,13 @@ The true dip of the interface can be recovered using circular arcs. To
 apply the correction (assuming you have obtained the velocity of the
 top-layer from the direct ground wave or other means):
 
-1.  Obtain the distance from the two-way travel time of the reflection.
+1)  Obtain the distance from the two-way travel time of the reflection.
     Assume this represents the vertical distance to the interface. Doing
     so will give you the dashed line shown in the figure above.
-2.  For each Tx-Rx position, draw and arc centered at this location,
+2)  For each Tx-Rx position, draw and arc centered at this location,
     which passes through the under-estimated vertical distance point
     (found on the dashed line).
-3.  The true dipping interface is created by drawing a line which
+3)  The true dipping interface is created by drawing a line which
     intersects all of the arcs at only a single point (black line).
 
 ## Common Midpoint Survey
@@ -214,18 +228,21 @@ velocity.</figcaption>
 
 Once again, the travel time for the radiowave signal is given by:
 
-$$t = \frac{2 \sqrt{ x^2 + d^2 }}{V}$$
+``` math
+t = \frac{2 \sqrt{ x^2 + d^2 }}{V}
+```
 
-where *d* is the thickness of the top layer and *x* is the distance
+where $`d`$ is the thickness of the top layer and $`x`$ is the distance
 between the mid-point and either the transmitter or the receiver. Once
-again by defining *t*<sub>0</sub> = 2*d*/*V*, the top-layer velocity is
-given by:
+again by defining $`t_0 = 2d/V`$, the top-layer velocity is given by:
 
-$$V = 2 \sqrt{ \dfrac{x^2}{t^2 - t_0^2} }$$
+``` math
+V = 2 \sqrt{ \dfrac{x^2}{t^2 - t_0^2} }
+```
 
 Thus, **any point** on the parabola can be used to determine the
-top-layer velocity from a common mid-point survey. And once *V* is
-determined, the definition of *t*<sub>0</sub> can be used to obtain the
+top-layer velocity from a common mid-point survey. And once $`V`$ is
+determined, the definition of $`t_0`$ can be used to obtain the
 thickness of the top layer.
 
 > <figure class="align-right">
@@ -257,6 +274,8 @@ In panel (C), a GPR transmitter and receiver are placed on opposing
 sides of an object; in this case, a concrete pillar. This represents a
 non-invasive approach for determining internal structures.
 
+<div class="sidebar">
+
 **Wavelet Example**
 
 <figure class="align-center">
@@ -279,6 +298,8 @@ alt="images_new/GPR_wavelet_frequencies_example.png" />
 <figcaption>Band of frequencies for a particular wavelet.</figcaption>
 </figure>
 
+</div>
+
 ## Source Signal
 
 As we have already discussed, the source antenna sends a pulse of
@@ -287,19 +308,19 @@ magnetic fields. As it turns out, the pulse is not made up entirely of
 radiowaves of a single frequency. Instead, a set of sinusoidal EM waves
 of similar frequencies are used create what is called a wavelet. As a
 result, the wavelet contains information over a range of frequencies
-(generally between 10<sup>6</sup> and 10<sup>9</sup> Hz).
+(generally between $`10^6`$ and $`10^9`$ Hz).
 
 Before we move forward let us define a few terms:
 
-> -   **Wavelet**: A wave-like oscillation of short duration.
-> -   **Bandwidth**: The range of frequencies present in the source
->     wavelet.
-> -   **Pulse Width**: The time duration of the wavelet.
-> -   **Spatial Length (wavelength)**: The physical length of the
->     wavelet signal while it propagates through a medium.
-> -   **Central Frequency**: The central frequency corresponding to the
->     bandwidth. In general, the central frequency defines the
->     propagation of the GPR signal.
+> - **Wavelet**: A wave-like oscillation of short duration.
+> - **Bandwidth**: The range of frequencies present in the source
+>   wavelet.
+> - **Pulse Width**: The time duration of the wavelet.
+> - **Spatial Length (wavelength)**: The physical length of the wavelet
+>   signal while it propagates through a medium.
+> - **Central Frequency**: The central frequency corresponding to the
+>   bandwidth. In general, the central frequency defines the propagation
+>   of the GPR signal.
 
 ### GPR Signals and Bandwidth
 
@@ -308,10 +329,12 @@ aforementioned terms. As we can see, the bandwidth and central frequency
 for the GPR signal depend on the pulse width of the wavelet. Here are a
 few important relationships to keep in mind:
 
-**1)** For a pulse width *Δ**t*, the central frequency *f*<sub>*c*</sub>
-is given by:
+**1)** For a pulse width $`\Delta t`$, the central frequency $`f_c`$ is
+given by:
 
-$$f_c = \frac{1}{\Delta t}$$
+``` math
+f_c = \frac{1}{\Delta t}
+```
 
 As a result, longer wavelets generally contain lower-frequency
 information. Frequencies corresponding to GPR signal are around 100 MHz
@@ -335,22 +358,26 @@ alt="images_new/GPR_pulse_bandwidth.png" />
 
 The spatial length of the GPR wavelet signal is different as it moves
 through different materials. For a wavelet with central frequency
-*f*<sub>*c*</sub> moving at velocity *V*, the wavelength *λ* is given
+$`f_c`$ moving at velocity $`V`$, the wavelength $`\lambda`$ is given
 by:
 
-$$\lambda = \frac{V}{f_c} = \frac{c}{f_c \sqrt{\varepsilon_r}}$$
+``` math
+\lambda = \frac{V}{f_c} = \frac{c}{f_c \sqrt{\varepsilon_r}}
+```
 
-where *c* = 3.00 × 10<sup>8</sup> m/s is the speed of light and
-*ε*<sub>*r*</sub> is the relative permittivity. This expressions shows
+where $`c = 3.00 \times 10^8`$ m/s is the speed of light and
+$`\varepsilon_r`$ is the relative permittivity. This expressions shows
 that if the signal is moving through a material with a higher dielectric
 permittivity, it will move slower and it will have a larger spatial
 width. It also shows that GPR signals with higher central frequencies
 have shorter spatial widths.
 
 Recall that the central frequency is the reciprocal of the pulse width
-(*f*<sub>*c*</sub> = 1/*Δ**t*). Thus:
+($`f_c = 1/\Delta t`$). Thus:
 
-$$\lambda = V \\ \Delta t = \frac{c \\ \Delta t}{\sqrt{\varepsilon_r}}$$
+``` math
+\lambda = V \, \Delta t = \frac{c \, \Delta t}{\sqrt{\varepsilon_r}}
+```
 
 Therefore, shorter pulse widths result in shorter spatial lengths. This
 was stated in the previous subsection.
@@ -377,14 +404,16 @@ sufficiently thick compared to the wavelength of the incoming wavelet.
 As a general rule, the layer must be at least 1/4 the wavelength of the
 incoming wavelet to be detectable. Thus:
 
-$$L \>  \frac{\lambda}{4} = \frac{c}{4 f_c \sqrt{\varepsilon_r}} = \frac{c \Delta t}{4 \sqrt{\varepsilon_r}}$$
+``` math
+L >  \frac{\lambda}{4} = \frac{c}{4 f_c \sqrt{\varepsilon_r}} = \frac{c \Delta t}{4 \sqrt{\varepsilon_r}}
+```
 
-where *L* is the layer thickness, $c/\\\sqrt{\varepsilon_r}$ is the
-propagation velocity for radiowaves, *Δ**t* is the pulse width and
-*f*<sub>*c*</sub> is the central frequency. As we can see from this
-expression, higher frequencies/shorter pulse widths are required to
-observe smaller features. This means higher frequencies/shorter pulse
-widths are used for higher resolution surveys.
+where $`L`$ is the layer thickness, $`c/\!\sqrt{\varepsilon_r}`$ is the
+propagation velocity for radiowaves, $`\Delta t`$ is the pulse width and
+$`f_c`$ is the central frequency. As we can see from this expression,
+higher frequencies/shorter pulse widths are required to observe smaller
+features. This means higher frequencies/shorter pulse widths are used
+for higher resolution surveys.
 
 ### Horizontal Resolution for Objects
 
@@ -399,11 +428,13 @@ are too close to one another, their respective returning GPR signals can
 be hard to differentiate. In general, we can distinguish the signals
 from two nearby objects so long as:
 
-$$L \> \sqrt{\dfrac{V \\ d}{2 f_c}}$$
+``` math
+L > \sqrt{\dfrac{V \, d}{2 f_c}}
+```
 
-where *V* is the propagation velocity, *f*<sub>*c*</sub> is the central
-frequency for the wavelet, *d* is the depth to the objects and *L* is
-the separation distance from both objects. We can see from this
+where $`V`$ is the propagation velocity, $`f_c`$ is the central
+frequency for the wavelet, $`d`$ is the depth to the objects and $`L`$
+is the separation distance from both objects. We can see from this
 equation, that by reducing the pulse length, we can see objects that are
 closer together. Additionally, it is harder to distinguish objects which
 are further away from the transmitters and receivers.
@@ -423,15 +454,17 @@ materials which have larger skin depths, radiowaves can penetrate deeper
 into the ground and still provide a sufficiently strong returning
 signal.
 
-As a general rule, the probing distance (*D*) is approximated 3
+As a general rule, the probing distance ($`D`$) is approximated 3
 `skin depths <GPR_fundamental_principles_skin_depth>`. If we assume the
-Earth is non-magnetic (*μ*<sub>*r*</sub> = 1):
+Earth is non-magnetic ($`\mu_r = 1`$):
 
-$$\begin{aligned}
+``` math
+\begin{aligned}
 D = 3 \delta \approx
-\begin{cases} 1510 \sqrt{\dfrac{1}{\sigma f}} \\ \\ &\textrm{for} \\\\ \omega \varepsilon \ll \sigma \\ 
-0.0159 \dfrac{\sqrt{\varepsilon_r}}{\sigma}  \\ \\ &\textrm{for} \\\\ \omega \varepsilon \gg \sigma \end{cases}
-\end{aligned}$$
+\begin{cases} 1510 \sqrt{\dfrac{1}{\sigma f}} \; \; &\textrm{for} \;\; \omega \varepsilon \ll \sigma \\ 
+0.0159 \dfrac{\sqrt{\varepsilon_r}}{\sigma}  \; \; &\textrm{for} \;\; \omega \varepsilon \gg \sigma \end{cases}
+\end{aligned}
+```
 
 <figure class="align-right">
 <img src="images_new/GPR_probing_distance.jpg"
@@ -441,20 +474,22 @@ alt="images_new/GPR_probing_distance.jpg" />
 On the right we see figures which show probing distances for various
 materials. Using these figures, we can see that:
 
-> -   In general, as the frequency increases, the skin depth decreases
->     and the probing distance decreases.
-> -   Frequencies used for GPR are ∼ 1 GHz. Therefore, the probing
->     distances for GPR signals are generally quite shallow.
-> -   It is very difficult for GPR signals to penetrate concrete and
->     asphalt, as the probing distance is only about 1 m for GPR.
-> -   Water saturated sedimentary rocks, such as clays and sandstones,
->     have much lower probing distances than dry sedimentary rocks.
-> -   Rocks saturated with sea water have much smaller probing distances
->     than rocks saturated with fresh water.
-> -   The probing distances for hard rocks (granites, limestones,
->     schists...) is quite large.
+> - In general, as the frequency increases, the skin depth decreases and
+>   the probing distance decreases.
+> - Frequencies used for GPR are $`\sim`$ 1 GHz. Therefore, the probing
+>   distances for GPR signals are generally quite shallow.
+> - It is very difficult for GPR signals to penetrate concrete and
+>   asphalt, as the probing distance is only about 1 m for GPR.
+> - Water saturated sedimentary rocks, such as clays and sandstones,
+>   have much lower probing distances than dry sedimentary rocks.
+> - Rocks saturated with sea water have much smaller probing distances
+>   than rocks saturated with fresh water.
+> - The probing distances for hard rocks (granites, limestones,
+>   schists...) is quite large.
 
 ### Probing Distance versus Resolution
+
+<div class="sidebar">
 
 **Radargrams at Several Resolutions (Underground tunnels)**
 
@@ -475,6 +510,8 @@ alt="images_new/GPR_resolution_mid.jpg" />
 alt="images_new/GPR_resolution_low.jpg" />
 <figcaption>Lower resolution radargram (50 MHz).</figcaption>
 </figure>
+
+</div>
 
 On the right we see several radargrams corresponding to data collected
 over two buried tunnels (hyperbolic features). Each radargram was
@@ -539,7 +576,7 @@ configuration. The survey was performed in a wooded area without using a
 shield. Because the trees acts as point reflectors, they produce
 hyperbolic signatures in the radargram. Using the slope on either end of
 the hyperbola, we find that the propagation velocity associated with
-this reflection is 2/*c*; this is demonstrated with a line. This
+this reflection is $`2/c`$; this is demonstrated with a line. This
 verifies that the signature must correspond to an object which is above
 the ground. And we can infer that signatures after 100 ns correspond to
 nearby trees.
@@ -549,7 +586,7 @@ and a building. A diagram showing the different radargram signatures for
 both the tree and the building is also provided. Unlike the tree, the
 face of the building is not a point reflector. However, the ends of the
 signature corresponding to the building also have slopes which are
-2/*c*. Thus, we can infer the propagation velocity.
+$`2/c`$. Thus, we can infer the propagation velocity.
 
 To avoid measuring signals such as these, shields may also be used on
 the transmitter and receiver. However, if signals from above ground

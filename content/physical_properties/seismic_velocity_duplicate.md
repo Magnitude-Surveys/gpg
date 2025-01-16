@@ -21,6 +21,8 @@ materials.
 
 ## Elastic Deformation
 
+<div class="sidebar">
+
 **Normal and Shear Stress**
 
 <figure class="align-center">
@@ -39,6 +41,8 @@ alt="images/fig_shear_deformation.png" />
 <figcaption>Shear stress</figcaption>
 </figure>
 
+</div>
+
 When a mechanical force is applied to a material, it may experience a
 change in volume and/or shape. If the deformation is elastic, it implies
 that once the applied force is removed, the material will return to its
@@ -55,7 +59,7 @@ stress is perpendicular to the surface of an object whereas shear
 stresses are tangential. Normal stresses can be further divided into
 compressive and tensile stresses. Compressive, tensile and shear stress
 are illustrated in the figure to the right. Stress is a force per unit
-area and has SI units units of N/m  <sup>2</sup>.
+area and has SI units units of N/m $`\! ^2`$.
 
 ### Strain
 
@@ -101,7 +105,7 @@ alt="images/fig_bulk_deformation.png" />
 <figcaption>Bulk modulus diagram.</figcaption>
 </figure>
 
-The bulk modulus (*K*) defines the resistance of a material to elastic
+The bulk modulus ($`K`$) defines the resistance of a material to elastic
 compression. As a result, it is sometimes referred to as the modulus of
 incompressibility. When a block of material is subjected to
 compressional forces, its volume decreases and it becomes more dense
@@ -109,11 +113,13 @@ compressional forces, its volume decreases and it becomes more dense
 material returns to its original size if the deformation is elastic. The
 bulk modulus characterizes the compressional deformation as follows:
 
-$$K = - V_0 \frac{\Delta P}{\Delta V}$$
+``` math
+K = - V_0 \frac{\Delta P}{\Delta V}
+```
 
-where *V*<sub>0</sub> is the original volume of material, *Δ**P*
-represents the pressure being applied to the material and *Δ**V* is the
-resulting change in volume.
+where $`V_0`$ is the original volume of material, $`\Delta P`$
+represents the pressure being applied to the material and $`\Delta V`$
+is the resulting change in volume.
 
 **Shear Modulus**
 
@@ -123,18 +129,20 @@ alt="images/fig_shear_deformation.png" />
 <figcaption>Shear modulus diagram.</figcaption>
 </figure>
 
-The shear modulus (*μ*) defines how resistant a material is to shear
+The shear modulus ($`\mu`$) defines how resistant a material is to shear
 stress. As a result, it is sometimes referred to as the modulus of
 rigidity. When a block of material is subjected to a shear stress, it
 experiences a shear strain (see figure). The shear modulus defines the
 ratio of shear stress to shear strain:
 
-$$\mu = \frac{Stress}{Strain} = \frac{F l}{\Delta x A}$$
+``` math
+\mu = \frac{Stress}{Strain} = \frac{F l}{\Delta x A}
+```
 
-where the shear stress is represented by a force (*F*) per unit area
-(*A*). Shear strain represents a tangent angle between the shear
-deformation (*Δ**x*) of the material along the direction of force and
-the perpendicular dimension (*l*) of the block of material.
+where the shear stress is represented by a force ($`F`$) per unit area
+($`A`$). Shear strain represents a tangent angle between the shear
+deformation ($`\Delta x`$) of the material along the direction of force
+and the perpendicular dimension ($`l`$) of the block of material.
 
 ### Young's Modulus and Poisson's Ratio
 
@@ -152,27 +160,31 @@ under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY
 
 Young's modulus is defined to be the ratio of longitudinal normal stress
 to longitudinal normal strain. Consider the rectangular prism shown
-below with square cross-sectional area *A* = *W*<sup>2</sup> and length
-*L*. A force *F* applied normal to the axis of the prism, distributed
-over the cross-sectional area, will generate a normal stress of
-*P* = *F*/*A*. If this stress generates a reduction in length of the
-prism of *Δ**L*, the Young's modulus of the prism material is
+below with square cross-sectional area $`A = W^2`$ and length $`L`$. A
+force $`F`$ applied normal to the axis of the prism, distributed over
+the cross-sectional area, will generate a normal stress of $`P = F/A`$.
+If this stress generates a reduction in length of the prism of
+$`\Delta L`$, the Young's modulus of the prism material is
 
-$$E = \frac{P}{\Delta L/L}$$
+``` math
+E = \frac{P}{\Delta L/L}
+```
 
 **Poisson's Ratio**
 
 As a result of the longitudinal stress described above the
 cross-sectional area of the prism may be increased, compensating for the
 reduction in length. Let us define the cross-sectional strain as
-*Δ**W*/*W*. **Poisson's ratio** is the ratio of transverse strain to
-longitudinal strain due to a longitudinal stress:
+$`\Delta W / W`$. **Poisson's ratio** is the ratio of transverse strain
+to longitudinal strain due to a longitudinal stress:
 
-$$\sigma = \frac{\Delta W / W}{\Delta L/L}$$
+``` math
+\sigma = \frac{\Delta W / W}{\Delta L/L}
+```
 
-Note that it is possible for *σ* to be zero. The decrease in length
-could be compensated for by decrease in pore space for example. Cork is
-an example of such a material.
+Note that it is possible for $`\sigma`$ to be zero. The decrease in
+length could be compensated for by decrease in pore space for example.
+Cork is an example of such a material.
 
 **Other Elastic Parameters**
 
@@ -208,10 +220,12 @@ the right[^1]. As we can see, cells change volume when they come in
 contact with the wave. The P-wave velocity is related to the elastic
 properties of the medium by the following expression:
 
-$$v_p = \sqrt{\frac{K+4/3\mu}{\rho}}$$
+``` math
+v_p = \sqrt{\frac{K+4/3\mu}{\rho}}
+```
 
-where *K* is the bulk modulus, *μ* is the shear modulus and *ρ* is the
-density.
+where $`K`$ is the bulk modulus, $`\mu`$ is the shear modulus and
+$`\rho`$ is the density.
 
 **S-waves**
 
@@ -228,7 +242,9 @@ motion with respect to the surface. In isotropic media, SH and SV waves
 travel at the same speed. The S-wave velocity can be related to the
 elastic properties of the medium by the following expression:
 
-$$v_s = \sqrt{\frac{\mu}{\rho}}$$
+``` math
+v_s = \sqrt{\frac{\mu}{\rho}}
+```
 
 S waves propagate through materials more slowly than P waves. In
 addition, S waves cannot propagate through fluids, as fluids do support
@@ -252,7 +268,9 @@ amplitude of the elliptic motion decreases with depth. As a general
 rule, Rayleigh waves at the surface of the Earth have a propagation
 speed which is 90 % the speed of shear waves, thus:
 
-*v*<sub>*R*</sub> = 0.9 *v*<sub>*s*</sub>
+``` math
+v_R = 0.9 \, v_s
+```
 
 **Love waves**
 
@@ -266,19 +284,21 @@ waves decreases with depth. Love waves travel faster than Rayleigh waves
 but do not travel as fast as P or S waves. Thus Love waves have a
 propagation speed of:
 
-0.9 *v*<sub>*s*</sub> \< *v*<sub>*L*</sub> \< *v*<sub>*s*</sub>
+``` math
+0.9 \, v_s < v_L < v_s
+```
 
 Symbols used to define P-wave and S-wave velocities, as well as the
 elastic properties on which they depend, are summarized in the following
 table:
 
-| Property | Symbol | Units |
-|--------------------------------|-----------|----------------------------|
-| P-Wave Velocity | *v*<sub>*p*</sub> | m/s or km/s |
-| S-Wave Velocity | *v*<sub>*s*</sub> | m/s or km/s |
-| Bulk Modulus(Incompressibility) | *K* | Pa or GPa |
-| Shear Modulus (Rigidity) | *μ* | Pa or GPa |
-| Density | *ρ* | kg/m  <sup>3</sup> or g/cm  <sup>3</sup> |
+| Property                        | Symbol   | Units                          |
+|---------------------------------|----------|--------------------------------|
+| P-Wave Velocity                 | $`v_p`$  | m/s or km/s                    |
+| S-Wave Velocity                 | $`v_s`$  | m/s or km/s                    |
+| Bulk Modulus(Incompressibility) | $`K`$    | Pa or GPa                      |
+| Shear Modulus (Rigidity)        | $`\mu`$  | Pa or GPa                      |
+| Density                         | $`\rho`$ | kg/m $`\!^3`$ or g/cm $`\!^3`$ |
 
 ## P-Wave and S-Wave Velocity Measurements
 
@@ -302,12 +322,14 @@ the other side of the rock, a receiver transducer registers the elastic
 waves and transforms the corresponding energy back into a current
 signal. This current signal is then measured by an oscilloscope.
 
-Using the oscilloscope, we can determine the amount of time (*Δ**t*) it
-took for the elastic waves to propagate through the rock core. Given
-that we know the length of the rock core (*L*), the seismic velocity is
-given by:
+Using the oscilloscope, we can determine the amount of time
+($`\Delta t`$) it took for the elastic waves to propagate through the
+rock core. Given that we know the length of the rock core ($`L`$), the
+seismic velocity is given by:
 
-$$V = \frac{L}{\Delta t}$$
+``` math
+V = \frac{L}{\Delta t}
+```
 
 In practice, the user may control whether they are measuring P-wave or
 S-wave velocities by specifying the direction of elastic deformation
@@ -496,13 +518,14 @@ the density of the pore fluid. As a result, P-wave and S-wave velocities
 increase as pore saturation increases. This can be described in a
 rudimentary manner using Wyllie's equation:
 
-$$V\_{bulk} = \Bigg \[ \frac{\phi}{V\_{fluid}} + \frac{1-\phi}{V\_{matrix}} \Bigg \]^{-1}$$
+``` math
+V_{bulk} = \Bigg [ \frac{\phi}{V_{fluid}} + \frac{1-\phi}{V_{matrix}} \Bigg ]^{-1}
+```
 
-where 0 ≤ *ϕ* ≤ 1 is the fractional % fluid saturation,
-*V*<sub>*f**l**u**i**d*</sub> is the seismic velocity of the fluid,
-*V*<sub>*m**a**t**r**i**x*</sub> is the seismic velocity of the solid
-material within the rock, and *V*<sub>*b**u**l**k*</sub> is the bulk
-seismic velocity for the rock.
+where $`0 \leq \phi \leq 1`$ is the fractional % fluid saturation,
+$`V_{fluid}`$ is the seismic velocity of the fluid, $`V_{matrix}`$ is
+the seismic velocity of the solid material within the rock, and
+$`V_{bulk}`$ is the bulk seismic velocity for the rock.
 
 **Lithification**
 
@@ -523,21 +546,21 @@ this process is responsible for increasing the seismic velocities.
 **Footnotes**
 
 [^1]:
-    1.  Braile,
+    12. Braile,
         <http://web.ics.purdue.edu/~braile/edumod/waves/WaveDemo.htm>,
         Copyright 2004-2010,
 
 [^2]:
-    1.  Braile,
+    12. Braile,
         <http://web.ics.purdue.edu/~braile/edumod/waves/WaveDemo.htm>,
         Copyright 2004-2010,
 
 [^3]:
-    1.  Braile,
+    12. Braile,
         <http://web.ics.purdue.edu/~braile/edumod/waves/WaveDemo.htm>,
         Copyright 2004-2010,
 
 [^4]:
-    1.  Braile,
+    12. Braile,
         <http://web.ics.purdue.edu/~braile/edumod/waves/WaveDemo.htm>,
         Copyright 2004-2010,

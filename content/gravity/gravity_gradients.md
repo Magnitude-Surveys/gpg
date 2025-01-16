@@ -13,24 +13,23 @@ inventing this capability and yes, it is useful for larger scale
 problems associated with oil and gas and to some extent minerals
 exploration.
 
-## Measured gravity is *g*<sub>*z*</sub>
+## Measured gravity is $`g_z`$
 
 <figure class="align-right">
 <img src="./images/grav_diag.gif" alt="./images/grav_diag.gif" />
 </figure>
 
-Normally the vertical component of gravity *g*<sub>*z*</sub> is
-measured. This was illustrated using the profile over a sphere or
-cylinder (right) in the section `gravity_basics`. The horizontal
-components of gravity, *g*<sub>*x*</sub>, and *g*<sub>*y*</sub>, are
-small and not measured.
+Normally the vertical component of gravity $`g_z`$ is measured. This was
+illustrated using the profile over a sphere or cylinder (right) in the
+section `gravity_basics`. The horizontal components of gravity, $`g_x`$,
+and $`g_y`$, are small and not measured.
 
-## The spatial derivative (rate of change) of *g*
+## The spatial derivative (rate of change) of $`g`$
 
 The spatial rate of change of gravity (in the x-direction) is written
-mathematically as ∂*g*/∂*x*. This horizontal derivative can help map
-edges of buried changes in density. However, when data were gathered
-over an area, it is more common to employ the so called *total
+mathematically as $`\partial g/ \partial x`$. This horizontal derivative
+can help map edges of buried changes in density. However, when data were
+gathered over an area, it is more common to employ the so called *total
 horizontal derivative*, which is the square root of the sum of squared
 x- and y- horizontal derivatives. This is a conceptually simple idea,
 but challenging to actually calculate if data are not on a survey grid
@@ -65,13 +64,13 @@ location.
 alt="./images/2ndhorizderiv.gif" />
 </figure>
 
-The rate of change of gradients (written as
-∂<sup>2</sup>*g*/∂*x*<sup>2</sup> also can be estimated. Inflection
-points on the graph of ∂<sup>2</sup>*g*/∂*x*<sup>2</sup> reveal the
-location of maximum rate of change of the gradient. The adjacent images
-show how this can help reveal the difference between a basin and an
-intrusion. Maps can also be processed to generate images of the second
-horizontal derivatives.
+The rate of change of gradients (written as $`\partial^2 g / \partial
+x^2`$ also can be estimated. Inflection points on the graph of
+$`\partial^2
+g / \partial x^2`$ reveal the location of maximum rate of change of the
+gradient. The adjacent images show how this can help reveal the
+difference between a basin and an intrusion. Maps can also be processed
+to generate images of the second horizontal derivatives.
 
 The second vertical derivative is often considered useful. But what is
 the first vertical derivative? It is the vertical rate of change of
@@ -80,16 +79,17 @@ everywhere at two elevations. However, gravity (a potential field)
 follows Laplace's equation, which states that squared gradient of
 gravity equals 0:
 
-$$\frac{\partial^2 g}{\partial x^2} + \frac{\partial^2 g}{\partial y^2}  + \frac{\partial^2 g}{\partial y^2} =0$$
+``` math
+\frac{\partial^2 g}{\partial x^2} + \frac{\partial^2 g}{\partial y^2}  + \frac{\partial^2 g}{\partial y^2} =0
+```
 
-The ∂<sup>2</sup>*g*/∂*x*<sup>2</sup> and
-∂<sup>2</sup>*g*/∂*y*<sup>2</sup> terms can be obtained directly from a
-Bouguer anomaly map, so the ∂<sup>2</sup>*g*/∂*z*<sup>2</sup> term can
-be derived. This last term describes how fast the "vertical rate of
-change in gravity" is changing. However the success of this process
-depends upon adequate data spacing. These types of calculations are very
-efficient in the Fourier domain - something beyond the scope of this
-presentation.
+The $`\partial^2 g / \partial x^2`$ and $`\partial^2 g / \partial
+y^2`$ terms can be obtained directly from a Bouguer anomaly map, so the
+$`\partial^2 g / \partial z^2`$ term can be derived. This last term
+describes how fast the "vertical rate of change in gravity" is changing.
+However the success of this process depends upon adequate data spacing.
+These types of calculations are very efficient in the Fourier domain -
+something beyond the scope of this presentation.
 
 Making these types of processed maps is sometimes useful, but not always
 worthwhile. Two examples are given below: 1) salt domes where the
@@ -135,25 +135,24 @@ Exhibition — Florence, Italy, 27 - 30 May 2002.
 ## Measuring gradients
 
 We are talking now about measuring how gravity varies spatially - that
-is ∂*g*/∂*x* or ∂*g*/∂*y* or ∂*g*/∂*z*. In fact, there are units for
-gravitational gradient - the Eotvos Unit (EU) which is 10<sup>−6</sup>
-mGal/cm.
+is $`\partial g / \partial x`$ or $`\partial g / \partial y`$ or
+$`\partial g / \partial z`$. In fact, there are units for gravitational
+gradient - the Eotvos Unit (EU) which is $`10^{-6}`$ mGal/cm.
 
 However, if you think about it, we should really be more careful about
 what we are measuring. We are familiar with measuring the vertical
-component of gravity, *g*<sub>*z*</sub>. However, it would be
-theoretically possible to measure *g*<sub>*x*</sub> and
-*g*<sub>*y*</sub>. In fact, one could consider how each of these three
-components of gravity vary in all three directions. That represents nine
-different "gradient" measurements. Given what you know about measuring
-*g*<sub>*z*</sub>, measuring the other two components should sound like
-a very difficult task. Well, you are right. It is very difficult. In
-fact, it turns out to be easier to measure the gradients than the fields
-themselves. And, as of roughly 1998 - 2001, there are systems that can
-make these measurements. Are they useful measurements? Yes. Oil and
-mineral exploration companies would not have spent millions of dollars
-developing the capacity if it were not useful. But there is much
-research needed to learn how best to make use of the results.
+component of gravity, $`g_z`$. However, it would be theoretically
+possible to measure $`g_x`$ and $`g_y`$. In fact, one could consider how
+each of these three components of gravity vary in all three directions.
+That represents nine different "gradient" measurements. Given what you
+know about measuring $`g_z`$, measuring the other two components should
+sound like a very difficult task. Well, you are right. It is very
+difficult. In fact, it turns out to be easier to measure the gradients
+than the fields themselves. And, as of roughly 1998 - 2001, there are
+systems that can make these measurements. Are they useful measurements?
+Yes. Oil and mineral exploration companies would not have spent millions
+of dollars developing the capacity if it were not useful. But there is
+much research needed to learn how best to make use of the results.
 
 Maps showing what measurements of gravitational gradients look like are
 given on [a separate page of
@@ -162,12 +161,11 @@ images](http://www.eoas.ubc.ca/courses/eosc350/content/methods/meth_4/assets/gra
 buried density contrast or target. Look at these figures and consider
 these questions:
 
-1.  Which emphasizes the feature's location? (answer =
-    *T*<sub>*z**z*</sub>)
+1.  Which emphasizes the feature's location? (answer = $`T_{zz}`$)
 2.  Which emphasize lineations in one or another direction? (answer =
-    *T*<sub>*x**x*</sub>, *T*<sub>*y**y*</sub>)?
-3.  Which emphasize the feature's edges? (answer = *T*<sub>*x**z*</sub>,
-    *T*<sub>*y**z*</sub>)?
+    $`T_{xx}`$, $`T_{yy}`$)?
+3.  Which emphasize the feature's edges? (answer = $`T_{xz}`$,
+    $`T_{yz}`$)?
 4.  What does the remaining component emphasize? (answer = edges)?
 
 Consider some practical questions: How useful is this type of work? What
@@ -187,9 +185,9 @@ images from gravity (and magnetics) maps. It is true, however, that
 there are many forms of processing that are used. Two excellent
 introductions can be found at the following locations:
 
--   If you are interested, there are some interactive figures on
-    frequency domain filtering at
-    <http://www.geoexplo.com/airborne_survey_workshop_filtering.html>.
--   There is a good summary of Advanced Processing of Potential Fields
-    by Getech (Houston, and Leeds). See the tutorial on-line at Getech
-    via Advanced Processing of Potential Field Data.
+- If you are interested, there are some interactive figures on frequency
+  domain filtering at
+  <http://www.geoexplo.com/airborne_survey_workshop_filtering.html>.
+- There is a good summary of Advanced Processing of Potential Fields by
+  Getech (Houston, and Leeds). See the tutorial on-line at Getech via
+  Advanced Processing of Potential Field Data.

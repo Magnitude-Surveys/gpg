@@ -16,7 +16,11 @@ data.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 induced_polarization_introduction
 induced_polarization_physical_properties
 induced_polarization_basic_principles induced_polarization_survey
 induced_polarization_data induced_polarization_interpretation
+
+</div>

@@ -54,5 +54,9 @@ investigate refraction, reflection and MASW methods.
 
 Contents:
 
+<div class="toctree" maxdepth="1">
+
 elastic_properties basic_principles seismic_survey seismic_data
 seismic_processing seismic_interpretation MASW seismic_apps
+
+</div>

@@ -60,30 +60,25 @@ history are available through the few engineering documents presented
 below:
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_openBrWindow(theURL,winName,features) { //v2.0
+&#10;function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -94,104 +89,62 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script><!-- InstanceEndEditable -->
-
-
+&#10;
 <br>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-  </tr>
-
-  </tbody>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-      <table border="0" cellpadding="2" cellspacing="1" width="100%">
-
-        <tbody>
-
-          <tr>
-
-            <td>
+&#10;      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+&#10;        <tbody>
+&#10;          <tr>
+&#10;            <td>
             <form name="form1" method="post" action="">
-
-              <p class="figureCaption">
-
-                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('filters','','./../../_images/Expo_site_1902.gif',1)" type="radio">
+&#10;              <p class="figureCaption">
+&#10;                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('filters','','./../../_images/Expo_site_1902.gif',1)" type="radio">
                   <b>
-
-                    1902.
-
-                  </b>
-
-                   Before 1902, there were wood processing and storage facilities in the area. During that period, the original shoreline was moved from the north edge of our site to the south edge using a wide variety of fill materials including wood chips, logs, and construction debris. <br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1936.gif',1)" type="radio">
+&#10;                    1902.
+&#10;                  </b>
+&#10;                   Before 1902, there were wood processing and storage facilities in the area. During that period, the original shoreline was moved from the north edge of our site to the south edge using a wide variety of fill materials including wood chips, logs, and construction debris. <br>
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1936.gif',1)" type="radio">
                   <b>
-
-                    1936.
-
-                  </b>
-
-                   After 1902 there was a gas manufacturing plant with storage facilities, an oil house, an auto repair garage, and a substation maintenance facility. The gas plant left some quantities of ammonia, phenolics, cyanide, oxides, and light hydrocarbons, as well as other miscellaneous waste. The substation maintenance shop included a sump in the floor into which dielectric fluids from capacitors and transformers was drained. Oil from this  sump was piped to the oil house for treatment and recycling. This oil house included large tanks, at least one of which was underground. There was also the Viaduct traffic overpass crossing over the central portion of our site, and associated support foundations may well have been left in the ground when the viaduct was later removed.<br>
-
-                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('filters','','./../../_images/Expo_site_1952.gif',1)" type="radio">
+&#10;                    1936.
+&#10;                  </b>
+&#10;                   After 1902 there was a gas manufacturing plant with storage facilities, an oil house, an auto repair garage, and a substation maintenance facility. The gas plant left some quantities of ammonia, phenolics, cyanide, oxides, and light hydrocarbons, as well as other miscellaneous waste. The substation maintenance shop included a sump in the floor into which dielectric fluids from capacitors and transformers was drained. Oil from this  sump was piped to the oil house for treatment and recycling. This oil house included large tanks, at least one of which was underground. There was also the Viaduct traffic overpass crossing over the central portion of our site, and associated support foundations may well have been left in the ground when the viaduct was later removed.<br>
+&#10;                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('filters','','./../../_images/Expo_site_1952.gif',1)" type="radio">
                   <b>
-
-                    1952.
-
-                  </b>
-
-                   Between 1910 and 1960 there were several different railway lines laid at various orientations across our field site.<br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1961.gif',1)" type="radio">
+&#10;                    1952.
+&#10;                  </b>
+&#10;                   Between 1910 and 1960 there were several different railway lines laid at various orientations across our field site.<br>
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1961.gif',1)" type="radio">
                   <b>
-
-                    1961.
-
-                  </b>
-
-                  Sometime in 1969 or 1970 as much as several thousand gallons of oil was spilled on to the shop floor because a valve had been accidentally left open over a  weekend.<br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1974.gif',1)" type="radio">
+&#10;                    1961.
+&#10;                  </b>
+&#10;                  Sometime in 1969 or 1970 as much as several thousand gallons of oil was spilled on to the shop floor because a valve had been accidentally left open over a  weekend.<br>
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/Expo_site_1974.gif',1)" type="radio">
                   <b>
-
-                    1974.
-
-                  </b>
-
-                   After 1974, a fuel depot, bus wash and several underground storage tanks existed. These were demolished for the most recent use, which was a parking lot for a near by Exposition.<br>
-
-              </form>
+&#10;                    1974.
+&#10;                  </b>
+&#10;                   After 1974, a fuel depot, bus wash and several underground storage tanks existed. These were demolished for the most recent use, which was a parking lot for a near by Exposition.<br>
+&#10;              </form>
             </td>
-
-          </tr>
-
-          <tr>
-
-            <td>
+&#10;          </tr>
+&#10;          <tr>
+&#10;            <td>
             <div align="center"><font size="-1"><img src="./../../_images/Expo_site_1902.gif" name="filters" height="129" width="400"></font></div>
             </td>
-
-          </tr>
-
-
+&#10;          </tr>
+&#10;
         </tbody>
-
-      </table>
-
-    <!-- InstanceEndEditable --></td>
-
-  </tr>
-
-  </tbody>
+&#10;      </table>
+&#10;    <!-- InstanceEndEditable --></td>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
 
 ### Stratigraphy
@@ -207,22 +160,22 @@ alt="./images/Expo_Stratigraphy.jpg" />
 trenching.</figcaption>
 </figure>
 
--   The top half metre consisted of two layers of very hard pavement.
--   The fill below was very variable, consisting mainly of mineral fill,
-    but with considerable quantities of other materials, including
-    buried metal and concrete, wood waste, construction debris and
-    gravel fill. Individually, these materials have a wide range of
-    physical and geotechnical properties, and when used as fill, bulk
-    (averaged) properties would also range widely. Identifying elevation
-    highs and lows may provide some insight as to where more (or less)
-    compressible fill materials existed.
--   The next unit below the artificial fill was a sandy silt (or silty
-    clay in some areas), ranging between zero and one metre thick. The
-    deepest layer penetrated by boreholes was a very dense gray sandy
-    silt, with some gravel and traces of clay - basically a till.
--   The depth to this till is moderately well-constrained under the
-    profile to the west of the field site.
--   Sedimentary bedrock was reportedly deeper than 20 m.
+- The top half metre consisted of two layers of very hard pavement.
+- The fill below was very variable, consisting mainly of mineral fill,
+  but with considerable quantities of other materials, including buried
+  metal and concrete, wood waste, construction debris and gravel fill.
+  Individually, these materials have a wide range of physical and
+  geotechnical properties, and when used as fill, bulk (averaged)
+  properties would also range widely. Identifying elevation highs and
+  lows may provide some insight as to where more (or less) compressible
+  fill materials existed.
+- The next unit below the artificial fill was a sandy silt (or silty
+  clay in some areas), ranging between zero and one metre thick. The
+  deepest layer penetrated by boreholes was a very dense gray sandy
+  silt, with some gravel and traces of clay - basically a till.
+- The depth to this till is moderately well-constrained under the
+  profile to the west of the field site.
+- Sedimentary bedrock was reportedly deeper than 20 m.
 
 ### Hydrogeology
 

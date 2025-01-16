@@ -31,26 +31,29 @@ Newton in the 17<sup>th</sup> century.
 Newton's equation describing the force between two masses (Earth and
 Moon, or Earth and you) is
 
-$$F = G \frac{Mm}{r^2} \qquad \text{(Eq1)}$$
+``` math
+F = G \frac{Mm}{r^2} \qquad \text{(Eq1)}
+```
 
-where the force *F* points from one mass to the other, *M* and *m* are
-two masses, and *G* = 6.67 \* 10<sup>−11</sup>
-Nm<sup>2</sup>/Kg<sup>2</sup>. You should recall that another of
-Newton's relations characterizes the force on an object experiencing
-acceleration:
+where the force $`F`$ points from one mass to the other, $`M`$ and $`m`$
+are two masses, and $`G=6.67*10^{-11}`$ Nm<sup>2</sup>/Kg<sup>2</sup>.
+You should recall that another of Newton's relations characterizes the
+force on an object experiencing acceleration:
 
-*F* = *m**a*   (Eq2)
+``` math
+F=ma \qquad \text{(Eq2)}
+```
 
 Comparing these two equations, it should be clear that most of Eq1
-represents an acceleration: *a* = *G**M*/*r*<sup>2</sup>. In fact this
-is gravitational acceleration, and we call it *g*. This gravitational
-acceleration *g* is nominally approximately 9.8 m/s<sup>2</sup> on
-Earth's surface at the equator. Local variations in *g* will be caused
-by local variations in *M* and/or in *r*.
+represents an acceleration: $`a = GM/r^2`$. In fact this is
+gravitational acceleration, and we call it $`g`$. This gravitational
+acceleration $`g`$ is nominally approximately 9.8 m/s<sup>2</sup> on
+Earth's surface at the equator. Local variations in $`g`$ will be caused
+by local variations in $`M`$ and/or in $`r`$.
 
 ## Units
 
-What are the units for this acceleration, or *g*? Acceleration is in
+What are the units for this acceleration, or $`g`$? Acceleration is in
 m/s<sup>2</sup>, but another name for g = 1 cm/s<sup>2</sup> is 1 Gal
 (short for Galileo). Usually geophysicists work in units of milliGals
 (0.001 Gal). You will also see the "gravity unit," or *gu*, where 1 gu =
@@ -65,33 +68,37 @@ Measurable geophysical gravity anomalies generally range between 0.1 and
 0.00001 Gal. This means we must measure accelerations of 1 part in 10
 <sup>8</sup> or 10 <sup>9</sup>; not a trivial task! How is this done?
 
-If a mass hangs on a spring, a force on the mass (*F* = *m**a*) will
+If a mass hangs on a spring, a force on the mass $`(F = ma)`$ will
 stretch the spring. Hooke's law states that the extension of a spring is
 proportional to force, or
 
-*m*(*d**g*) = *k*(*d**s*)
+``` math
+m(dg)=k(ds)
+```
 
-where *k* is the "elastic spring constant," *d**g* :math:\`\` a small
-change in gravitational acceleration, and *d**s* is a small change in
-spring length. So, if we measure *d**s*, we can get
+where $`k`$ is the "elastic spring constant," $`dg`$ :math:\`\` a small
+change in gravitational acceleration, and $`ds`$ is a small change in
+spring length. So, if we measure $`ds`$, we can get
 
-$$dg = ds \frac{k}{m}$$
+``` math
+dg = ds \frac{k}{m}
+```
 
 To summarize:
 
--   The *measured* parameter is the force on a mass, *m*, due to the
-    presence of another mass, *M*.
--   The *recorded* parameter is acceleration, with units of milliGals
-    (compared to m/s<sup>2</sup>).
--   The *interpreted* parameter is usually density of causative buried
-    materials and structures.
+- The *measured* parameter is the force on a mass, $`m`$, due to the
+  presence of another mass, $`M`$.
+- The *recorded* parameter is acceleration, with units of milliGals
+  (compared to m/s<sup>2</sup>).
+- The *interpreted* parameter is usually density of causative buried
+  materials and structures.
 
 To carry out a gravity survey, you must measure this change in spring
 length all over the field site (or along a line). Then you can produce a
 map (or profile) of relative differences in gravitational acceleration,
-*g*. Finally, this result must be interpreted in terms of variations in
-buried mass (integrated all over the volume), and/or in terms of the
-distance, *r*, to the buried mass.
+$`g`$. Finally, this result must be interpreted in terms of variations
+in buried mass (integrated all over the volume), and/or in terms of the
+distance, $`r`$, to the buried mass.
 
 There are other fundamental measurements that do not involve springs.
 There are instruments that measure the time it takes for a mass to fall
@@ -106,64 +113,71 @@ measuring gravity in most text books about applied geophysics.
 </figure>
 
 Instruments actually measure the vertical component of the gravitational
-effect of the target, *Δ**g*<sub>*z*</sub>. However, the formula
-*G**m*/*r*<sup>2</sup> gives acceleration experienced in line with two
-masses, where r is the distance between center of masses (sensor and
-target mass). Since we measure *Δ**g*<sub>*z*</sub> along the surface
-over the target, we must resolve this geometry. Using the figure to the
-right, *Δ**g*<sub>*z*</sub> at location (*x*, 0, 0) is
+effect of the target, $`\Delta g_z`$. However, the formula $`Gm/r^2`$
+gives acceleration experienced in line with two masses, where r is the
+distance between center of masses (sensor and target mass). Since we
+measure $`\Delta g_z`$ along the surface over the target, we must
+resolve this geometry. Using the figure to the right, $`\Delta g_z`$ at
+location $`(x,0
+,0)`$ is
 
-$$\Delta g_z = \Delta g_r \cos(\theta) = \Delta g_r \frac{z}{r}$$
+``` math
+\Delta g_z = \Delta g_r \cos(\theta) = \Delta g_r \frac{z}{r}
+```
 
 and since
 
-$$\Delta g_r = G \frac{M}{r^2}$$
+``` math
+\Delta g_r = G \frac{M}{r^2}
+```
 
 then
 
-$$\Delta g_z = G \frac{M}{r^3} = G \frac{Mz}{(x^2+z^2)^{3/2}}$$
+``` math
+\Delta g_z = G \frac{M}{r^3} = G \frac{Mz}{(x^2+z^2)^{3/2}}
+```
 
 <figure class="align-right">
 <img src="./images/response_cylinder.gif"
 alt="./images/response_cylinder.gif" />
 </figure>
 
-If the mass, *M*, is a sphere centered at (0, 0, *x*), then this
+If the mass, $`M`$, is a sphere centered at $`(0,0,x)`$, then this
 equation describes the pattern of gravitational acceleration that would
 be measured along a traverse that crosses over the sphere. For a sphere
-with radius, *R*, the mass and its density are related according to
-4/3(*π**R*<sup>3</sup>)*d**ρ* where *d**ρ* is **density contrast**; that
-is, density of host rocks minus the density of anomalous mass.
+with radius, $`R`$, the mass and its density are related according to
+$`4/3(\pi
+R^3)dρ`$ where $`dρ`$ is **density contrast**; that is, density of host
+rocks minus the density of anomalous mass.
 
 This relation (profile) is plotted (figure to the right) assuming the
 survey crosses over a 2D “point” mass - i.e. a “line mass," or
 horizontal cylinder. The pattern would be similar but slightly narrower
 if the buried feature was a point mass or sphere.
 
--   Note that the “mass” must involve the density *contrast*. In other
-    words, the difference between host and target densities.
--   An estimate of vertical depth to the center of mass can be obtained
-    by equating amplitude at *x* = 0 to twice the amplitude at *x*.
--   The result is a half-width rule giving depth to center of a sphere
-    *z* = 1.3*x*<sub>1/2</sub>, where *x*<sub>1/2</sub> is half the
-    width of the measured gravity anomaly at half of its maximum
-    amplitude. You can prove this by recognizing that at the maximum
-    amplitude (directly over the sphere), *x* = 0 so
-    *g*<sub>*Z*</sub> = *G**M*/*z*<sup>2</sup>. Then *x* in terms of *z*
-    at the location where *g*<sub>*Z*</sub> is half of its maximum
-    amplitude, or
+- Note that the “mass” must involve the density *contrast*. In other
+  words, the difference between host and target densities.
+- An estimate of vertical depth to the center of mass can be obtained by
+  equating amplitude at $`x=0`$ to twice the amplitude at $`x`$.
+- The result is a half-width rule giving depth to center of a sphere
+  $`z=1.3 x_{1/2}`$, where $`x_{1/2}`$ is half the width of the measured
+  gravity anomaly at half of its maximum amplitude. You can prove this
+  by recognizing that at the maximum amplitude (directly over the
+  sphere), $`x=0`$ so $`g_Z=GM/z^2`$. Then $`x`$ in terms of $`z`$ at
+  the location where $`g_Z`$ is half of its maximum amplitude, or
 
-$$\frac{GM}{2z^2}=\frac{GMz}{(x^2 + z^2)^{3/2}}$$
+``` math
+\frac{GM}{2z^2}=\frac{GMz}{(x^2 + z^2)^{3/2}}
+```
 
--   For the infinite horizontal cylinder, the half-width rule is
-    *z* = 1.0*x*<sub>1/2</sub>, giving depth to the center of the
-    cylinder.
+- For the infinite horizontal cylinder, the half-width rule is
+  $`z=1.0 x_{1/2}`$, giving depth to the center of the cylinder.
 
 ## Factors affecting gravity
 
 Gravitational acceleration measured at any point depends on five
-factors, all related to either *M* or *r* or both (in Eq2 above). The
-effects are as follows, and corrections for these effects must be
+factors, all related to either $`M`$ or $`r`$ or both (in Eq2 above).
+The effects are as follows, and corrections for these effects must be
 applied to data sets. The section on data reduction explains further.
 
 1.  **Latitude**: From equator to pole, gravity varies by roughly 5000
@@ -171,7 +185,7 @@ applied to data sets. The section on data reduction explains further.
     respect to latitude) is maximum at 45° latitude, where it is about
     0.8 mGal/km.
 2.  **Elevation**: The effect of changing the elevation (changing the
-    *r* of Eq2) of a measurement is quite significant. For modern
+    $`r`$ of Eq2) of a measurement is quite significant. For modern
     instruments, a change of only a few centimeters can be detected, and
     between sea level and the top of Mt. Everest, the difference is
     roughly 2000 mGal.
@@ -180,9 +194,9 @@ applied to data sets. The section on data reduction explains further.
     soils between us and where we were. The attraction of these
     materials counteracts the effect of going up in elevation.
     Therefore, the elevation correction is counteracted by subtracting a
-    factor of 0.0419 × *h* × *d* mGal, where h is elevation in metres,
-    *d* is density of intervening materials in g/cc. This is called the
-    *Bouguer correction*.
+    factor of $`0.0419 \times h \times d`$ mGal, where h is elevation in
+    metres, $`d`$ is density of intervening materials in g/cc. This is
+    called the *Bouguer correction*.
 4.  **Topography**: Effects due to nearby topographic relief (hills or
     valleys) may be significant, but are rarely more than 1.0 mGal.
     These effects are rather tedious to apply, but are important when

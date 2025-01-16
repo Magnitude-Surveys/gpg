@@ -19,32 +19,36 @@ off the current source to the primary voltage measured after the signal
 has stabilized while the current is still on.
 
 > 
-> $$d= \frac{V_s}{V_P} = \frac{V_P - V \_ {\sigma}}{V_P} = \frac{F\_{DC}\[\sigma (1 - m)\] - F\_{DC}\[\sigma\]}{F\_{DC}\[\sigma (1 - m)\] }$$
+> ``` math
+> d= \frac{V_s}{V_P} = \frac{V_P - V _ {\sigma}}{V_P} = \frac{F_{DC}[\sigma (1 - m)] - F_{DC}[\sigma]}{F_{DC}[\sigma (1 - m)] }
+> ```
 
 The right hand side of this equation is showing that each potential can
 be found using a DC resistivity forward modeling calculation using the
 conductivity of the region involved, and that conductivity is modified
-by chargeability, *m*. This is based upon the original definition of
+by chargeability, $`m`$. This is based upon the original definition of
 chargeablity suggested by Seigel, 1959.
 
 This equation turns out to be non-linear. It can, however, be
-approximated as linear for small values of *m*, which is usually true
-since in practice *m* \< 0.2. Therefore, forward modeling of
+approximated as linear for small values of $`m`$, which is usually true
+since in practice $`m < 0.2`$. Therefore, forward modeling of
 chargeability data can be done using the following formulation:
 
-$$d_i = \sum\limits\_{j=1}^n J\_{ij} m_j \quad \textrm{;} \quad  J\_{ij} = - \frac{\partial \ln (V_i)}{\partial \ln ( \sigma_j)}$$
+``` math
+d_i = \sum\limits_{j=1}^n J_{ij} m_j \quad \textrm{;} \quad  J_{ij} = - \frac{\partial \ln (V_i)}{\partial \ln ( \sigma_j)}
+```
 
-The matrix form for this equation is *J**m* = *d*, where *J* is an N x M
+The matrix form for this equation is $`Jm = d`$, where $`J`$ is an N x M
 sensitivity matrix (N is the number of data points and M is the number
-of cells in a rectangular discretization grid), and the
-*J*<sub>*i**j*</sub> are sensitivities for the DC resistivity problem.
-So in order to model (and invert) IP data for interpretation, we need to
-solve the DC problem first.
+of cells in a rectangular discretization grid), and the $`J_{ij}`$ are
+sensitivities for the DC resistivity problem. So in order to model (and
+invert) IP data for interpretation, we need to solve the DC problem
+first.
 
 Finally, if "small" chargeabilities are assumed, the linear relationship
 means measured data and chargeabilities recovered by inversion have the
 same units. Therefore, all four types of IP data can be approximated by
-*J**m* = *d*. This means that the common types of IP data (time domain,
+$`Jm = d`$. This means that the common types of IP data (time domain,
 phase, or PFE) can be employed as input to inversion routines without
 change.
 

@@ -27,8 +27,7 @@ alt="./images/frequency_band.gif" />
 </figure>
 
 One can apply a frequency filter to remove all signals that have a
-frequency high than *f*<sub>*H*</sub> and all frequencies lower than
-*f*<sub>*L*</sub>.
+frequency high than $`f_H`$ and all frequencies lower than $`f_L`$.
 
 <script language="JavaScript" type="text/JavaScript">
 <!--
@@ -37,32 +36,25 @@ function MM_preloadImages() { //v3.0
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-
-MM_preloadImages('./../../../_images/rawseis2.gif','./../../../_images/rawseis3.gif','./../../../_images/rawseis5.gif')
-
-</script>
-
-<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+&#10;MM_preloadImages('./../../../_images/rawseis2.gif','./../../../_images/rawseis3.gif','./../../../_images/rawseis5.gif')
+&#10;</script>
+&#10;<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-
-      <p><b><img src="./../../../_images/rawseis2.gif" name="rawdata" width="374" height="290" align="right" id="rawdata"></b>
+&#10;      <p><b><img src="./../../../_images/rawseis2.gif" name="rawdata" width="374" height="290" align="right" id="rawdata"></b>
     The figures to the right illustrate effects of low pass and high pass 
 		filters. First examine the figure and try to identify aspects caused by 
 		high frequencies. Then try to identify aspects caused by lower freqeuncy 
@@ -76,13 +68,11 @@ MM_preloadImages('./../../../_images/rawseis2.gif','./../../../_images/rawseis3.
     	low <em>pass</em> |
     <input name="radiobutton" type="radio" onClick="MM_swapImage('rawdata','','./../../../_images/rawseis5.gif',1)" value="radiobutton">
     	high <em>pass</em> |</strong>. <br>
-
-    Which of these three could also be described as the result of applying a <strong>
+&#10;    Which of these three could also be described as the result of applying a <strong>
 		low <em>cut</em></strong> filter, and which is the result of applying a <strong>
 		high <em>cut </em></strong>filter? </p>
       </form>
-
-  </tr>
+&#10;  </tr>
 </table>
 
 ### 2. Deconvolution
@@ -126,7 +116,7 @@ This type of processing can remove some multiples from a seismic
 section. Reverberation (multiples of the ocean-bottom reflection) in
 marine surveys is a common example of this type of problem.
 
-### 3. Velocity or *f*-*k* filtering
+### 3. Velocity or $`f\mbox{-}k`$ filtering
 
 In shot gathers or on final sections we often have events that appear
 with a specific slope. Notice the ground roll, in the CSP gather below
@@ -139,8 +129,8 @@ large dip. They can be isolated by taking a 2-D Fourier transform. In
 that domain the ground roll is located in a fan-like region. By zeroing
 the Fourier transform values in this fan and then inverse Fourier
 transforming, we remove the ground roll. The diagram below right
-sketches these fan-shaped regions of an *f*-*k* plot for a typical shot
-gather which contains reflections events and noise.
+sketches these fan-shaped regions of an $`f\mbox{-}k`$ plot for a
+typical shot gather which contains reflections events and noise.
 
 <figure class="align-left">
 <img src="./images/fk_freq_fan.gif" alt="./images/fk_freq_fan.gif" />
@@ -151,10 +141,11 @@ gather which contains reflections events and noise.
 alt="./images/CSP_w_ground_roll_2.gif" />
 </figure>
 
-The procedure for carrying out *f*-*k* filtering is provided in the flow
-chart, below left. The final diagram shows four shallow marine records
-before and after *f*-*k* filtering to remove coherent linear noise.
-Hyperbolic reflections are observed after removal of the noise.
+The procedure for carrying out $`f\mbox{-}k`$ filtering is provided in
+the flow chart, below left. The final diagram shows four shallow marine
+records before and after $`f\mbox{-}k`$ filtering to remove coherent
+linear noise. Hyperbolic reflections are observed after removal of the
+noise.
 
 <figure class="align-left">
 <img src="./images/fk_procedure.gif" alt="./images/fk_procedure.gif" />

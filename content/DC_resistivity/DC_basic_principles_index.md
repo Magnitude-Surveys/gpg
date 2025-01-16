@@ -13,6 +13,10 @@ modeling relations are also based upon charge distribution.
 
 Contents
 
+<div class="toctree" maxdepth="1">
+
 DC_basic_principles_equations
 DC_basic_principles_current_voltage_halfspace
 DC_basic_principles_heterogeneous_earth DC_basic_principles_anisotropy
+
+</div>

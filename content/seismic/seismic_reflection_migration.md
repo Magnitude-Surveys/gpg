@@ -1,11 +1,15 @@
 # Migration
 
+<div class="sidebar">
+
 **Migration**
 
 <figure class="align-center">
 <img src="./images/migration_fig1.gif"
 alt="./images/migration_fig1.gif" />
 </figure>
+
+</div>
 
 The ideal goal of seismic processing is to have a section which consists
 of true reflections which arise from structure directly beneath the
@@ -17,14 +21,16 @@ correct location is migration. The need for migration is most evident
 when layers are not flat lying. Consider a single dipping layer and
 seismic traces corresponding to a coincident source and receiver.
 
-The reflection time is given by 2*l*/*v*<sub>*i*</sub>. But when we plot
-the section we think of the reflections arriving from directly beneath
-the shot. The result is that a sloping reflector in the ground will
-appear as a sloping reflector in the seismic section, but the slopes
-will be different. The true dip will be greater than that observed on
-the section. The relationship between the two dips is
+The reflection time is given by $`2l/v_i`$. But when we plot the section
+we think of the reflections arriving from directly beneath the shot. The
+result is that a sloping reflector in the ground will appear as a
+sloping reflector in the seismic section, but the slopes will be
+different. The true dip will be greater than that observed on the
+section. The relationship between the two dips is
 
-*s**i**n*(*α*<sub>*t*</sub>) = *t**a**n*(*α*<sub>*s*</sub>)
+``` math
+sin(\alpha_t) = tan(\alpha_s)
+```
 
 <figure class="align-center">
 <img src="./images/two_dip_relation.gif"
@@ -59,10 +65,10 @@ reflection events are repositioned under their correct surface location
 and at a correct vertical reflection travel time. The effects of
 migration are to:
 
--   collapse a diffraction hyperbola back to a point;
--   make dipping structures appear with correct dip angle;
--   remove the bow ties from synclines and
--   shorten anticlines.
+- collapse a diffraction hyperbola back to a point;
+- make dipping structures appear with correct dip angle;
+- remove the bow ties from synclines and
+- shorten anticlines.
 
 The principles of migration are shown in the figure below left. A single
 point diffractor will generate a hyperbolic trajectory in a travel time

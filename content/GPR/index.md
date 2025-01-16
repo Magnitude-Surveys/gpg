@@ -18,12 +18,12 @@ important to GPR include: `physical_properties_dielectric_permittivity`,
 `Magnetic Permeability <physprop_mag_susc>`. Ground penetrating radar is
 used for a variety of applications. These include:
 
-> -   Investigating concrete structures and roads
-> -   Mapping the thickness of peat-bogs and other sedimentary layers
-> -   Obtaining the depth to groundwater or permafrost
-> -   Locating buried infrastructure such as irrigation pipes, tunnels
->     and electrical wires
-> -   Finding land mines and unexploded ordnance
+> - Investigating concrete structures and roads
+> - Mapping the thickness of peat-bogs and other sedimentary layers
+> - Obtaining the depth to groundwater or permafrost
+> - Locating buried infrastructure such as irrigation pipes, tunnels and
+>   electrical wires
+> - Finding land mines and unexploded ordnance
 
 <figure class="align-right">
 <img src="images_new/GPR_schematic_example.jpg"
@@ -31,7 +31,7 @@ alt="images_new/GPR_schematic_example.jpg" />
 <figcaption>Schematic of a zero-offset GPR setup.</figcaption>
 </figure>
 
-During GPR surveys, a source (*T**x*) is used to send a pulse of
+During GPR surveys, a source ($`Tx`$) is used to send a pulse of
 high-frequency electromagnetic waves (radiowaves) into the ground. As
 the radiowaves propagate through the Earth, they are distorted as a
 result of the Earth's electromagnetic properties. At boundaries where
@@ -47,7 +47,7 @@ alt="images_new/GPR_radargram_example.jpg" />
 Gray-scale shows the amplitude of the returning signal.</figcaption>
 </figure>
 
-Sensors (*R**x*) at the Earth's surface measure the amplitudes and
+Sensors ($`Rx`$) at the Earth's surface measure the amplitudes and
 travel times of signals returning to the surface. These data from each
 trace (Tx-Rx pair) are amalgamated and represented using a radargram
 (similar to a seismogram). The horizontal axis (distance) is used to
@@ -61,5 +61,9 @@ the majority of our interpretation of GPR data.
 
 **Contents**
 
+<div class="toctree" maxdepth="1">
+
 GPR_physical_properties table_velocity GPR_fundamental_principles
 GPR_survey_data GPR_processing GPR_interpretation
+
+</div>

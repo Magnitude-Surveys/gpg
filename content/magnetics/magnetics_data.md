@@ -15,48 +15,59 @@ magnetic data. Different assumptions are made depending on the type of
 As demonstrated in `mag_measurment`, the magnetic field measured above
 the surface is a vector quantity. The *magnetic field data* measured at
 any location contains the signal from both the `source<earth_s_field>`
-(**B**<sub>0</sub>), as well as the `response<magnetics_responses>`
-(**B**<sub>*A*</sub>) from `magnetized<magnetics_magnetization>`
-material:
+($`\mathbf{B}_0`$), as well as the `response<magnetics_responses>`
+($`\mathbf{B}_A`$) from `magnetized<magnetics_magnetization>` material:
 
-**B** = **B**<sub>0</sub> + **B**<sub>*A*</sub> .
+``` math
+\mathbf{B} = \mathbf{B}_0 + \mathbf{B}_A\;.
+```
 
 In ideal cases, magnetic surveys would measure all three components of
 the field (`fluxgate magnetometer<magnetics_fluxgate>`). The *magnetic
 field anomaly*, the quantity of interest, is readily available by simple
 subtraction of the inducing field such that:
 
-**B**<sub>*A*</sub> = **B** − **B**<sub>0</sub> .
+``` math
+\mathbf{B}_A = \mathbf{B} - \mathbf{B}_0 \;.
+```
 
 The acquisition of three-components data remains challenging however.
 The orientation of each components needs to corrected in real-time in
 order to compensate for sensors rotation. Most surveys measure instead
 the total strength of the field, or *Total Magnetic Intensity* data:
 
-\|**B**\| = \|**B**<sub>0</sub> + **B**<sub>*A*</sub>\| .
+``` math
+|\mathbf{B}| =   |\mathbf{B}_0 + \mathbf{B}_A| \;.
+```
 
-Since we do not know the direction of **B**<sub>*A*</sub> we assume that
+Since we do not know the direction of $`\mathbf{B}_A`$ we assume that
 the anomalous field is mostly induced and that it's direction aligns
-with the Earth's inducing field **B**<sub>0</sub>. This allows us to
+with the Earth's inducing field $`\mathbf{B}_0`$. This allows us to
 approximate the *Total Magnetic Anomaly* datum:
 
-*B*<sub>*T*</sub> = **B**<sub>*A*</sub> ⋅ **B̂**<sub>0</sub> ,
+``` math
+B_T = \mathbf{B}_A \cdot \mathbf{\hat B}_0 \;,
+```
 
 <figure class="align-center">
 <img src="./images/TMI_anomaly.png" alt="./images/TMI_anomaly.png" />
 </figure>
 
 This assumption holds as long as
-**B̂**<sub>0</sub> ≫ **B̂**<sub>*A*</sub>, which is valid in most cases
-considering the strength of the Earth's field.
+$`\mathbf{\hat B}_0 \gg \mathbf{\hat B}_A`$, which is valid in most
+cases considering the strength of the Earth's field.
 
 ### Gradient measurements
+
+<div class="sidebar">
 
 **Outline of gradient magnetics**
 
 <figure class="align-center">
 <img src="images/icon_maggrad.gif" alt="images/icon_maggrad.gif" />
 </figure>
+
+</div>
 
 When buried objects are the target, geophysical surveys must usually
 detect features with high magnetic susceptibility and/or high electrical
@@ -80,30 +91,24 @@ function MM_preloadImages() { //v3.0
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 //-->
-
-MM_preloadImages('./../../_images/applet-bt10.gif','./../../_images/applet-bt11.gif')
-
-</script>
-
-   <table align="center" border="1" cellpadding="1" cellspacing="1" width="690"> 
+&#10;MM_preloadImages('./../../_images/applet-bt10.gif','./../../_images/applet-bt11.gif')
+&#10;</script>
+&#10;   <table align="center" border="1" cellpadding="1" cellspacing="1" width="690"> 
           <tbody> 
             <tr valign="top"> 
               <td> <p><img src="./../../_images/applet-bt10.gif" name="dipole" id="dipole" height="307" width="280"></p> 

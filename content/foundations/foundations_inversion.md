@@ -26,15 +26,15 @@ described using only a few parameters. The solutions require that there
 be fewer parameters than there are data values so that the problem is
 formally "over-determined." A few examples of parametric models are:
 
-> -   **Buried object:** parameters could be depth to a sphere (or
->     cylinder), a radius of a sphere or radius and length of a
->     cylinder, and the physical property contrast between the object
->     and host rocks.
-> -   **Layered earth:** parameters are layer thicknesses and physical
->     property values.
-> -   **A buried sheet:** parameters might be depth to the top of sheet,
->     it's dip, strike, thickness, and the physical property contrast
->     between the sheet and host rocks.
+> - **Buried object:** parameters could be depth to a sphere (or
+>   cylinder), a radius of a sphere or radius and length of a cylinder,
+>   and the physical property contrast between the object and host
+>   rocks.
+> - **Layered earth:** parameters are layer thicknesses and physical
+>   property values.
+> - **A buried sheet:** parameters might be depth to the top of sheet,
+>   it's dip, strike, thickness, and the physical property contrast
+>   between the sheet and host rocks.
 
 ## Generalized inversion methods
 

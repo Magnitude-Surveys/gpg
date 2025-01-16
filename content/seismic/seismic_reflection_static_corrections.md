@@ -6,8 +6,8 @@ trace up or down in time.
 
 There are two main reasons for applying static corrections.
 
-1.  Put shots and receivers on a flat datum plane.
-2.  Correct for near surface velocity anomalies beneath the source or
+1)  Put shots and receivers on a flat datum plane.
+2)  Correct for near surface velocity anomalies beneath the source or
     receiver.
 
 ## Elevation Statics
@@ -43,10 +43,12 @@ The reflections of interest are usually coming from great depth and the
 upcoming energy is traveling nearly vertical. So the static correction
 due to elevation expressed as a change in travel time is
 
-$$\Delta t = \frac{h_s}{v_1} - \frac{h_r}{v_1}$$
+``` math
+\Delta t = \frac{h_s}{v_1} - \frac{h_r}{v_1}
+```
 
 and is subtracted from the record. That is, the whole seismic record is
-shifted in time by a value *Δ**t*.
+shifted in time by a value $`\Delta t`$.
 
 After static correction, the subsurface events will look more like an
 hyperbola and they will be ready for velocity analysis, NMO and
@@ -64,7 +66,9 @@ beneath a source or receiver or if the thickness of the weathering layer
 changes substantially. The amount to be subtracted from the seismic
 trace time is given by the following formula:
 
-$$\Delta t = \frac{h_a}{v_a} - \frac{h_a}{v_1} = \left( \frac{v_1-v_a}{v_1v_a}\right) h_a$$
+``` math
+\Delta t = \frac{h_a}{v_a} - \frac{h_a}{v_1} = \left( \frac{v_1-v_a}{v_1v_a}\right) h_a
+```
 
 The first layer is often highly weathered and it has variable thickness
 and velocity. It is also usually poorly consolidated and therefore is a

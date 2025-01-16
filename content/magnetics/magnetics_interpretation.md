@@ -27,18 +27,18 @@ advanced interpretation.
 As discussed in `magnetics_basic_principles`, in simple scenarios, the
 target of a survey can be approximated:
 
--   as a `dipole<fields_magnetic_dipole>` if it is a compact body
--   or as a `monopole <magnetics_extended_bodies>` if it is an extended
-    body .
+- as a `dipole<fields_magnetic_dipole>` if it is a compact body
+- or as a `monopole <magnetics_extended_bodies>` if it is an extended
+  body .
 
 Consider a vertical inducing field (or alternatively, a data set that
 has been `reduced to pole <magnetics_rtp>`), and a profile line of data
 over a target located at the origin. The total field anomaly is expected
 to take a shape similar to that show in figure `halfwidth`.
 
-We define the **half-width**, *x*<sub>1/2</sub>, as the width of the
-anomaly at half its maximum (note that this is the **anomaly**, the
-background field has been removed).
+We define the **half-width**, $`x_{1/2}`$, as the width of the anomaly
+at half its maximum (note that this is the **anomaly**, the background
+field has been removed).
 
 <figure class="align-center">
 <img src="./images/xhalf.png" id="halfwidth" alt="./images/xhalf.png" />
@@ -46,13 +46,17 @@ background field has been removed).
 </figure>
 
 For a **dipole** target, the depth of burial(to the top of the target),
-*z*, is approximately equal to the half-width
+$`z`$, is approximately equal to the half-width
 
-*z* ∼ *x*<sub>1/2</sub>
+``` math
+z \sim x_{1/2}
+```
 
 while for a **monopole** target, the depth of burial is
 
-$$z \sim \frac{1}{2} x\_{1/2}$$
+``` math
+z \sim \frac{1}{2} x_{1/2}
+```
 
 You can explore this concept further with the
 `Jupyter Notebook app <magnetics_applet>`.
@@ -63,15 +67,17 @@ While the data itself can be informative, image filtering techniques are
 commonly used by industry to further highlight important features
 present in the data. These filters a generally done in the
 [frequency_domain](https://en.wikipedia.org/wiki/Frequency_domain) and
-require the data to be interpolated on a regular grid. Let
-*M*(*x*, *y*, 0) be a grid of magnetic data taken at some reference
-elevation *z* = 0. Here are few filters applied to a simple 1x1x0.1 m
-block anomaly (`Data_Filters`):
+require the data to be interpolated on a regular grid. Let $`M(x,y,0)`$
+be a grid of magnetic data taken at some reference elevation $`z=0`$.
+Here are few filters applied to a simple 1x1x0.1 m block anomaly
+(`Data_Filters`):
 
--   **Upward Continuation (UC)**: Magnetic data are synthetically moved
-    vertically such that:
+- **Upward Continuation (UC)**: Magnetic data are synthetically moved
+  vertically such that:
 
-    *U**C* = *M*(*x*, *y*, *δ**z*)
+  ``` math
+  UC = M(x,y,\delta z)
+  ```
 
 > Upward continuation is commonly used to remove the effects of very
 > nearby (or shallow) susceptible material. High frequency information
@@ -79,23 +85,27 @@ block anomaly (`Data_Filters`):
 > is also possible in order to accentuate the high frequency content,
 > but comes at the risk of enhancing noise in the gridded data.
 
--   **First vertical derivative (1VD)**: Quantifies the change in signal
-    as a function of survey height.
+- **First vertical derivative (1VD)**: Quantifies the change in signal
+  as a function of survey height.
 
-    $$1VD = \frac{\partial M}{\partial z}$$
+  ``` math
+  1VD = \frac{\partial M}{\partial z}
+  ```
 
-    1VD maps are commonly used to enhance the shorter wavelength signal.
-    Notice how well the linear features are defined compared to the
-    Total Field profile.
+  1VD maps are commonly used to enhance the shorter wavelength signal.
+  Notice how well the linear features are defined compared to the Total
+  Field profile.
 
--   **Total horizontal derivative (THDR)**: Measures the lateral rate of
-    change of the measured field.
+- **Total horizontal derivative (THDR)**: Measures the lateral rate of
+  change of the measured field.
 
-    $$THDR = \sqrt{\frac{\partial M}{\partial x}^2+\frac{\partial M}{\partial y}^2}$$
+  ``` math
+  THDR = \sqrt{\frac{\partial M}{\partial x}^2+\frac{\partial M}{\partial y}^2}
+  ```
 
-    This filter is most useful to highlight edges and delineate
-    boundaries. Notice that the peak values occur over the edges of the
-    block at -1 and 1 m.
+  This filter is most useful to highlight edges and delineate
+  boundaries. Notice that the peak values occur over the edges of the
+  block at -1 and 1 m.
 
 <figure class="align-center">
 <img src="./images/Mag_Filters_Derivatives.png" id="Data_Filters"
@@ -142,7 +152,7 @@ found in the Lac de Gras region is presented in `TKC_Sketch`. The main
 rock types associated with kimberlites are summarized in `TKC_rocks`.
 
 | Rock Type | Description | Susceptibility |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Pyroclastic Kimberlite (PK) | Extrusive, violent, post-eruption | Moderate-low |
 | Volcaniclastic Kimberlite (VK) | Extrusive, fragmental, main body | Moderate-low |
 | Hypabyssal Kimberlite (HK) | Intrusive, igneous, coherent | High |
@@ -191,8 +201,8 @@ interpolation bias and should be ignore during the interpretation
 process.
 
 |  |  |
-|------------------------------------|------------------------------------|
-| Inducing field | *I**n**c*: 83.8<sup>∘</sup>, *D**e**c*: 25.4<sup>∘</sup>, *S**t**r**e**n**g**t**h*: 60308 *n**T* |
+|----|----|
+| Inducing field | $`Inc:\;83.8^\circ,\;Dec:\;25.4^\circ,\;Strength:\;60308\;nT`$ |
 | Line spacing | 200 m |
 | Instrument | Optical pump cesium vapor |
 
@@ -201,33 +211,28 @@ process.
 From the raw data, we notice a regional trend coming from the east of
 the survey area. In order to enhance the local anomalies, we first
 proceed with a `regional trend removal<magnetics_regional_trend>`. A
-1<sup>*t**h*</sup> Order polynomial is subtracted from the raw data.
+$`1^{th}`$ Order polynomial is subtracted from the raw data.
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_openBrWindow(theURL,winName,features) { //v2.0
+&#10;function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -238,97 +243,68 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script><!-- InstanceEndEditable -->
-
-
+&#10;
 <br>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-  </tr>
-
-  </tbody>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-      <table border="0" cellpadding="2" cellspacing="1" width="100%">
-
-        <tbody>
-
-          <tr>
-
-            <td>
+&#10;      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+&#10;        <tbody>
+&#10;          <tr>
+&#10;            <td>
             <form name="form1" method="post" action="">
-
-              <p class="figureCaption">
+&#10;              <p class="figureCaption">
                   <input name="radiobutton" value="radiobutton" checked="checked" onclick="MM_swapImage('lawnmap','','./../../_images/TKC_RTF_Raw.png',1)" type="radio">
                   Total field strength is measured along 15 lines covering an area of 2.5 x 3 kilometers. The raw data appears to include A large trend from the east<br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('lawnmap','','./../../_images/TKC_RTF_Trend.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('lawnmap','','./../../_images/TKC_RTF_Trend.png',1)" type="radio">
                   First order polynomial is calculated <br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('lawnmap','','./../../_images/TKC_RTF_Detrend.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('lawnmap','','./../../_images/TKC_RTF_Detrend.png',1)" type="radio">
                   The de-trended residual total field data highlights the local anomalies. <br>
-
-              </form>
+&#10;              </form>
             </td>
-
-          </tr>
-
-          <tr>
-
-            <td>
+&#10;          </tr>
+&#10;          <tr>
+&#10;            <td>
             <div align="center"><font size="-1"><img src="./../../_images/TKC_RTF_Raw.png" name="lawnmap" height="129" width="400"></font></div>
             </td>
-
-          </tr>
-
-
+&#10;          </tr>
+&#10;
         </tbody>
-
-      </table>
-
-    <!-- InstanceEndEditable --></td>
-
-  </tr>
-
-  </tbody>
+&#10;      </table>
+&#10;    <!-- InstanceEndEditable --></td>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
 
 Having isolated the local anomalies, we can now look at various
 `filtering techniques<magnetics_filters>` as shown below:
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_openBrWindow(theURL,winName,features) { //v2.0
+&#10;function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -339,88 +315,60 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script><!-- InstanceEndEditable -->
-
-
+&#10;
 <br>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-  </tr>
-
-  </tbody>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-      <table border="0" cellpadding="2" cellspacing="1" width="100%">
-
-        <tbody>
-
-          <tr>
-
-            <td>
+&#10;      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+&#10;        <tbody>
+&#10;          <tr>
+&#10;            <td>
             <form name="form1" method="post" action="">
-
-              <p class="figureCaption">
-
-                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('filters','','./../../_images/TKC_RTF_Detrend.png',1)" type="radio">
+&#10;              <p class="figureCaption">
+&#10;                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('filters','','./../../_images/TKC_RTF_Detrend.png',1)" type="radio">
                   De-trended residual total field data map <br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/TKC_Upward100m.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/TKC_Upward100m.png',1)" type="radio">
                   Upward continuation (100 m) map<br>
-
-                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('filters','','./../../_images/TKC_1VD.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('filters','','./../../_images/TKC_1VD.png',1)" type="radio">
                   First vertical derivative (1VD) map<br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/TKC_HD.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('filters','','./../../_images/TKC_HD.png',1)" type="radio">
                   Total horizontal derivative (THDR) map<br>
-
-
-
-              </form>
+&#10;
+&#10;              </form>
             </td>
-
-          </tr>
-
-          <tr>
-
-            <td>
+&#10;          </tr>
+&#10;          <tr>
+&#10;            <td>
             <div align="center"><font size="-1"><img src="./../../_images/TKC_RTF_Detrend.png" name="filters" height="129" width="400"></font></div>
             </td>
-
-          </tr>
-
-
+&#10;          </tr>
+&#10;
         </tbody>
-
-      </table>
-
-    <!-- InstanceEndEditable --></td>
-
-  </tr>
-
-  </tbody>
+&#10;      </table>
+&#10;    <!-- InstanceEndEditable --></td>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
 
 The derivative maps were useful in identifying at least two important
 features `1th_interp`).
 
-> -   Two sets of elongated magnetic anomalies striking 315<sup>∘</sup>
->     N and 45<sup>∘</sup> N. From the shape and strength of the
->     magnetic field, they may correspond to intrusive dykes emplaced
->     during separate events. From the THDR map, these dykes should be
->     between 20 to 50 m in width.
-> -   Possible sinistral faulting post-intrusion striking at
->      ≈ 40<sup>∘</sup>
-> -   Two compact, near circular anomaly that could resemble a
->     kimberlite pipes. These are features of interest in diamond
->     exploration.
+> - Two sets of elongated magnetic anomalies striking $`315^\circ`$ N
+>   and $`45^\circ`$ N. From the shape and strength of the magnetic
+>   field, they may correspond to intrusive dykes emplaced during
+>   separate events. From the THDR map, these dykes should be between 20
+>   to 50 m in width.
+> - Possible sinistral faulting post-intrusion striking at
+>   $`\approx 40^\circ`$
+> - Two compact, near circular anomaly that could resemble a kimberlite
+>   pipes. These are features of interest in diamond exploration.
 
 <figure class="align-center">
 <img src="./images/TKC_1th_interp.png" id="1th_Interp"
@@ -457,7 +405,7 @@ alt="./images/TKC_Parametric_Dyke.png" />
 |                |                  |
 |----------------|------------------|
 | Dimensions     | 50 x 800 x 500 m |
-| Dip            | 20<sup>∘</sup>   |
+| Dip            | $`20^\circ`$     |
 | Susceptibility | 0.1 SI           |
 
 : Parameter used to model the dykes
@@ -483,7 +431,7 @@ alt="./images/TKC_Parametric_Pipe.png" />
 |                |                  |
 |----------------|------------------|
 | Dimensions     | 300 x 200 x 50 m |
-| Dip            | 20<sup>∘</sup>   |
+| Dip            | $`20^\circ`$     |
 | Susceptibility | 0.05 SI          |
 
 : Parameters used to model the pipe
@@ -557,10 +505,10 @@ in `TKC_topo`.
 From the inversion algorithm, we recover a 3D model of magnetic
 susceptibility. We note the following features:
 
--   The inversion successfully recovered thin dipping planes similar to
-    our `parametric model<plate_model>`. Despite getting smooth and
-    broad at depth, the vertical length of these magnetic planes appear
-    to extend from the surface down to over 500 m (`TKC_susc` ).
+- The inversion successfully recovered thin dipping planes similar to
+  our `parametric model<plate_model>`. Despite getting smooth and broad
+  at depth, the vertical length of these magnetic planes appear to
+  extend from the surface down to over 500 m (`TKC_susc` ).
 
 <figure class="align-center">
 <img src="./images/TKC_Inv_Susc.png" id="TKC_susc"
@@ -568,11 +516,11 @@ alt="./images/TKC_Inv_Susc.png" />
 <figcaption>Inverted TKC susceptibility model</figcaption>
 </figure>
 
--   Two nearly vertical compact bodies are imaged west of the magnetic
-    dykes (`TKC_DO27`). Susceptibility values vary greatly between the
-    two anomalies. The largest (South) anomaly seems to dip slightly
-    toward SW has predicted by our `parametric model<pipe_model>` and
-    appears deeper than the northern anomaly.
+- Two nearly vertical compact bodies are imaged west of the magnetic
+  dykes (`TKC_DO27`). Susceptibility values vary greatly between the two
+  anomalies. The largest (South) anomaly seems to dip slightly toward SW
+  has predicted by our `parametric model<pipe_model>` and appears deeper
+  than the northern anomaly.
 
 <figure class="align-center">
 <img src="./images/TKC_Susc_DO27.png" id="TKC_DO27"
@@ -591,30 +539,25 @@ and predicted magnetic data. The residual map confirms that our model
 captures most of the signal contained in the airborne data set.
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_openBrWindow(theURL,winName,features) { //v2.0
+&#10;function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
@@ -625,69 +568,44 @@ function MM_swapImage() { //v3.0
 function MM_initInteractions(){}
 //-->
   </script><!-- InstanceEndEditable -->
-
-
+&#10;
 <br>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-  </tr>
-
-  </tbody>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
-
-  <tbody>
+&#10;<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+&#10;  <tbody>
     <tr>
-
-      <table border="0" cellpadding="2" cellspacing="1" width="100%">
-
-        <tbody>
-
-          <tr>
-
-            <td>
+&#10;      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+&#10;        <tbody>
+&#10;          <tr>
+&#10;            <td>
             <form name="form1" method="post" action="">
-
-              <p class="figureCaption">
-
-                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('inverse','','./../../_images/TKC_Obs.png',1)" type="radio">
+&#10;              <p class="figureCaption">
+&#10;                  <input name="radiobutton" value="radiobutton" checked="checked"onclick="MM_swapImage('inverse','','./../../_images/TKC_Obs.png',1)" type="radio">
                   Observed data. <br>
-
-                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('inverse','','./../../_images/TKC_Pred.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton" onclick="MM_swapImage('inverse','','./../../_images/TKC_Pred.png',1)" type="radio">
                   Predicted data from the recovered susceptibility model. <br>
-
-                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('inverse','','./../../_images/TKC_Residual.png',1)" type="radio">
+&#10;                  <input name="radiobutton" value="radiobutton"  onclick="MM_swapImage('inverse','','./../../_images/TKC_Residual.png',1)" type="radio">
                   Normalized residual [ (obs-pred)/uncertainties ]. <br>
-
-
+&#10;
               </form>
             </td>
-
-          </tr>
-
-          <tr>
-
-            <td>
+&#10;          </tr>
+&#10;          <tr>
+&#10;            <td>
             <div align="center"><font size="-1"><img src="./../../_images/TKC_Obs.png" name="inverse" height="129" width="400"></font></div>
             </td>
-
-          </tr>
-
-
+&#10;          </tr>
+&#10;
         </tbody>
-
-      </table>
-
-    <!-- InstanceEndEditable --></td>
-
-  </tr>
-
-  </tbody>
+&#10;      </table>
+&#10;    <!-- InstanceEndEditable --></td>
+&#10;  </tr>
+&#10;  </tbody>
 </table>
 
 ## Final Interpretation

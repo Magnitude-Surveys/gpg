@@ -22,22 +22,23 @@ themselves. We proceed as follows.
 1.  Assume that each reflection event in a CMP gather has a travel time
     that corresponds to a hyperbola,
 
-$$t^2 (x) = t_0^2 + \frac{x^2}{v\_{st}^2}$$
+``` math
+t^2 (x) = t_0^2 + \frac{x^2}{v_{st}^2}
+```
 
-where *v*<sub>*s**t*</sub> is a "stacking" velocity, or sometimes called
-the Normal Moveout Velocity, *v*<sub>*n**m**o*</sub>.
+where $`v_{st}`$ is a "stacking" velocity, or sometimes called the
+Normal Moveout Velocity, $`v_{nmo}`$.
 
-1.  For each reflection event hyperbola, perform a velocity analysis to
-    find *v*<sub>*s**t*</sub>. This is done by first choosing
-    *t*<sub>0</sub>. Then choose a trial value of velocity
-    *v*<sub>1</sub>. The associated travel time hyperbola is generated
-    and it forms a trajectory on the CMP gather. Sum the energy of the
-    seismic traces along the trajectory and plot this value on a graph
-    of velocity versus energy. Repeat this procedure for different trial
-    velocities. Choose as *v*<sub>*s**t*</sub> the velocity that yields
-    the largest energy. In the diagram below *v*<sub>2</sub> represents
-    the stacking velocity. The term cross power can be interpreted as
-    total energy.
+2.  For each reflection event hyperbola, perform a velocity analysis to
+    find $`v_{st}`$. This is done by first choosing $`t_0`$. Then choose
+    a trial value of velocity $`v_1`$. The associated travel time
+    hyperbola is generated and it forms a trajectory on the CMP gather.
+    Sum the energy of the seismic traces along the trajectory and plot
+    this value on a graph of velocity versus energy. Repeat this
+    procedure for different trial velocities. Choose as $`v_{st}`$ the
+    velocity that yields the largest energy. In the diagram below
+    $`v_2`$ represents the stacking velocity. The term cross power can
+    be interpreted as total energy.
 
 <figure class="align-center">
 <img src="./images/stacking_velocity.gif"
@@ -46,17 +47,16 @@ alt="./images/stacking_velocity.gif" />
 Geophysical Exploration. 2nd ed. Blackwell Science: 1991.</figcaption>
 </figure>
 
-1.  Calculate the Normal Moveout Correction: Again, using the hyperbola
-    corresponding to *v*<sub>*s*</sub>*t*, compute the normal moveout
-    for each trace and then adjust the reflection time by the amount
-    *Δ**T*.
+3.  Calculate the Normal Moveout Correction: Again, using the hyperbola
+    corresponding to $`v_st`$, compute the normal moveout for each trace
+    and then adjust the reflection time by the amount $`\Delta T`$.
 
 <figure class="align-center">
 <img src="./images/NMO_correction.gif"
 alt="./images/NMO_correction.gif" />
 </figure>
 
-1.  Finally, stacking the normal moveout corrected traces generates a
+4.  Finally, stacking the normal moveout corrected traces generates a
     single trace. Each trace corresponds to a zero-offset trace, that
     is, the seismic trace that would have been recorded by a receiver
     that is coincident with the source.

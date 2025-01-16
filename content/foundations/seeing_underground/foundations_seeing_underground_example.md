@@ -26,35 +26,28 @@ difficult to determine directly using conventional methods.
 > // function MM_openBrWindow(theURL,winName,features) { //v2.0
 > //   window.open(theURL,winName,features);
 > // }
->
-> function MM_swapImgRestore() { //v3.0
+> &#10;function MM_swapImgRestore() { //v3.0
 >   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 > }
->
-> function MM_preloadImages() { //v3.0
+> &#10;function MM_preloadImages() { //v3.0
 >   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
 >     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
 >     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 > }
->
-> function MM_findObj(n, d) { //v4.01
+> &#10;function MM_findObj(n, d) { //v4.01
 >   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
 >     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
 >   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
 >   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
 >   if(!x && d.getElementById) x=d.getElementById(n); return x;
 > }
->
-> function MM_swapImage() { //v3.0
+> &#10;function MM_swapImage() { //v3.0
 >   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
 >    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 > }
->
-> MM_preloadImages('./../../../_images/fig1as.jpg','./../../../_images/fig1s.jpg')
->
-> </script>
->
->
+> &#10;MM_preloadImages('./../../../_images/fig1as.jpg','./../../../_images/fig1s.jpg')
+> &#10;</script>
+> &#10;
 > <table align="center" border="0" cellpadding="0" cellspacing="0" width="99%"> 
 >   <tbody> 
 >         <table align="center" border="0" cellpadding="3" cellspacing="0" width="90%"> 
@@ -92,8 +85,7 @@ difficult to determine directly using conventional methods.
 >         </table>    
 >   </tbody> 
 > </table> 
->  
-> </body>
+>  &#10;</body>
 > </html>
 
 ## Inversion to obtain 3D details
@@ -157,12 +149,10 @@ it provides insight about subsequent alteration of the rocks that
 occurred after the initial formation of the mineral deposit.
 
 > <script language="JavaScript">
->
-> anims1 = new Array(36);
+> &#10;anims1 = new Array(36);
 > var frame1 = 0;
 > var timeout_state1 = null;
->
-> function imageLoad1() {
+> &#10;function imageLoad1() {
 > 	for(var i = 0; i<36; i++) {
 > 		anims1[i] = new Image();
 > 		anims1[i].src = "./../../../_images/mag" + i + ".gif";
@@ -224,12 +214,9 @@ occurred after the initial formation of the mineral deposit.
 > 	clearTimeout(timeout_state1);
 > 	timeout_state1 = null;
 > }
->
-> imageLoad1()
->
-> </script>
->
->
+> &#10;imageLoad1()
+> &#10;</script>
+> &#10;
 > <center><h4>Mt Milligan magnetic susceptibility model</h4></center>
 > <center>
 > 	<table>
@@ -250,8 +237,7 @@ occurred after the initial formation of the mineral deposit.
 > 			</form>
 > 	</table>
 > </center>
->
-> <p>
+> &#10;<p>
 > <hr SIZE=1 WIDTH="100%">
 
 **Figure 5:** The same magnetic susceptibility distribution model shown
@@ -356,7 +342,7 @@ susceptibility of rocks, perhaps from borehole or outcropping samples.
 > 	</table>
 > </center>
 > </body>
-> 		
+> 		&#10;
 >
 > **Figure 6:** An isosurface plot of chargeability, which is usually
 > related to the presence of sulphide ores, graphite, or clay minerals.

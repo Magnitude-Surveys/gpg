@@ -1,10 +1,14 @@
 # Introduction
 
+<div class="sidebar">
+
 **Gravity**
 
 <figure class="align-center">
 <img src="./images/icon_grav.gif" alt="./images/icon_grav.gif" />
 </figure>
+
+</div>
 
 These pages introduce the fundamentals and practicalities of gravity
 surveying. They are not exhaustive, and are meant only to serve as an

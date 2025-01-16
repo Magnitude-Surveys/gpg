@@ -25,58 +25,67 @@ apparent resistivities.
 
 If there are two current (source) electrodes, the potential is the
 superposition of the effects from both. In a practical experiment
-(figure below), one electrode, *A*, is the positive side of a current
-source, and the other electrode, *B*, is the negative side. The current
-into each electrode is equal, but of opposite sign. For a practical
-survey, we need two electrodes to measure a potential difference. These
-are *M*, the positive terminal of the voltmeter (the one closest to the
-*A* current electrode), and *N*, the negative terminal of the voltmeter.
+(figure below), one electrode, $`A`$, is the positive side of a current
+source, and the other electrode, $`B`$, is the negative side. The
+current into each electrode is equal, but of opposite sign. For a
+practical survey, we need two electrodes to measure a potential
+difference. These are $`M`$, the positive terminal of the voltmeter (the
+one closest to the $`A`$ current electrode), and $`N`$, the negative
+terminal of the voltmeter.
 
 <figure class="align-center">
 <img src="./images/practical_experiment.gif"
 alt="./images/practical_experiment.gif" />
 </figure>
 
-The measured voltage is a potential difference
-(*V*<sub>*M*</sub> − *V*<sub>*N*</sub>) in which each potential is the
-superposition of the effects from both current sources:
+The measured voltage is a potential difference $`(V_M - V_N)`$ in which
+each potential is the superposition of the effects from both current
+sources:
 
-$$\begin{aligned}
-\Delta V &= V_M - V_N \textrm{, with} \\\[0.8em\]
-V_M &= \frac{I \rho}{2 \pi} \left \\ \frac{1}{r\_{AM}}  -  \frac{1}{r\_{BM}} \right \\ \textrm{ and}  \\\[0.8em\]
-V_N &= \frac{I \rho}{2 \pi} \left \\ \frac{1}{r\_{AN}}  -  \frac{1}{r\_{BN}} \right \\ \textrm{, so} \\\[0.8em\]
-\Delta V &= \frac{I \rho}{2 \pi} \left \\ \frac{1}{r\_{AM}} - \frac{1}{r\_{BM}} - \frac{1}{r\_{AN}} + \frac{1}{r\_{BN}}      \right \\\\\[0.8em\]
+``` math
+\begin{aligned}
+\Delta V &= V_M - V_N \textrm{, with} \\[0.8em]
+V_M &= \frac{I \rho}{2 \pi} \left \{ \frac{1}{r_{AM}}  -  \frac{1}{r_{BM}} \right \} \textrm{ and}  \\[0.8em]
+V_N &= \frac{I \rho}{2 \pi} \left \{ \frac{1}{r_{AN}}  -  \frac{1}{r_{BN}} \right \} \textrm{, so} \\[0.8em]
+\Delta V &= \frac{I \rho}{2 \pi} \left \{ \frac{1}{r_{AM}} - \frac{1}{r_{BM}} - \frac{1}{r_{AN}} + \frac{1}{r_{BN}}      \right \}\\[0.8em]
 \Delta V &=I \rho G
-\end{aligned}$$
+\end{aligned}
+```
 
-In the final relation, *G* is a geometric factor which depends upon the
-geometry of all four electrodes. Finally, we can define apparent
+In the final relation, $`G`$ is a geometric factor which depends upon
+the geometry of all four electrodes. Finally, we can define apparent
 resistivity (discussed in the measurements section) by rearranging the
 last expression to give:
 
-$$\rho_a = \frac{\Delta V}{IG}$$
+``` math
+\rho_a = \frac{\Delta V}{IG}
+```
 
 Similarly, the apparent conductivity is
 
-$$\sigma_a = \frac{1}{\rho_a} = \frac{IG}{\Delta V}$$
+``` math
+\sigma_a = \frac{1}{\rho_a} = \frac{IG}{\Delta V}
+```
 
-We use the term *apparent resistivity* *ρ*<sub>*a*</sub> because it is
-the true resistivity of materials only if the Earth is a uniform
-halfspace within range of the survey. Otherwise, this number represents
-some complicated averaging of the resistivities of all materials
-encountered by the current field.
+We use the term *apparent resistivity* $`\rho_{a}`$ because it is the
+true resistivity of materials only if the Earth is a uniform halfspace
+within range of the survey. Otherwise, this number represents some
+complicated averaging of the resistivities of all materials encountered
+by the current field.
 
 For any survey we can compute the apparent resistivity if measured
-voltage, *I*, and the geometric factor, *G* are known. Sometimes there
-is a simple expression for *G*. For example, if electrodes are spaced
-equally by a distance *a*, then:
+voltage, $`I`$, and the geometric factor, $`G`$ are known. Sometimes
+there is a simple expression for $`G`$. For example, if electrodes are
+spaced equally by a distance $`a`$, then:
 
 > 
-> $$G = \frac{ \frac{1}{a} - \frac{1}{2a}    - \frac{1}{2a} + \frac{1}{a} }{2 \pi}  = \frac{1}{2 \pi a}$$
+> ``` math
+> G = \frac{ \frac{1}{a} - \frac{1}{2a}    - \frac{1}{2a} + \frac{1}{a} }{2 \pi}  = \frac{1}{2 \pi a}
+> ```
 
 This is the case for the "Wenner" array shown in `Survey Configuration`,
 which summarizes the geometric factor for a variety of common electrode
-configurations. Note that in this figure, *k* = 1/*G* . Usage of the
+configurations. Note that in this figure, $`k=1/G`$ . Usage of the
 various arrays is illustrated in the next section.
 
 <figure class="align-center">
@@ -102,34 +111,28 @@ The electrode spacings are varied symmetrically about a central
 location.
 
 <script language="JavaScript" type="text/JavaScript">
-
-function MM_swapImgRestore() { //v3.0
+&#10;function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-
-function MM_findObj(n, d) { //v4.01
+&#10;function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
-
-function MM_swapImage() { //v3.0
+&#10;function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-
-function MM_preloadImages() { //v3.0
+&#10;function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif');
+&#10;MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif');
   </script>
-
-
+&#10;
         <table border="0" cellpadding="1" cellspacing="0" width="100%"> 
           <tbody> 
             <tr valign="top"> 
@@ -194,37 +197,31 @@ experience.
 
 In the animation in Figure 10, the process of gathering and plotting
 profiling data is illustrated. The survey illustrated involves a
-dipole-dipole array with *a* = 2 meters, and *n* = 4.
+dipole-dipole array with $`a = 2`$ meters, and $`n = 4`$.
 
 > <script language="JavaScript" type="text/JavaScript">
->
-> function MM_swapImgRestore() { //v3.0
+> &#10;function MM_swapImgRestore() { //v3.0
 >   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 > }
->
-> function MM_findObj(n, d) { //v4.01
+> &#10;function MM_findObj(n, d) { //v4.01
 >   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
 >     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
 >   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
 >   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
 >   if(!x && d.getElementById) x=d.getElementById(n); return x;
 > }
->
-> function MM_swapImage() { //v3.0
+> &#10;function MM_swapImage() { //v3.0
 >   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
 >    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 > }
->
->
+> &#10;
 > function MM_preloadImages() { //v3.0
 >   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
 >     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
 >     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
->
-> MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif')
+> &#10;MM_preloadImages('./../../_images/t1.gif','./../../_images/t2.gif','./../../_images/t3.gif','./../../_images/t4.gif','./../../_images/t5.gif','./../../_images/t6.gif','./../../_images/t7.gif','./../../_images/t8.gif','./../../_images/t9.gif','./../../_images/t10.gif','./../../_images/t11.gif','./../../_images/t12.gif','./../../_images/t13.gif','./../../_images/shell.gif','./../../_images/s1.gif','./../../_images/s2.gif','./../../_images/s3.gif','./../../_images/s4.gif','./../../_images/s5.gif','./../../_images/s6.gif','./../../_images/s7.gif','./../../_images/s8.gif','./../../_images/s9.gif','./../../_images/s10.gif','./../../_images/s11.gif','./../../_images/s12.gif','./../../_images/s13.gif','./../../_images/s14.gif','./../../_images/s15.gif','./../../_images/s16.gif','./../../_images/e1.gif','./../../_images/e2.gif','./../../_images/e3.gif','./../../_images/e4.gif','./../../_images/e5.gif','./../../_images/e6.gif','./../../_images/e7.gif','./../../_images/e8.gif','./../../_images/e9.gif','./../../_images/e10.gif','./../../_images/e11.gif','./../../_images/e12.gif','./../../_images/e13.gif','./../../_images/e14.gif','./../../_images/e15.gif','./../../_images/e16.gif')
 > </script>
->
->
+> &#10;
 >             <table align="center" cellpadding="4" cellspacing="0" width="100%">
 >               <tbody>
 >                 <tr>
@@ -280,30 +277,25 @@ acquisition, the data look like the following:
 > function MM_swapImgRestore() { //v3.0
 >   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 > }
->
-> function MM_findObj(n, d) { //v4.01
+> &#10;function MM_findObj(n, d) { //v4.01
 >   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
 >     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
 >   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
 >   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
 >   if(!x && d.getElementById) x=d.getElementById(n); return x;
 > }
->
-> function MM_swapImage() { //v3.0
+> &#10;function MM_swapImage() { //v3.0
 >   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
 >    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 > }
->
-> function MM_preloadImages() { //v3.0
+> &#10;function MM_preloadImages() { //v3.0
 >   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
 >     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
 >     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 > }
->
-> MM_preloadImages('./../../_images/l50-ip3.gif','./../../_images/l50-ip-10.gif','./../../_images/l50-ip-13.gif','./../../_images/l50-ip-00.gif');
+> &#10;MM_preloadImages('./../../_images/l50-ip3.gif','./../../_images/l50-ip-10.gif','./../../_images/l50-ip-13.gif','./../../_images/l50-ip-00.gif');
 > </script> 
->      
-> 	 <table border="0" cellpadding="1" cellspacing="0" width="100%"> 
+>      &#10;	 <table border="0" cellpadding="1" cellspacing="0" width="100%"> 
 >           <tbody> 
 >             <tr valign="top"> 
 >               <td colspan="2" valign="top"><div class="caption">Figure 11. Although the result is not a "real" section at all, data can be inverted as for any other pseudosection to provide a more legitimate estimate of the true Earth resistivity structure. This example shows data gathered over the San Nicolas deposit in Mexico.<br></div></td>
@@ -340,6 +332,6 @@ Very little processing is applied to most raw resistivity data, other
 than to convert from apparent resistivities to potentials if that is
 needed for input to inversion programs. This is accomplished by using
 the apparent resistivity formula for the array in use, and the known
-geometric factor. If the current, *I*, is taken to be 1 (even if it was
-not 1 Amp in the field), then the result is a normalized potential in
-units of volts.
+geometric factor. If the current, $`I`$, is taken to be 1 (even if it
+was not 1 Amp in the field), then the result is a normalized potential
+in units of volts.

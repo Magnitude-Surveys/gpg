@@ -12,11 +12,15 @@ Apply a force (stress) to any part and you will eventually get motion
 elsewhere. This propagation of energy is a type of wave motion. Elastic
 waves can be divided into two categories:
 
+<div class="sidebar">
+
 **Elastic model for rocks**
 
 <figure class="align-center">
 <img src="./images/springbox.png" alt="./images/springbox.png" />
 </figure>
+
+</div>
 
 1.  **Body waves** which travel through materials
 2.  **Surface waves** which propagate along boundaries between materials
@@ -29,11 +33,13 @@ elastic properties and density of the material.
 ## Body Waves
 
 **Compressional waves (P waves)** propagate by compression and
-rarefaction and the velocity of such waves, *v*<sub>*p*</sub>, in a
-material with bulk modulus *K*, shear modulus *μ*, and density *ρ* is
-given by the equation
+rarefaction and the velocity of such waves, $`v_p`$, in a material with
+bulk modulus $`K`$, shear modulus $`\mu`$, and density $`\rho`$ is given
+by the equation
 
-$$v_p = \sqrt{ \frac{K + 4/3\mu}{\rho} }.$$
+``` math
+v_p = \sqrt{ \frac{K + 4/3\mu}{\rho} }.
+```
 
 The figure below shows a simple animation of the motion associated with
 P waves.
@@ -48,8 +54,7 @@ wave demo</a>, licensed for non-commercial reuse.</figcaption>
 </figure>
 
 **Shear waves (S waves)** propagate by a pure shear strain perpendicular
-to the wave propagation. The propagation speed *v*<sub>*s*</sub> is
-given by
+to the wave propagation. The propagation speed $`v_s`$ is given by
 
 The below animation shows the propagation of a vertically polarized S
 wave. Note that an S wave could also be horizontally polarized, meaning
@@ -66,8 +71,8 @@ href="http://web.ics.purdue.edu/~braile/edumod/waves/WaveDemo.htm">seismic
 wave demo</a>, licensed for non-commercial reuse.</figcaption>
 </figure>
 
-Note that if *μ* = 0 then *v*<sub>*s*</sub> = 0. This tells us that
-shear waves do not travel in a liquid.
+Note that if $`\mu = 0`$ then $`v_s = 0`$. This tells us that shear
+waves do not travel in a liquid.
 
 Seismic reflection and refraction surveying is usually carried out by
 the analysis of P waves. S-waves can also be used but they are harder to
@@ -75,8 +80,8 @@ generate artificially compared to P-waves and require more complex
 receivers than ones designed to measure just P-waves. In marine surveys
 (unless sources and receivers are coupled directly to the ocean bottom)
 it is not possible to generate or measure S-waves at all. However, since
-*v*<sub>*s*</sub> \< *v*<sub>*p*</sub>, there are situations where it is
-beneficial to use S-waves instead of P-waves.
+$`v_s < v_p`$, there are situations where it is beneficial to use
+S-waves instead of P-waves.
 
 ## Surface Waves
 
@@ -84,10 +89,9 @@ beneficial to use S-waves instead of P-waves.
 between two materials. Particle motion is a retrograde ellipse, and in
 the same plane as wave energy propagation. The amplitude of particle
 motion decays exponentially with depth. Rayleigh wave speed
-*v*<sub>*R*</sub> \< *v*<sub>*S*</sub>. Large earthquakes can generate
-Rayleigh waves that circumnavigate the globe. This provides information
-about the velocity structure in the upper few hundred kilometers of the
-earth.
+$`v_R < v_S`$. Large earthquakes can generate Rayleigh waves that
+circumnavigate the globe. This provides information about the velocity
+structure in the upper few hundred kilometers of the earth.
 
 <figure class="align-center">
 <img src="./images/Rayleigh-wave-animated.gif"
@@ -104,7 +108,9 @@ The waves are trapped in the upper layer and the particle motion is
 parallel to the free surface and perpendicular to the direction of
 propagation.
 
-*v*<sub>*S*1</sub> \< *v*<sub>*L**o**v**e*</sub> \< *v*<sub>*S*2</sub>
+``` math
+v_{S1} < v_{Love} < v_{S2}
+```
 
 <figure class="align-center">
 <img src="./images/Love-wave-animated.gif"
@@ -133,10 +139,9 @@ comparison, sound travels in air at approximately 0.33 km/s. The wave
 energy can be recorded many kilometers from the source even if the
 source is small. The velocity and displacements of individual particles
 in the rocks are however very small; typical particle speeds are
-10<sup>−8</sup> m/s and typical ground displacements are
-10<sup>−10</sup> m. For a list of velocities of some common earth
-materials and a discussion of the geological factors that affect
-velocities please see the
+$`10^{-8}`$ m/s and typical ground displacements are $`10^{-10}`$ m. For
+a list of velocities of some common earth materials and a discussion of
+the geological factors that affect velocities please see the
 `seismic velocity <seismic_velocity_duplicate>` page on the physical
 properties section of this site.
 
@@ -218,8 +223,8 @@ BY 3.0</a>.</figcaption>
 The amplitude of seismic waves falls off with distance from the source.
 There are two primary reasons:
 
-1.  Geometrical spreading - that is, energy falls off as
-    1/*r*<sup>2</sup> and hence the amplitude falls of as 1/*r*.
+1.  Geometrical spreading - that is, energy falls off as $`1/r^2`$ and
+    hence the amplitude falls of as $`1/r`$.
 2.  Earth materials are not perfectly elastic. Some frictional heating
     occurs as the waves propagate through the earth. This is often
     described as "absorption" and the absorption coefficient expresses

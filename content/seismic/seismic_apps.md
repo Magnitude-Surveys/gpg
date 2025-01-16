@@ -4,15 +4,15 @@ There are four seismic related apps used in this course. They are
 referenced throughout the seismic course material. They are collected
 here for reference:
 
-1.  [Seismic NMO
+1)  [Seismic NMO
     App](https://mybinder.org/v2/gh/geoscixyz/gpgLabs/main?filepath=notebooks%2Fseismic%2FSeis_NMO.ipynb)
-2.  [Seismic Reflection
+2)  [Seismic Reflection
     App](https://mybinder.org/v2/gh/geoscixyz/gpgLabs/main?filepath=notebooks%2Fseismic%2FSeis_Reflection.ipynb)
-3.  [Seismic Refraction
+3)  [Seismic Refraction
     App](https://mybinder.org/v2/gh/geoscixyz/gpgLabs/main?filepath=notebooks%2Fseismic%2FSeis_Refraction.ipynb)
-4.  [Seismic Vertical Resolution
+4)  [Seismic Vertical Resolution
     App](https://mybinder.org/v2/gh/geoscixyz/gpgLabs/main?filepath=notebooks%2Fseismic%2FSeis_VerticalResolution.ipynb)
-5.  [Seismic General
+5)  [Seismic General
     App](https://mybinder.org/v2/gh/geoscixyz/gpgLabs/main?filepath=notebooks%2Fseismic%2FSeismicApplet.ipynb)
 
 Apps 2-4 are Jupyter notebooks, which can be run live on the web using
